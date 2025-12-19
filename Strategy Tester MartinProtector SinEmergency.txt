@@ -1,3 +1,10 @@
+//+------------------------------------------------------------------+
+// Emergency desactivado - Magic 12347
+// Versión: Protección bidireccional sin interrupciones emergency
+//+------------------------------------------------------------------+
+#property copyright "Guido"
+----------------------------------------------------------------------------------------------------------
+
 Strategy Tester Report
 Martim_ProtectorEA
 ICMarketsSC-Demo04 (Build 1441)
@@ -5,7 +12,7 @@ ICMarketsSC-Demo04 (Build 1441)
 Símbolo	EURUSD (Euro vs US Dollar)
 Período	5 minutos (M5) 2025.06.10 00:00 - 2025.06.11 23:55 (2025.06.10 - 2025.06.12)
 Modelo	Cada tick (el método más preciso basado en todos los períodos menores disponibles)
-Parámetros	Test_Mode=true; Test_Signal_Magic=77777; Test_Lot=0.01; Test_RSI_Period=2; Martim_MagicNumber=99000; Monitor_Magics="77777,0"; Hedge1_Lot=0.02; Hedge2_Lot=0.03; Level1_Trigger_Pips=1; Level2_Trigger_Pips=1; Exit_Min_Profit_Pips=1; Emergency_Net_Loss=0; HMA_Period=7; RSI_Period=2; Enable_Logging=true;
+Parámetros	Test_Mode=true; Test_Signal_Magic=77777; Test_Lot=0.01; Test_RSI_Period=2; Martim_MagicNumber=12347; Monitor_Magics="77777,0"; Hedge1_Lot=0.02; Hedge2_Lot=0.03; Level1_Trigger_Pips=1; Level2_Trigger_Pips=1; Exit_Min_Profit_Pips=1; Emergency_Net_Loss=0; HMA_Period=7; RSI_Period=2; Enable_Logging=true;
 Barras en el historial	1577	Ticks modelados	101432	Calidad del modelado	90.00%
 Errores de desalineación de gráficos	0				
 Depósito inicial	200.00			Spread	2
@@ -162,7 +169,229 @@ Graph
 139	2025.06.11 23:40	close	69	0.01	1.14851	0.00000	0.00000	-0.17	187.75
 140	2025.06.11 23:40	close	70	0.02	1.14849	0.00000	0.00000	-0.20	187.55
 
-JOURNAL
+Journal
+---------------------------------------------------------------
+2025.12.19 12:10:11.005	EURUSD,M5: 100432 tick events (576 bars, 101432 bar states) processed in 0:00:00.250 (total time 0:00:00.266)
+2025.12.19 12:10:11.005	2025.06.11 23:59:48  Martim_ProtectorEA EURUSD,M5: Martim_ProtectorEA finalizado. Grupos activos: 0
+2025.12.19 12:10:11.005	2025.06.11 23:40:33  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:11.005	2025.06.11 23:40:33  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.16
+2025.12.19 12:10:11.005	2025.06.11 23:40:33  Martim_ProtectorEA EURUSD,M5: TO: #69
+2025.12.19 12:10:11.005	2025.06.11 23:40:33  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
+2025.12.19 12:10:11.005	2025.06.11 23:40:33  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:11.005	2025.06.11 23:40:33  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #70 cerrado | $-0.06
+2025.12.19 12:10:11.005	2025.06.11 23:40:33  Martim_ProtectorEA EURUSD,M5: close #70 buy 0.02 EURUSD at 1.14852 at price 1.14849
+2025.12.19 12:10:11.005	2025.06.11 23:40:33  Martim_ProtectorEA EURUSD,M5: >>> TO #69 cerrado | $-0.10
+2025.12.19 12:10:11.005	2025.06.11 23:40:33  Martim_ProtectorEA EURUSD,M5: close #69 sell 0.01 EURUSD at 1.14841 at price 1.14851
+2025.12.19 12:10:11.005	2025.06.11 23:40:33  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #69 | Neto: -1.3p ? CERRAR TODO
+2025.12.19 12:10:11.005	2025.06.11 23:40:30  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #70 ABIERTO | TO #69 | Tipo: BUY | Lote: 0.02 | Precio: 1.14852
+2025.12.19 12:10:11.005	2025.06.11 23:40:30  Martim_ProtectorEA EURUSD,M5: open #70 buy 0.02 EURUSD at 1.14852 ok
+2025.12.19 12:10:11.005	2025.06.11 23:40:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #69 | Tipo: SELL | Lote: 0.01
+2025.12.19 12:10:11.005	2025.06.11 23:40:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #69 VENTA | Precio: 1.14841 | RSI: 32.5 | HMA: ROJO
+2025.12.19 12:10:11.005	2025.06.11 23:40:00  Martim_ProtectorEA EURUSD,M5: open #69 sell 0.01 EURUSD at 1.14841 ok
+2025.12.19 12:10:11.005	2025.06.11 23:01:27  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:11.005	2025.06.11 23:01:27  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.12
+2025.12.19 12:10:11.005	2025.06.11 23:01:27  Martim_ProtectorEA EURUSD,M5: TO: #67
+2025.12.19 12:10:11.005	2025.06.11 23:01:27  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
+2025.12.19 12:10:11.005	2025.06.11 23:01:27  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:11.005	2025.06.11 23:01:27  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #68 cerrado | $0.02
+2025.12.19 12:10:11.005	2025.06.11 23:01:27  Martim_ProtectorEA EURUSD,M5: close #68 sell 0.02 EURUSD at 1.14812 at price 1.14811
+2025.12.19 12:10:11.005	2025.06.11 23:01:27  Martim_ProtectorEA EURUSD,M5: >>> TO #67 cerrado | $-0.14
+2025.12.19 12:10:11.005	2025.06.11 23:01:27  Martim_ProtectorEA EURUSD,M5: close #67 buy 0.01 EURUSD at 1.14823 at price 1.14809
+2025.12.19 12:10:11.005	2025.06.11 23:01:27  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #67 | Neto: -1.3p ? CERRAR TODO
+2025.12.19 12:10:11.005	2025.06.11 23:01:26  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #68 ABIERTO | TO #67 | Tipo: SELL | Lote: 0.02 | Precio: 1.14812
+2025.12.19 12:10:11.005	2025.06.11 23:01:26  Martim_ProtectorEA EURUSD,M5: open #68 sell 0.02 EURUSD at 1.14812 ok
+2025.12.19 12:10:11.005	2025.06.11 23:00:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #67 | Tipo: BUY | Lote: 0.01
+2025.12.19 12:10:11.005	2025.06.11 23:00:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #67 COMPRA | Precio: 1.14823 | RSI: 37.5 | HMA: VERDE
+2025.12.19 12:10:11.005	2025.06.11 23:00:00  Martim_ProtectorEA EURUSD,M5: open #67 buy 0.01 EURUSD at 1.14823 ok
+2025.12.19 12:10:11.005	2025.06.11 21:43:06  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:11.005	2025.06.11 21:43:06  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.13
+2025.12.19 12:10:11.005	2025.06.11 21:43:06  Martim_ProtectorEA EURUSD,M5: TO: #65
+2025.12.19 12:10:11.005	2025.06.11 21:43:06  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
+2025.12.19 12:10:11.005	2025.06.11 21:43:06  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:11.005	2025.06.11 21:43:06  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #66 cerrado | $0.00
+2025.12.19 12:10:11.005	2025.06.11 21:43:06  Martim_ProtectorEA EURUSD,M5: close #66 sell 0.02 EURUSD at 1.14865 at price 1.14865
+2025.12.19 12:10:11.005	2025.06.11 21:43:06  Martim_ProtectorEA EURUSD,M5: >>> TO #65 cerrado | $-0.13
+2025.12.19 12:10:11.005	2025.06.11 21:43:06  Martim_ProtectorEA EURUSD,M5: close #65 buy 0.01 EURUSD at 1.14876 at price 1.14863
+2025.12.19 12:10:11.005	2025.06.11 21:43:06  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #65 | Neto: -1.3p ? CERRAR TODO
+2025.12.19 12:10:11.005	2025.06.11 21:43:05  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #66 ABIERTO | TO #65 | Tipo: SELL | Lote: 0.02 | Precio: 1.14865
+2025.12.19 12:10:11.005	2025.06.11 21:43:05  Martim_ProtectorEA EURUSD,M5: open #66 sell 0.02 EURUSD at 1.14865 ok
+2025.12.19 12:10:11.005	2025.06.11 21:35:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #65 | Tipo: BUY | Lote: 0.01
+2025.12.19 12:10:11.005	2025.06.11 21:35:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #65 COMPRA | Precio: 1.14876 | RSI: 43.1 | HMA: VERDE
+2025.12.19 12:10:11.005	2025.06.11 21:35:00  Martim_ProtectorEA EURUSD,M5: open #65 buy 0.01 EURUSD at 1.14876 ok
+2025.12.19 12:10:11.005	2025.06.11 21:15:41  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:11.005	2025.06.11 21:15:41  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.18
+2025.12.19 12:10:11.005	2025.06.11 21:15:41  Martim_ProtectorEA EURUSD,M5: TO: #63
+2025.12.19 12:10:11.005	2025.06.11 21:15:41  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
+2025.12.19 12:10:11.005	2025.06.11 21:15:41  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:11.005	2025.06.11 21:15:41  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #64 cerrado | $-0.06
+2025.12.19 12:10:11.005	2025.06.11 21:15:41  Martim_ProtectorEA EURUSD,M5: close #64 sell 0.02 EURUSD at 1.14928 at price 1.14931
+2025.12.19 12:10:11.005	2025.06.11 21:15:41  Martim_ProtectorEA EURUSD,M5: >>> TO #63 cerrado | $-0.12
+2025.12.19 12:10:11.005	2025.06.11 21:15:41  Martim_ProtectorEA EURUSD,M5: close #63 buy 0.01 EURUSD at 1.14941 at price 1.14929
+2025.12.19 12:10:11.005	2025.06.11 21:15:41  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #63 | Neto: -1.5p ? CERRAR TODO
+2025.12.19 12:10:11.005	2025.06.11 21:15:40  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #64 ABIERTO | TO #63 | Tipo: SELL | Lote: 0.02 | Precio: 1.14928
+2025.12.19 12:10:11.005	2025.06.11 21:15:40  Martim_ProtectorEA EURUSD,M5: open #64 sell 0.02 EURUSD at 1.14928 ok
+2025.12.19 12:10:11.005	2025.06.11 20:45:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #63 | Tipo: BUY | Lote: 0.01
+2025.12.19 12:10:11.005	2025.06.11 20:45:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #63 COMPRA | Precio: 1.14941 | RSI: 65.2 | HMA: VERDE
+2025.12.19 12:10:11.005	2025.06.11 20:45:00  Martim_ProtectorEA EURUSD,M5: open #63 buy 0.01 EURUSD at 1.14941 ok
+2025.12.19 12:10:11.005	2025.06.11 19:45:42  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:11.005	2025.06.11 19:45:42  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.17
+2025.12.19 12:10:11.005	2025.06.11 19:45:42  Martim_ProtectorEA EURUSD,M5: TO: #61
+2025.12.19 12:10:11.005	2025.06.11 19:45:42  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
+2025.12.19 12:10:11.005	2025.06.11 19:45:42  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:11.005	2025.06.11 19:45:42  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #62 cerrado | $-0.06
+2025.12.19 12:10:11.005	2025.06.11 19:45:42  Martim_ProtectorEA EURUSD,M5: close #62 buy 0.02 EURUSD at 1.14928 at price 1.14925
+2025.12.19 12:10:11.005	2025.06.11 19:45:42  Martim_ProtectorEA EURUSD,M5: >>> TO #61 cerrado | $-0.11
+2025.12.19 12:10:11.005	2025.06.11 19:45:42  Martim_ProtectorEA EURUSD,M5: close #61 sell 0.01 EURUSD at 1.14916 at price 1.14927
+2025.12.19 12:10:11.005	2025.06.11 19:45:42  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #61 | Neto: -1.4p ? CERRAR TODO
+2025.12.19 12:10:11.005	2025.06.11 19:45:40  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #62 ABIERTO | TO #61 | Tipo: BUY | Lote: 0.02 | Precio: 1.14928
+2025.12.19 12:10:11.005	2025.06.11 19:45:40  Martim_ProtectorEA EURUSD,M5: open #62 buy 0.02 EURUSD at 1.14928 ok
+2025.12.19 12:10:11.005	2025.06.11 19:45:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #61 | Tipo: SELL | Lote: 0.01
+2025.12.19 12:10:11.005	2025.06.11 19:45:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #61 VENTA | Precio: 1.14916 | RSI: 41.1 | HMA: ROJO
+2025.12.19 12:10:11.005	2025.06.11 19:45:00  Martim_ProtectorEA EURUSD,M5: open #61 sell 0.01 EURUSD at 1.14916 ok
+2025.12.19 12:10:11.005	2025.06.11 19:20:42  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:11.005	2025.06.11 19:20:42  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.16
+2025.12.19 12:10:11.005	2025.06.11 19:20:42  Martim_ProtectorEA EURUSD,M5: TO: #59
+2025.12.19 12:10:11.005	2025.06.11 19:20:42  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
+2025.12.19 12:10:11.005	2025.06.11 19:20:42  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:11.005	2025.06.11 19:20:42  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #60 cerrado | $-0.06
+2025.12.19 12:10:11.005	2025.06.11 19:20:42  Martim_ProtectorEA EURUSD,M5: close #60 sell 0.02 EURUSD at 1.14832 at price 1.14835
+2025.12.19 12:10:11.005	2025.06.11 19:20:42  Martim_ProtectorEA EURUSD,M5: >>> TO #59 cerrado | $-0.10
+2025.12.19 12:10:11.005	2025.06.11 19:20:42  Martim_ProtectorEA EURUSD,M5: close #59 buy 0.01 EURUSD at 1.14843 at price 1.14833
+2025.12.19 12:10:11.005	2025.06.11 19:20:42  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #59 | Neto: -1.3p ? CERRAR TODO
+2025.12.19 12:10:11.005	2025.06.11 19:20:40  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #60 ABIERTO | TO #59 | Tipo: SELL | Lote: 0.02 | Precio: 1.14832
+2025.12.19 12:10:11.005	2025.06.11 19:20:40  Martim_ProtectorEA EURUSD,M5: open #60 sell 0.02 EURUSD at 1.14832 ok
+2025.12.19 12:10:11.005	2025.06.11 19:20:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #59 | Tipo: BUY | Lote: 0.01
+2025.12.19 12:10:11.005	2025.06.11 19:20:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #59 COMPRA | Precio: 1.14843 | RSI: 44.2 | HMA: VERDE
+2025.12.19 12:10:11.005	2025.06.11 19:20:00  Martim_ProtectorEA EURUSD,M5: open #59 buy 0.01 EURUSD at 1.14843 ok
+2025.12.19 12:10:11.005	2025.06.11 18:41:19  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:11.005	2025.06.11 18:41:19  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.16
+2025.12.19 12:10:11.005	2025.06.11 18:41:19  Martim_ProtectorEA EURUSD,M5: TO: #57
+2025.12.19 12:10:11.005	2025.06.11 18:41:19  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
+2025.12.19 12:10:11.005	2025.06.11 18:41:19  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:11.005	2025.06.11 18:41:19  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #58 cerrado | $-0.06
+2025.12.19 12:10:11.005	2025.06.11 18:41:19  Martim_ProtectorEA EURUSD,M5: close #58 buy 0.02 EURUSD at 1.14896 at price 1.14893
+2025.12.19 12:10:11.005	2025.06.11 18:41:19  Martim_ProtectorEA EURUSD,M5: >>> TO #57 cerrado | $-0.10
+2025.12.19 12:10:11.005	2025.06.11 18:41:19  Martim_ProtectorEA EURUSD,M5: close #57 sell 0.01 EURUSD at 1.14885 at price 1.14895
+2025.12.19 12:10:11.005	2025.06.11 18:41:19  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #57 | Neto: -1.3p ? CERRAR TODO
+2025.12.19 12:10:11.005	2025.06.11 18:41:18  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #58 ABIERTO | TO #57 | Tipo: BUY | Lote: 0.02 | Precio: 1.14896
+2025.12.19 12:10:11.005	2025.06.11 18:41:18  Martim_ProtectorEA EURUSD,M5: open #58 buy 0.02 EURUSD at 1.14896 ok
+2025.12.19 12:10:11.005	2025.06.11 18:40:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #57 | Tipo: SELL | Lote: 0.01
+2025.12.19 12:10:11.005	2025.06.11 18:40:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #57 VENTA | Precio: 1.14885 | RSI: 81.1 | HMA: ROJO
+2025.12.19 12:10:11.005	2025.06.11 18:40:00  Martim_ProtectorEA EURUSD,M5: open #57 sell 0.01 EURUSD at 1.14885 ok
+2025.12.19 12:10:11.005	2025.06.11 17:15:05  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:11.005	2025.06.11 17:15:05  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.14
+2025.12.19 12:10:11.005	2025.06.11 17:15:05  Martim_ProtectorEA EURUSD,M5: TO: #55
+2025.12.19 12:10:11.005	2025.06.11 17:15:05  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
+2025.12.19 12:10:11.005	2025.06.11 17:15:05  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:11.005	2025.06.11 17:15:05  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #56 cerrado | $-0.02
+2025.12.19 12:10:11.005	2025.06.11 17:15:05  Martim_ProtectorEA EURUSD,M5: close #56 buy 0.02 EURUSD at 1.14729 at price 1.14728
+2025.12.19 12:10:11.005	2025.06.11 17:15:05  Martim_ProtectorEA EURUSD,M5: >>> TO #55 cerrado | $-0.12
+2025.12.19 12:10:11.005	2025.06.11 17:15:05  Martim_ProtectorEA EURUSD,M5: close #55 sell 0.01 EURUSD at 1.14718 at price 1.14730
+2025.12.19 12:10:10.989	2025.06.11 17:15:05  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #55 | Neto: -1.3p ? CERRAR TODO
+2025.12.19 12:10:10.989	2025.06.11 17:15:04  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #56 ABIERTO | TO #55 | Tipo: BUY | Lote: 0.02 | Precio: 1.14729
+2025.12.19 12:10:10.989	2025.06.11 17:15:04  Martim_ProtectorEA EURUSD,M5: open #56 buy 0.02 EURUSD at 1.14729 ok
+2025.12.19 12:10:10.989	2025.06.11 17:10:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #55 | Tipo: SELL | Lote: 0.01
+2025.12.19 12:10:10.989	2025.06.11 17:10:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #55 VENTA | Precio: 1.14718 | RSI: 53.8 | HMA: ROJO
+2025.12.19 12:10:10.989	2025.06.11 17:10:00  Martim_ProtectorEA EURUSD,M5: open #55 sell 0.01 EURUSD at 1.14718 ok
+2025.12.19 12:10:10.989	2025.06.11 16:11:03  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:10.989	2025.06.11 16:11:03  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.14
+2025.12.19 12:10:10.989	2025.06.11 16:11:03  Martim_ProtectorEA EURUSD,M5: TO: #53
+2025.12.19 12:10:10.989	2025.06.11 16:11:03  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
+2025.12.19 12:10:10.989	2025.06.11 16:11:03  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:10.989	2025.06.11 16:11:03  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #54 cerrado | $0.00
+2025.12.19 12:10:10.989	2025.06.11 16:11:03  Martim_ProtectorEA EURUSD,M5: close #54 sell 0.02 EURUSD at 1.14609 at price 1.14609
+2025.12.19 12:10:10.989	2025.06.11 16:11:03  Martim_ProtectorEA EURUSD,M5: >>> TO #53 cerrado | $-0.14
+2025.12.19 12:10:10.989	2025.06.11 16:11:03  Martim_ProtectorEA EURUSD,M5: close #53 buy 0.01 EURUSD at 1.14621 at price 1.14607
+2025.12.19 12:10:10.989	2025.06.11 16:11:03  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #53 | Neto: -1.4p ? CERRAR TODO
+2025.12.19 12:10:10.989	2025.06.11 16:11:02  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #54 ABIERTO | TO #53 | Tipo: SELL | Lote: 0.02 | Precio: 1.14609
+2025.12.19 12:10:10.989	2025.06.11 16:11:02  Martim_ProtectorEA EURUSD,M5: open #54 sell 0.02 EURUSD at 1.14609 ok
+2025.12.19 12:10:10.989	2025.06.11 16:10:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #53 | Tipo: BUY | Lote: 0.01
+2025.12.19 12:10:10.989	2025.06.11 16:10:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #53 COMPRA | Precio: 1.14621 | RSI: 63.3 | HMA: VERDE
+2025.12.19 12:10:10.989	2025.06.11 16:10:00  Martim_ProtectorEA EURUSD,M5: open #53 buy 0.01 EURUSD at 1.14621 ok
+2025.12.19 12:10:10.989	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:10.989	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.14
+2025.12.19 12:10:10.989	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: TO: #51
+2025.12.19 12:10:10.989	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
+2025.12.19 12:10:10.989	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:10.989	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #52 cerrado | $-0.02
+2025.12.19 12:10:10.989	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: close #52 buy 0.02 EURUSD at 1.14714 at price 1.14713
+2025.12.19 12:10:10.989	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: >>> TO #51 cerrado | $-0.12
+2025.12.19 12:10:10.989	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: close #51 sell 0.01 EURUSD at 1.14703 at price 1.14715
+2025.12.19 12:10:10.989	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #51 | Neto: -1.3p ? CERRAR TODO
+2025.12.19 12:10:10.989	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #52 ABIERTO | TO #51 | Tipo: BUY | Lote: 0.02 | Precio: 1.14714
+2025.12.19 12:10:10.989	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: open #52 buy 0.02 EURUSD at 1.14714 ok
+2025.12.19 12:10:10.989	2025.06.11 15:45:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #51 | Tipo: SELL | Lote: 0.01
+2025.12.19 12:10:10.989	2025.06.11 15:45:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #51 VENTA | Precio: 1.14703 | RSI: 66.4 | HMA: ROJO
+2025.12.19 12:10:10.989	2025.06.11 15:45:00  Martim_ProtectorEA EURUSD,M5: open #51 sell 0.01 EURUSD at 1.14703 ok
+2025.12.19 12:10:10.989	2025.06.11 15:30:19  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:10.989	2025.06.11 15:30:19  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.09
+2025.12.19 12:10:10.989	2025.06.11 15:30:19  Martim_ProtectorEA EURUSD,M5: TO: #49
+2025.12.19 12:10:10.989	2025.06.11 15:30:19  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
+2025.12.19 12:10:10.989	2025.06.11 15:30:19  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:10.989	2025.06.11 15:30:19  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #50 cerrado | $0.18
+2025.12.19 12:10:10.989	2025.06.11 15:30:19  Martim_ProtectorEA EURUSD,M5: close #50 buy 0.02 EURUSD at 1.14433 at price 1.14442
+2025.12.19 12:10:10.989	2025.06.11 15:30:19  Martim_ProtectorEA EURUSD,M5: >>> TO #49 cerrado | $-0.27
+2025.12.19 12:10:10.989	2025.06.11 15:30:19  Martim_ProtectorEA EURUSD,M5: close #49 sell 0.01 EURUSD at 1.14417 at price 1.14444
+2025.12.19 12:10:10.989	2025.06.11 15:30:19  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #49 | Neto: -1.8p ? CERRAR TODO
+2025.12.19 12:10:10.989	2025.06.11 15:30:18  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #50 ABIERTO | TO #49 | Tipo: BUY | Lote: 0.02 | Precio: 1.14433
+2025.12.19 12:10:10.989	2025.06.11 15:30:18  Martim_ProtectorEA EURUSD,M5: open #50 buy 0.02 EURUSD at 1.14433 ok
+2025.12.19 12:10:10.957	2025.06.11 12:40:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #49 | Tipo: SELL | Lote: 0.01
+2025.12.19 12:10:10.957	2025.06.11 12:40:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #49 VENTA | Precio: 1.14417 | RSI: 59.5 | HMA: ROJO
+2025.12.19 12:10:10.957	2025.06.11 12:40:00  Martim_ProtectorEA EURUSD,M5: open #49 sell 0.01 EURUSD at 1.14417 ok
+2025.12.19 12:10:10.957	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:10.957	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.17
+2025.12.19 12:10:10.957	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: TO: #47
+2025.12.19 12:10:10.957	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
+2025.12.19 12:10:10.957	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:10.957	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #48 cerrado | $-0.06
+2025.12.19 12:10:10.957	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: close #48 buy 0.02 EURUSD at 1.14202 at price 1.14199
+2025.12.19 12:10:10.957	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: >>> TO #47 cerrado | $-0.11
+2025.12.19 12:10:10.957	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: close #47 sell 0.01 EURUSD at 1.14190 at price 1.14201
+2025.12.19 12:10:10.957	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #47 | Neto: -1.4p ? CERRAR TODO
+2025.12.19 12:10:10.957	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #48 ABIERTO | TO #47 | Tipo: BUY | Lote: 0.02 | Precio: 1.14202
+2025.12.19 12:10:10.957	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: open #48 buy 0.02 EURUSD at 1.14202 ok
+2025.12.19 12:10:10.957	2025.06.11 11:00:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #47 | Tipo: SELL | Lote: 0.01
+2025.12.19 12:10:10.957	2025.06.11 11:00:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #47 VENTA | Precio: 1.1419 | RSI: 47.5 | HMA: ROJO
+2025.12.19 12:10:10.957	2025.06.11 11:00:00  Martim_ProtectorEA EURUSD,M5: open #47 sell 0.01 EURUSD at 1.14190 ok
+2025.12.19 12:10:10.957	2025.06.11 10:05:30  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:10.957	2025.06.11 10:05:30  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.14
+2025.12.19 12:10:10.957	2025.06.11 10:05:30  Martim_ProtectorEA EURUSD,M5: TO: #45
+2025.12.19 12:10:10.957	2025.06.11 10:05:30  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
+2025.12.19 12:10:10.957	2025.06.11 10:05:30  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:10.957	2025.06.11 10:05:30  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #46 cerrado | $0.00
+2025.12.19 12:10:10.957	2025.06.11 10:05:30  Martim_ProtectorEA EURUSD,M5: close #46 sell 0.02 EURUSD at 1.14116 at price 1.14116
+2025.12.19 12:10:10.957	2025.06.11 10:05:30  Martim_ProtectorEA EURUSD,M5: >>> TO #45 cerrado | $-0.14
+2025.12.19 12:10:10.957	2025.06.11 10:05:30  Martim_ProtectorEA EURUSD,M5: close #45 buy 0.01 EURUSD at 1.14128 at price 1.14114
+2025.12.19 12:10:10.957	2025.06.11 10:05:30  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #45 | Neto: -1.4p ? CERRAR TODO
+2025.12.19 12:10:10.957	2025.06.11 10:05:28  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #46 ABIERTO | TO #45 | Tipo: SELL | Lote: 0.02 | Precio: 1.14116
+2025.12.19 12:10:10.957	2025.06.11 10:05:28  Martim_ProtectorEA EURUSD,M5: open #46 sell 0.02 EURUSD at 1.14116 ok
+2025.12.19 12:10:10.957	2025.06.11 10:05:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #45 | Tipo: BUY | Lote: 0.01
+2025.12.19 12:10:10.957	2025.06.11 10:05:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #45 COMPRA | Precio: 1.14128 | RSI: 48.6 | HMA: VERDE
+2025.12.19 12:10:10.957	2025.06.11 10:05:00  Martim_ProtectorEA EURUSD,M5: open #45 buy 0.01 EURUSD at 1.14128 ok
+2025.12.19 12:10:10.957	2025.06.11 09:35:31  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:10.957	2025.06.11 09:35:31  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.16
+2025.12.19 12:10:10.957	2025.06.11 09:35:31  Martim_ProtectorEA EURUSD,M5: TO: #43
+2025.12.19 12:10:10.957	2025.06.11 09:35:31  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
+2025.12.19 12:10:10.957	2025.06.11 09:35:31  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:10.957	2025.06.11 09:35:31  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #44 cerrado | $-0.06
+2025.12.19 12:10:10.957	2025.06.11 09:35:31  Martim_ProtectorEA EURUSD,M5: close #44 sell 0.02 EURUSD at 1.14135 at price 1.14138
+2025.12.19 12:10:10.957	2025.06.11 09:35:31  Martim_ProtectorEA EURUSD,M5: >>> TO #43 cerrado | $-0.10
+2025.12.19 12:10:10.957	2025.06.11 09:35:31  Martim_ProtectorEA EURUSD,M5: close #43 buy 0.01 EURUSD at 1.14146 at price 1.14136
+2025.12.19 12:10:10.957	2025.06.11 09:35:31  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #43 | Neto: -1.3p ? CERRAR TODO
+2025.12.19 12:10:10.957	2025.06.11 09:35:30  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #44 ABIERTO | TO #43 | Tipo: SELL | Lote: 0.02 | Precio: 1.14135
+2025.12.19 12:10:10.957	2025.06.11 09:35:30  Martim_ProtectorEA EURUSD,M5: open #44 sell 0.02 EURUSD at 1.14135 ok
+2025.12.19 12:10:10.957	2025.06.11 09:35:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #43 | Tipo: BUY | Lote: 0.01
+2025.12.19 12:10:10.957	2025.06.11 09:35:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #43 COMPRA | Precio: 1.14146 | RSI: 57.8 | HMA: VERDE
+2025.12.19 12:10:10.957	2025.06.11 09:35:00  Martim_ProtectorEA EURUSD,M5: open #43 buy 0.01 EURUSD at 1.14146 ok
+2025.12.19 12:10:10.957	2025.06.11 09:08:30  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:10.957	2025.06.11 09:08:30  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.14
+2025.12.19 12:10:10.957	2025.06.11 09:08:30  Martim_ProtectorEA EURUSD,M5: TO: #41
+2025.12.19 12:10:10.957	2025.06.11 09:08:30  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
+2025.12.19 12:10:10.957	2025.06.11 09:08:30  Martim_ProtectorEA EURUSD,M5: ========================================
+2025.12.19 12:10:10.957	2025.06.11 09:08:30  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #42 cerrado | $0.02
+2025.12.19 12:10:10.957	2025.06.11 09:08:30  Martim_ProtectorEA EURUSD,M5: close #42 buy 0.02 EURUSD at 1.14191 at price 1.14192
+2025.12.19 12:09:56.925	Expert Martim_ProtectorEA EURUSD,M5: loaded successfully
+2025.12.19 12:09:56.909	Expert Martim_ProtectorEA EURUSD,M5: removed
 2025.12.19 11:56:33.246	EURUSD,M5: 100432 tick events (576 bars, 101432 bar states) processed in 0:00:00.219 (total time 0:00:00.234)
 2025.12.19 11:56:33.246	2025.06.11 23:59:48  Martim_ProtectorEA EURUSD,M5: Martim_ProtectorEA finalizado. Grupos activos: 0
 2025.12.19 11:56:33.246	2025.06.11 23:40:33  Martim_ProtectorEA EURUSD,M5: ========================================
@@ -454,224 +683,3 @@ JOURNAL
 2025.12.19 11:56:24.987	2025.06.11 17:10:00  Martim_ProtectorEA EURUSD,M5: open #55 sell 0.01 EURUSD at 1.14718 ok
 2025.12.19 11:56:24.987	2025.06.11 16:11:03  Martim_ProtectorEA EURUSD,M5: ========================================
 2025.12.19 11:56:24.987	2025.06.11 16:11:03  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.14
-2025.12.19 11:56:24.987	2025.06.11 16:11:03  Martim_ProtectorEA EURUSD,M5: TO: #53
-2025.12.19 11:56:24.987	2025.06.11 16:11:03  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
-2025.12.19 11:56:24.987	2025.06.11 16:11:03  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:56:24.987	2025.06.11 16:11:03  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #54 cerrado | $0.00
-2025.12.19 11:56:24.987	2025.06.11 16:11:03  Martim_ProtectorEA EURUSD,M5: close #54 sell 0.02 EURUSD at 1.14609 at price 1.14609
-2025.12.19 11:56:24.987	2025.06.11 16:11:03  Martim_ProtectorEA EURUSD,M5: >>> TO #53 cerrado | $-0.14
-2025.12.19 11:56:24.987	2025.06.11 16:11:03  Martim_ProtectorEA EURUSD,M5: close #53 buy 0.01 EURUSD at 1.14621 at price 1.14607
-2025.12.19 11:56:24.987	2025.06.11 16:11:03  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #53 | Neto: -1.4p ? CERRAR TODO
-2025.12.19 11:56:24.987	2025.06.11 16:11:02  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #54 ABIERTO | TO #53 | Tipo: SELL | Lote: 0.02 | Precio: 1.14609
-2025.12.19 11:56:24.987	2025.06.11 16:11:02  Martim_ProtectorEA EURUSD,M5: open #54 sell 0.02 EURUSD at 1.14609 ok
-2025.12.19 11:56:24.987	2025.06.11 16:10:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #53 | Tipo: BUY | Lote: 0.01
-2025.12.19 11:56:24.987	2025.06.11 16:10:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #53 COMPRA | Precio: 1.14621 | RSI: 63.3 | HMA: VERDE
-2025.12.19 11:56:24.987	2025.06.11 16:10:00  Martim_ProtectorEA EURUSD,M5: open #53 buy 0.01 EURUSD at 1.14621 ok
-2025.12.19 11:56:24.987	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:56:24.987	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.14
-2025.12.19 11:56:24.987	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: TO: #51
-2025.12.19 11:56:24.987	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
-2025.12.19 11:56:24.987	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:56:24.987	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #52 cerrado | $-0.02
-2025.12.19 11:56:24.987	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: close #52 buy 0.02 EURUSD at 1.14714 at price 1.14713
-2025.12.19 11:56:24.987	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: >>> TO #51 cerrado | $-0.12
-2025.12.19 11:56:24.987	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: close #51 sell 0.01 EURUSD at 1.14703 at price 1.14715
-2025.12.19 11:56:24.987	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #51 | Neto: -1.3p ? CERRAR TODO
-2025.12.19 11:56:24.987	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #52 ABIERTO | TO #51 | Tipo: BUY | Lote: 0.02 | Precio: 1.14714
-2025.12.19 11:56:24.987	2025.06.11 15:45:04  Martim_ProtectorEA EURUSD,M5: open #52 buy 0.02 EURUSD at 1.14714 ok
-2025.12.19 11:56:24.987	2025.06.11 15:45:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #51 | Tipo: SELL | Lote: 0.01
-2025.12.19 11:56:24.987	2025.06.11 15:45:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #51 VENTA | Precio: 1.14703 | RSI: 66.4 | HMA: ROJO
-2025.12.19 11:56:24.987	2025.06.11 15:45:00  Martim_ProtectorEA EURUSD,M5: open #51 sell 0.01 EURUSD at 1.14703 ok
-2025.12.19 11:56:24.987	2025.06.11 15:30:19  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:56:24.987	2025.06.11 15:30:19  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.09
-2025.12.19 11:56:24.987	2025.06.11 15:30:19  Martim_ProtectorEA EURUSD,M5: TO: #49
-2025.12.19 11:56:24.987	2025.06.11 15:30:19  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
-2025.12.19 11:56:24.987	2025.06.11 15:30:19  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:56:24.987	2025.06.11 15:30:19  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #50 cerrado | $0.18
-2025.12.19 11:56:24.987	2025.06.11 15:30:19  Martim_ProtectorEA EURUSD,M5: close #50 buy 0.02 EURUSD at 1.14433 at price 1.14442
-2025.12.19 11:56:24.987	2025.06.11 15:30:19  Martim_ProtectorEA EURUSD,M5: >>> TO #49 cerrado | $-0.27
-2025.12.19 11:56:24.987	2025.06.11 15:30:19  Martim_ProtectorEA EURUSD,M5: close #49 sell 0.01 EURUSD at 1.14417 at price 1.14444
-2025.12.19 11:56:24.987	2025.06.11 15:30:19  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #49 | Neto: -1.8p ? CERRAR TODO
-2025.12.19 11:56:24.987	2025.06.11 15:30:18  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #50 ABIERTO | TO #49 | Tipo: BUY | Lote: 0.02 | Precio: 1.14433
-2025.12.19 11:56:24.987	2025.06.11 15:30:18  Martim_ProtectorEA EURUSD,M5: open #50 buy 0.02 EURUSD at 1.14433 ok
-2025.12.19 11:56:24.956	2025.06.11 12:40:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #49 | Tipo: SELL | Lote: 0.01
-2025.12.19 11:56:24.956	2025.06.11 12:40:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #49 VENTA | Precio: 1.14417 | RSI: 59.5 | HMA: ROJO
-2025.12.19 11:56:24.956	2025.06.11 12:40:00  Martim_ProtectorEA EURUSD,M5: open #49 sell 0.01 EURUSD at 1.14417 ok
-2025.12.19 11:56:24.956	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:56:24.956	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.17
-2025.12.19 11:56:24.956	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: TO: #47
-2025.12.19 11:56:24.956	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
-2025.12.19 11:56:24.956	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:56:24.956	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #48 cerrado | $-0.06
-2025.12.19 11:56:24.956	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: close #48 buy 0.02 EURUSD at 1.14202 at price 1.14199
-2025.12.19 11:56:24.956	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: >>> TO #47 cerrado | $-0.11
-2025.12.19 11:56:24.956	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: close #47 sell 0.01 EURUSD at 1.14190 at price 1.14201
-2025.12.19 11:56:24.956	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #47 | Neto: -1.4p ? CERRAR TODO
-2025.12.19 11:56:24.956	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #48 ABIERTO | TO #47 | Tipo: BUY | Lote: 0.02 | Precio: 1.14202
-2025.12.19 11:56:24.956	2025.06.11 11:00:05  Martim_ProtectorEA EURUSD,M5: open #48 buy 0.02 EURUSD at 1.14202 ok
-2025.12.19 11:56:24.956	2025.06.11 11:00:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #47 | Tipo: SELL | Lote: 0.01
-2025.12.19 11:56:24.956	2025.06.11 11:00:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #47 VENTA | Precio: 1.1419 | RSI: 47.5 | HMA: ROJO
-2025.12.19 11:56:24.956	2025.06.11 11:00:00  Martim_ProtectorEA EURUSD,M5: open #47 sell 0.01 EURUSD at 1.14190 ok
-2025.12.19 11:56:24.956	2025.06.11 10:05:30  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:56:24.956	2025.06.11 10:05:30  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.14
-2025.12.19 11:56:24.956	2025.06.11 10:05:30  Martim_ProtectorEA EURUSD,M5: TO: #45
-2025.12.19 11:56:24.956	2025.06.11 10:05:30  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
-2025.12.19 11:56:24.956	2025.06.11 10:05:30  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:56:24.956	2025.06.11 10:05:30  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #46 cerrado | $0.00
-2025.12.19 11:56:24.956	2025.06.11 10:05:30  Martim_ProtectorEA EURUSD,M5: close #46 sell 0.02 EURUSD at 1.14116 at price 1.14116
-2025.12.19 11:56:24.956	2025.06.11 10:05:30  Martim_ProtectorEA EURUSD,M5: >>> TO #45 cerrado | $-0.14
-2025.12.19 11:56:24.956	2025.06.11 10:05:30  Martim_ProtectorEA EURUSD,M5: close #45 buy 0.01 EURUSD at 1.14128 at price 1.14114
-2025.12.19 11:56:24.956	2025.06.11 10:05:30  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #45 | Neto: -1.4p ? CERRAR TODO
-2025.12.19 11:56:24.956	2025.06.11 10:05:28  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #46 ABIERTO | TO #45 | Tipo: SELL | Lote: 0.02 | Precio: 1.14116
-2025.12.19 11:56:24.956	2025.06.11 10:05:28  Martim_ProtectorEA EURUSD,M5: open #46 sell 0.02 EURUSD at 1.14116 ok
-2025.12.19 11:56:24.956	2025.06.11 10:05:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #45 | Tipo: BUY | Lote: 0.01
-2025.12.19 11:56:24.956	2025.06.11 10:05:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #45 COMPRA | Precio: 1.14128 | RSI: 48.6 | HMA: VERDE
-2025.12.19 11:56:24.956	2025.06.11 10:05:00  Martim_ProtectorEA EURUSD,M5: open #45 buy 0.01 EURUSD at 1.14128 ok
-2025.12.19 11:56:24.956	2025.06.11 09:35:31  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:56:24.956	2025.06.11 09:35:31  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.16
-2025.12.19 11:56:24.956	2025.06.11 09:35:31  Martim_ProtectorEA EURUSD,M5: TO: #43
-2025.12.19 11:56:24.956	2025.06.11 09:35:31  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
-2025.12.19 11:56:24.956	2025.06.11 09:35:31  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:56:24.956	2025.06.11 09:35:31  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #44 cerrado | $-0.06
-2025.12.19 11:56:24.956	2025.06.11 09:35:31  Martim_ProtectorEA EURUSD,M5: close #44 sell 0.02 EURUSD at 1.14135 at price 1.14138
-2025.12.19 11:56:24.956	2025.06.11 09:35:31  Martim_ProtectorEA EURUSD,M5: >>> TO #43 cerrado | $-0.10
-2025.12.19 11:56:24.956	2025.06.11 09:35:31  Martim_ProtectorEA EURUSD,M5: close #43 buy 0.01 EURUSD at 1.14146 at price 1.14136
-2025.12.19 11:56:24.956	2025.06.11 09:35:31  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #43 | Neto: -1.3p ? CERRAR TODO
-2025.12.19 11:56:24.956	2025.06.11 09:35:30  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #44 ABIERTO | TO #43 | Tipo: SELL | Lote: 0.02 | Precio: 1.14135
-2025.12.19 11:56:24.956	2025.06.11 09:35:30  Martim_ProtectorEA EURUSD,M5: open #44 sell 0.02 EURUSD at 1.14135 ok
-2025.12.19 11:56:24.956	2025.06.11 09:35:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #43 | Tipo: BUY | Lote: 0.01
-2025.12.19 11:56:24.956	2025.06.11 09:35:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #43 COMPRA | Precio: 1.14146 | RSI: 57.8 | HMA: VERDE
-2025.12.19 11:56:24.956	2025.06.11 09:35:00  Martim_ProtectorEA EURUSD,M5: open #43 buy 0.01 EURUSD at 1.14146 ok
-2025.12.19 11:56:24.956	2025.06.11 09:08:30  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:56:24.956	2025.06.11 09:08:30  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.14
-2025.12.19 11:56:24.956	2025.06.11 09:08:30  Martim_ProtectorEA EURUSD,M5: TO: #41
-2025.12.19 11:56:24.956	2025.06.11 09:08:30  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
-2025.12.19 11:56:24.956	2025.06.11 09:08:30  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:56:24.956	2025.06.11 09:08:30  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #42 cerrado | $0.02
-2025.12.19 11:56:24.956	2025.06.11 09:08:30  Martim_ProtectorEA EURUSD,M5: close #42 buy 0.02 EURUSD at 1.14191 at price 1.14192
-2025.12.19 11:56:24.956	2025.06.11 09:08:30  Martim_ProtectorEA EURUSD,M5: >>> TO #41 cerrado | $-0.16
-2025.12.19 11:56:24.956	2025.06.11 09:08:30  Martim_ProtectorEA EURUSD,M5: close #41 sell 0.01 EURUSD at 1.14178 at price 1.14194
-2025.12.19 11:56:24.956	2025.06.11 09:08:30  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #41 | Neto: -1.5p ? CERRAR TODO
-2025.12.19 11:56:24.956	2025.06.11 09:08:28  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #42 ABIERTO | TO #41 | Tipo: BUY | Lote: 0.02 | Precio: 1.14191
-2025.12.19 11:56:24.956	2025.06.11 09:08:28  Martim_ProtectorEA EURUSD,M5: open #42 buy 0.02 EURUSD at 1.14191 ok
-2025.12.19 11:56:24.956	2025.06.11 09:05:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #41 | Tipo: SELL | Lote: 0.01
-2025.12.19 11:56:24.956	2025.06.11 09:05:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #41 VENTA | Precio: 1.14178 | RSI: 29.0 | HMA: ROJO
-2025.12.19 11:56:24.956	2025.06.11 09:05:00  Martim_ProtectorEA EURUSD,M5: open #41 sell 0.01 EURUSD at 1.14178 ok
-2025.12.19 11:56:24.956	2025.06.11 06:53:42  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:56:24.956	2025.06.11 06:53:42  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.16
-2025.12.19 11:56:24.956	2025.06.11 06:53:42  Martim_ProtectorEA EURUSD,M5: TO: #39
-2025.12.19 11:56:24.956	2025.06.11 06:53:42  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
-2025.12.19 11:56:24.956	2025.06.11 06:53:42  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:56:24.956	2025.06.11 06:53:42  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #40 cerrado | $-0.06
-2025.12.19 11:56:24.956	2025.06.11 06:53:42  Martim_ProtectorEA EURUSD,M5: close #40 buy 0.02 EURUSD at 1.14159 at price 1.14156
-2025.12.19 11:56:24.956	2025.06.11 06:53:42  Martim_ProtectorEA EURUSD,M5: >>> TO #39 cerrado | $-0.10
-2025.12.19 11:56:13.954	Expert Martim_ProtectorEA EURUSD,M5: loaded successfully
-2025.12.19 11:56:13.924	Expert Martim_ProtectorEA EURUSD,M5: removed
-2025.12.19 11:04:11.481	EURUSD,M5: 100432 tick events (576 bars, 101432 bar states) processed in 0:00:00.234 (total time 0:00:00.250)
-2025.12.19 11:04:11.481	2025.06.11 23:59:48  Martim_ProtectorEA EURUSD,M5: Martim_ProtectorEA finalizado. Grupos activos: 0
-2025.12.19 11:04:11.481	2025.06.11 23:40:33  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:04:11.481	2025.06.11 23:40:33  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.16
-2025.12.19 11:04:11.481	2025.06.11 23:40:33  Martim_ProtectorEA EURUSD,M5: TO: #69
-2025.12.19 11:04:11.481	2025.06.11 23:40:33  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
-2025.12.19 11:04:11.481	2025.06.11 23:40:33  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:04:11.481	2025.06.11 23:40:33  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #70 cerrado | $-0.06
-2025.12.19 11:04:11.481	2025.06.11 23:40:33  Martim_ProtectorEA EURUSD,M5: close #70 buy 0.02 EURUSD at 1.14852 at price 1.14849
-2025.12.19 11:04:11.481	2025.06.11 23:40:33  Martim_ProtectorEA EURUSD,M5: >>> TO #69 cerrado | $-0.10
-2025.12.19 11:04:11.481	2025.06.11 23:40:33  Martim_ProtectorEA EURUSD,M5: close #69 sell 0.01 EURUSD at 1.14841 at price 1.14851
-2025.12.19 11:04:11.481	2025.06.11 23:40:33  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #69 | Neto: -1.3p ? CERRAR TODO
-2025.12.19 11:04:11.481	2025.06.11 23:40:30  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #70 ABIERTO | TO #69 | Tipo: BUY | Lote: 0.02 | Precio: 1.14852
-2025.12.19 11:04:11.481	2025.06.11 23:40:30  Martim_ProtectorEA EURUSD,M5: open #70 buy 0.02 EURUSD at 1.14852 ok
-2025.12.19 11:04:11.481	2025.06.11 23:40:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #69 | Tipo: SELL | Lote: 0.01
-2025.12.19 11:04:11.480	2025.06.11 23:40:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #69 VENTA | Precio: 1.14841 | RSI: 32.5 | HMA: ROJO
-2025.12.19 11:04:11.480	2025.06.11 23:40:00  Martim_ProtectorEA EURUSD,M5: open #69 sell 0.01 EURUSD at 1.14841 ok
-2025.12.19 11:04:11.480	2025.06.11 23:01:27  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:04:11.480	2025.06.11 23:01:27  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.12
-2025.12.19 11:04:11.480	2025.06.11 23:01:27  Martim_ProtectorEA EURUSD,M5: TO: #67
-2025.12.19 11:04:11.480	2025.06.11 23:01:27  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
-2025.12.19 11:04:11.480	2025.06.11 23:01:27  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:04:11.480	2025.06.11 23:01:27  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #68 cerrado | $0.02
-2025.12.19 11:04:11.479	2025.06.11 23:01:27  Martim_ProtectorEA EURUSD,M5: close #68 sell 0.02 EURUSD at 1.14812 at price 1.14811
-2025.12.19 11:04:11.479	2025.06.11 23:01:27  Martim_ProtectorEA EURUSD,M5: >>> TO #67 cerrado | $-0.14
-2025.12.19 11:04:11.479	2025.06.11 23:01:27  Martim_ProtectorEA EURUSD,M5: close #67 buy 0.01 EURUSD at 1.14823 at price 1.14809
-2025.12.19 11:04:11.479	2025.06.11 23:01:27  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #67 | Neto: -1.3p ? CERRAR TODO
-2025.12.19 11:04:11.479	2025.06.11 23:01:26  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #68 ABIERTO | TO #67 | Tipo: SELL | Lote: 0.02 | Precio: 1.14812
-2025.12.19 11:04:11.479	2025.06.11 23:01:26  Martim_ProtectorEA EURUSD,M5: open #68 sell 0.02 EURUSD at 1.14812 ok
-2025.12.19 11:04:11.479	2025.06.11 23:00:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #67 | Tipo: BUY | Lote: 0.01
-2025.12.19 11:04:11.479	2025.06.11 23:00:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #67 COMPRA | Precio: 1.14823 | RSI: 37.5 | HMA: VERDE
-2025.12.19 11:04:11.479	2025.06.11 23:00:00  Martim_ProtectorEA EURUSD,M5: open #67 buy 0.01 EURUSD at 1.14823 ok
-2025.12.19 11:04:11.474	2025.06.11 21:43:06  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:04:11.474	2025.06.11 21:43:06  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.13
-2025.12.19 11:04:11.474	2025.06.11 21:43:06  Martim_ProtectorEA EURUSD,M5: TO: #65
-2025.12.19 11:04:11.474	2025.06.11 21:43:06  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
-2025.12.19 11:04:11.474	2025.06.11 21:43:06  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:04:11.474	2025.06.11 21:43:06  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #66 cerrado | $0.00
-2025.12.19 11:04:11.474	2025.06.11 21:43:06  Martim_ProtectorEA EURUSD,M5: close #66 sell 0.02 EURUSD at 1.14865 at price 1.14865
-2025.12.19 11:04:11.474	2025.06.11 21:43:06  Martim_ProtectorEA EURUSD,M5: >>> TO #65 cerrado | $-0.13
-2025.12.19 11:04:11.474	2025.06.11 21:43:06  Martim_ProtectorEA EURUSD,M5: close #65 buy 0.01 EURUSD at 1.14876 at price 1.14863
-2025.12.19 11:04:11.474	2025.06.11 21:43:06  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #65 | Neto: -1.3p ? CERRAR TODO
-2025.12.19 11:04:11.474	2025.06.11 21:43:05  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #66 ABIERTO | TO #65 | Tipo: SELL | Lote: 0.02 | Precio: 1.14865
-2025.12.19 11:04:11.474	2025.06.11 21:43:05  Martim_ProtectorEA EURUSD,M5: open #66 sell 0.02 EURUSD at 1.14865 ok
-2025.12.19 11:04:11.472	2025.06.11 21:35:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #65 | Tipo: BUY | Lote: 0.01
-2025.12.19 11:04:11.472	2025.06.11 21:35:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #65 COMPRA | Precio: 1.14876 | RSI: 43.1 | HMA: VERDE
-2025.12.19 11:04:11.472	2025.06.11 21:35:00  Martim_ProtectorEA EURUSD,M5: open #65 buy 0.01 EURUSD at 1.14876 ok
-2025.12.19 11:04:11.472	2025.06.11 21:15:41  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:04:11.472	2025.06.11 21:15:41  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.18
-2025.12.19 11:04:11.472	2025.06.11 21:15:41  Martim_ProtectorEA EURUSD,M5: TO: #63
-2025.12.19 11:04:11.472	2025.06.11 21:15:41  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
-2025.12.19 11:04:11.472	2025.06.11 21:15:41  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:04:11.472	2025.06.11 21:15:41  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #64 cerrado | $-0.06
-2025.12.19 11:04:11.472	2025.06.11 21:15:41  Martim_ProtectorEA EURUSD,M5: close #64 sell 0.02 EURUSD at 1.14928 at price 1.14931
-2025.12.19 11:04:11.472	2025.06.11 21:15:41  Martim_ProtectorEA EURUSD,M5: >>> TO #63 cerrado | $-0.12
-2025.12.19 11:04:11.472	2025.06.11 21:15:41  Martim_ProtectorEA EURUSD,M5: close #63 buy 0.01 EURUSD at 1.14941 at price 1.14929
-2025.12.19 11:04:11.472	2025.06.11 21:15:41  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #63 | Neto: -1.5p ? CERRAR TODO
-2025.12.19 11:04:11.472	2025.06.11 21:15:40  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #64 ABIERTO | TO #63 | Tipo: SELL | Lote: 0.02 | Precio: 1.14928
-2025.12.19 11:04:11.472	2025.06.11 21:15:40  Martim_ProtectorEA EURUSD,M5: open #64 sell 0.02 EURUSD at 1.14928 ok
-2025.12.19 11:04:11.470	2025.06.11 20:45:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #63 | Tipo: BUY | Lote: 0.01
-2025.12.19 11:04:11.470	2025.06.11 20:45:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #63 COMPRA | Precio: 1.14941 | RSI: 65.2 | HMA: VERDE
-2025.12.19 11:04:11.470	2025.06.11 20:45:00  Martim_ProtectorEA EURUSD,M5: open #63 buy 0.01 EURUSD at 1.14941 ok
-2025.12.19 11:04:11.469	2025.06.11 19:45:42  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:04:11.469	2025.06.11 19:45:42  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.17
-2025.12.19 11:04:11.469	2025.06.11 19:45:42  Martim_ProtectorEA EURUSD,M5: TO: #61
-2025.12.19 11:04:11.469	2025.06.11 19:45:42  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
-2025.12.19 11:04:11.469	2025.06.11 19:45:42  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:04:11.469	2025.06.11 19:45:42  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #62 cerrado | $-0.06
-2025.12.19 11:04:11.469	2025.06.11 19:45:42  Martim_ProtectorEA EURUSD,M5: close #62 buy 0.02 EURUSD at 1.14928 at price 1.14925
-2025.12.19 11:04:11.469	2025.06.11 19:45:42  Martim_ProtectorEA EURUSD,M5: >>> TO #61 cerrado | $-0.11
-2025.12.19 11:04:11.469	2025.06.11 19:45:42  Martim_ProtectorEA EURUSD,M5: close #61 sell 0.01 EURUSD at 1.14916 at price 1.14927
-2025.12.19 11:04:11.469	2025.06.11 19:45:42  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #61 | Neto: -1.4p ? CERRAR TODO
-2025.12.19 11:04:11.469	2025.06.11 19:45:40  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #62 ABIERTO | TO #61 | Tipo: BUY | Lote: 0.02 | Precio: 1.14928
-2025.12.19 11:04:11.469	2025.06.11 19:45:40  Martim_ProtectorEA EURUSD,M5: open #62 buy 0.02 EURUSD at 1.14928 ok
-2025.12.19 11:04:11.469	2025.06.11 19:45:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #61 | Tipo: SELL | Lote: 0.01
-2025.12.19 11:04:11.469	2025.06.11 19:45:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #61 VENTA | Precio: 1.14916 | RSI: 41.1 | HMA: ROJO
-2025.12.19 11:04:11.469	2025.06.11 19:45:00  Martim_ProtectorEA EURUSD,M5: open #61 sell 0.01 EURUSD at 1.14916 ok
-2025.12.19 11:04:11.468	2025.06.11 19:20:42  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:04:11.468	2025.06.11 19:20:42  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.16
-2025.12.19 11:04:11.468	2025.06.11 19:20:42  Martim_ProtectorEA EURUSD,M5: TO: #59
-2025.12.19 11:04:11.468	2025.06.11 19:20:42  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
-2025.12.19 11:04:11.468	2025.06.11 19:20:42  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:04:11.468	2025.06.11 19:20:42  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #60 cerrado | $-0.06
-2025.12.19 11:04:11.468	2025.06.11 19:20:42  Martim_ProtectorEA EURUSD,M5: close #60 sell 0.02 EURUSD at 1.14832 at price 1.14835
-2025.12.19 11:04:11.468	2025.06.11 19:20:42  Martim_ProtectorEA EURUSD,M5: >>> TO #59 cerrado | $-0.10
-2025.12.19 11:04:11.468	2025.06.11 19:20:42  Martim_ProtectorEA EURUSD,M5: close #59 buy 0.01 EURUSD at 1.14843 at price 1.14833
-2025.12.19 11:04:11.468	2025.06.11 19:20:42  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #59 | Neto: -1.3p ? CERRAR TODO
-2025.12.19 11:04:11.468	2025.06.11 19:20:40  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #60 ABIERTO | TO #59 | Tipo: SELL | Lote: 0.02 | Precio: 1.14832
-2025.12.19 11:04:11.468	2025.06.11 19:20:40  Martim_ProtectorEA EURUSD,M5: open #60 sell 0.02 EURUSD at 1.14832 ok
-2025.12.19 11:04:11.468	2025.06.11 19:20:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #59 | Tipo: BUY | Lote: 0.01
-2025.12.19 11:04:11.468	2025.06.11 19:20:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #59 COMPRA | Precio: 1.14843 | RSI: 44.2 | HMA: VERDE
-2025.12.19 11:04:11.468	2025.06.11 19:20:00  Martim_ProtectorEA EURUSD,M5: open #59 buy 0.01 EURUSD at 1.14843 ok
-2025.12.19 11:04:11.467	2025.06.11 18:41:19  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:04:11.467	2025.06.11 18:41:19  Martim_ProtectorEA EURUSD,M5: Profit Total: $-0.16
-2025.12.19 11:04:11.467	2025.06.11 18:41:19  Martim_ProtectorEA EURUSD,M5: TO: #57
-2025.12.19 11:04:11.467	2025.06.11 18:41:19  Martim_ProtectorEA EURUSD,M5: GRUPO CERRADO - Razón: Emergency
-2025.12.19 11:04:11.467	2025.06.11 18:41:19  Martim_ProtectorEA EURUSD,M5: ========================================
-2025.12.19 11:04:11.467	2025.06.11 18:41:19  Martim_ProtectorEA EURUSD,M5: >>> Hedge1 #58 cerrado | $-0.06
-2025.12.19 11:04:11.467	2025.06.11 18:41:19  Martim_ProtectorEA EURUSD,M5: close #58 buy 0.02 EURUSD at 1.14896 at price 1.14893
-2025.12.19 11:04:11.467	2025.06.11 18:41:19  Martim_ProtectorEA EURUSD,M5: >>> TO #57 cerrado | $-0.10
-2025.12.19 11:04:11.467	2025.06.11 18:41:19  Martim_ProtectorEA EURUSD,M5: close #57 sell 0.01 EURUSD at 1.14885 at price 1.14895
-2025.12.19 11:04:11.467	2025.06.11 18:41:19  Martim_ProtectorEA EURUSD,M5: !!! EMERGENCY #57 | Neto: -1.3p ? CERRAR TODO
-2025.12.19 11:04:11.467	2025.06.11 18:41:18  Martim_ProtectorEA EURUSD,M5: >>> HEDGE1 #58 ABIERTO | TO #57 | Tipo: BUY | Lote: 0.02 | Precio: 1.14896
-2025.12.19 11:04:11.467	2025.06.11 18:41:18  Martim_ProtectorEA EURUSD,M5: open #58 buy 0.02 EURUSD at 1.14896 ok
-2025.12.19 11:04:11.467	2025.06.11 18:40:00  Martim_ProtectorEA EURUSD,M5: >>> GRUPO CREADO para TO #57 | Tipo: SELL | Lote: 0.01
-2025.12.19 11:04:11.467	2025.06.11 18:40:00  Martim_ProtectorEA EURUSD,M5: >>> TO TEST #57 VENTA | Precio: 1.14885 | RSI: 81.1 | HMA: ROJO
-2025.12.19 11:04:11.467	2025.06.11 18:40:00  Martim_ProtectorEA EURUSD,M5: open #57 sell 0.01 EURUSD at 1.14885 ok
-2025.12.19 11:04:11.464	2025.06.11 17:15:05  Martim_ProtectorEA EURUSD,M5: ========================================
