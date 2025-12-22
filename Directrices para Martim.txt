@@ -1,0 +1,61 @@
+Directrices para Martim
+
+Para continuar con Martim_ProtectorEa_v6
+
+Recapitulemos para aclarar la memoria y la información Importante.
+Cuando te presente la lógica de martim dijiste:
+
+ "VENTAJA CLAVE CONFIRMADA
+✅ Hedge1 inverso convierte pérdidas TO en ganancias
+✅ Cambio a Hedge2 (mismo sentido) permite aprovechar recuperación TO
+✅ Pérdida Hedge1 absorbida se compensa con ganancia Hedge2
+✅ Múltiples puntos de salida con ganancia neta o breakeven"
+
+Bien la siguiente sección revisala muy cuidadosamente, por que es la clave para codificación de Martim V6 
+// SALIDA
+El principio de la salida es siempre salir con la mayor ganancia posible, para esto es necesario que los indicadores apoyen el movimiento del precio.
+Solo se sale si los indicadores no apoyan la direccion del Hedge.
+
+Lo ideal es que ambos indicadores apoyen la dirección para continuar. 
+Si un indicador contradice se sale de inmediato.
+Si ambos indicadores apoyan la dirección del edge se continua hasta que:
+el precio retroceda y 1 de los indicadores o ambos contradigan la dirección del Hedge. 
+
+
+
+
+ Llamarenos Trade Original a la Operación que Martim decida intervenir por que esta en pérdida.
+"Cuando ingresemos un trade, independiente de si al inicio estemos comenzando a  tener ganancia y luego la operación se va en nuestra contra  o comenzamos de inmediato a perder, por que la entrada fue mala, 
+
+
+1. una vez que que la pérdida del Trade Original (TO) alcance  -1pips (configurable), Martin va a ingresar un trade en dirección contraria con el doble del lote (Hedge1).-, 
+
+2. si el primer trade alcanza -0.02 lotes de pérdida, Martim tendrá 0.02 lotes de ganancia y Aquí ya podemos salir si los indicadores no apoyan la dirección del edge. o continuamos si los indicadores apoyan
+
+3.- esperamos a que el trade  Original (TO) alcance - 0.03 lotes pero Martim habrá acumulado 0.04 lotes así que podemos salir en ganancia de 1 pip o continuamos, si los indicadores estan de acuerdo con la dirección del Hedge.
+
+5.- por el contrario,  si el trade Original (TO) se regresa a - 0.01 lote de pérdida  Martim de nuevo tiene 0 lotes de ganancia y esperamos. Si la     operacion llega a 0 lotes Martim va a tener - 0.02 lotes de de pérdida. Martim sigue esperando  
+
+
+6. si el Trade Original se sigue recuperando  y llega  0.01 lote de ganacia, Martim tendrá -0.04 lotes de pérdida  pero aquí, abre una operación de  0.03 lotes (Hedge 2)   y ahora Martin además, cambia.  Ahora va asumir la perdida que tiene y va a cerrar la primera cobertura que abrió  y va a abrir una segunda cobertura de 0.03 lotes. Entonces para el próximo paso:.......
+
+
+7.- cuando el trade original (TO) llegue a 0.02 lotes martin tendrá  0.03 lotes de ganancia, con una ganancia neta de 0.01 lote  ya puede salir o apoyarse en indicadores para decidir si se retira o sigue avanzando. No se debe salir nunca en perdida si puede evitarlo.
+ 
+8.- Si ahora el precio vuelve a girar y el trade Original Llega  0.01 lote de ganancia Martin esta en Cero y el trade se puede cerrar para salir definitivamente de la operación. Pero si no es así Martin seguirá acumulando ganancias, hasta que un indicador contradiga el movimiento. Entonces debe salir de inmediato.
+
+Finalmente cual es la respuesta a tu pregunta: Martin debe mantener ambos Hedge. 
+
+Solo hay que mejorar el algoritmo.
+La función Martim es eliminar las perdidas y aumentar las ganancias lo máximo posible, y para ello tiene 4 posibilidades
+1.- No interfiere mientras la operación tenga profit y no pérdidas
+2.- Ingresa Hedge1 cuando la operación entra rapidamente en pérdida de -1 pips.
+3.- Ingresa Hedge2 cuando Hedge 1 fracasa. y aqui o sale con 1 pips de ganancia o continua si los indicadores apoyan el Hedge 2.
+4.- Si los indicadores apoyan el movimiento de edge2 pero el precio igual se revierte debe salir de inmediato cuando el precio se regrese a       estar entre 0 y - 0.5  pips. Esto es lo que se podría considerar la salida de emergencia .
+
+
+Debes crear el algoritmo correcto para que las salidas no se generen en retrocesos parciales que ocurran en Hedge1 o al principio de Hedge2, donde potencialmente existen 2 malas salidas, que pueden ocasionar perdidas, cuando recién se abra Hedge2 y llegue a -1 pips y los indicadores indique que la perdida puede continuae, sería una buena razón para salir o cuando Hedge2 despues de alcanzar 1 o mas pips comience un retroceso apoyado por los indicadores que al inicio del movimiento eran favorables, tambien es conveniente salir al retroceder -1 pip.
+Te Sugiero que revises la evolución de las diferentes opciones que analizamos desde que aparecio Martim, y rehagas un código completamente, apoyado en un algoritmo bien pensado y a toda prueba que considere todas las premisas que deben regir el funcionamiento de Martim.
+
+Recuerda que los pips para entradas son configurables.
+Reecruerda que el modulo de señales (void GenerateTestSignals()) ingresa ordenes para poder realizar pruebas del funcionamiento de Martin, e el en probador de MT4, y no es un modulo definitivo de Martin. 
