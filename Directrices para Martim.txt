@@ -59,3 +59,10 @@ Te Sugiero que revises la evolución de las diferentes opciones que analizamos d
 
 Recuerda que los pips para entradas son configurables.
 Reecruerda que el modulo de señales (void GenerateTestSignals()) ingresa ordenes para poder realizar pruebas del funcionamiento de Martin, e el en probador de MT4, y no es un modulo definitivo de Martin. 
+
+Necesitas revisar estos Link para tener toda la información necesaria para continuar con el desarrollo de Martin_ProtectorEav6.
+
+Has una revisión cuidadosa y luego cuando regreses al Chat, enumera todos el conocimiento de los informes que te seran útiles para codificar un EA exitoso y rentable.
+INFORME FINAL:  https://raw.githubusercontent.com/guval61-rgb/Scalpers/main/Martim_INFORME_FINAL_EURUSD.txt
+ANATOMÍA TENDENCIAS:  https://raw.githubusercontent.com/guval61-rgb/Scalpers/main/Martim_ANATOMIA_TENDENCIAS.txt
+Indicador HMA_Color:  https://raw.githubusercontent.com/guval61-rgb/Pruebas_Martim/main/HMA_Color.mq4
