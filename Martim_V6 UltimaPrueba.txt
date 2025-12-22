@@ -1,123 +1,297 @@
-Informe del probador de estrategias
-Martim_ProtectorEA_V6.3
-ICMarketsSC-Demo04 (versión 1441)
+Strategy Tester Report
+Martim_ProtectorEA_V6
+ICMarketsSC-Demo04 (Build 1441)
+Símbolo EURUSD (Euro vs US Dollar)
+Período 5 minutos (M5) 2025.06.10 00:00 - 2025.06.11 23:55 (2025.06.10 - 2025.06.12)
+Modelo Cada tick (el método más preciso basado en todos los períodos menores disponibles)
+Parámetros
+TO_Lot=0.01; Hedge1_Lot=0.02; Hedge2_Lot=0.03; Entry_Loss_Pips=-1; Hedge2_Trigger_Pips=1; Min_Exit_Profit=1; HMA_Period=7;
+HMA_Indicator="HMA_Color"; Magic_Number=12364; Comment_Prefix="MartimV6"; Enable_Test_Signals=true; Test_Signal_Interval=300;
+Barras en el historial 1577 Ticks modelados 101432 Calidad del modelado 90.00%
+Errores de desalineación
+de gráficos
+0
+Depósito inicial 200.00 Spread 2
+Beneficio neto total 11.70 Beneficio bruto 20.14 Pérdida bruta -8.44
+Factor de beneficio 2.39 Beneficio esperado 0.32
+Drawdown absoluto 10.28 Drawdown máximo 13.02 (6.42%) Drawdown relativo 6.42% (13.02)
+Total de transacciones 37 Posiciones cortas (% ganadoras) 18 (55.56%) Posiciones largas (% ganadoras) 19 (63.16%)
+Transacciones rentables (% del total) 22 (59.46%) Transacciones no rentables (% del total) 15 (40.54%)
+Mayor transacción rentable 7.73 transacción no rentable -1.38
+Media transacción rentable 0.92 transacción no rentable -0.56
+Número máximo ganancias consecutivas (beneficio en dinero) 3 (8.66) pérdidas consecutivas (pérdidas en dinero) 2 (-0.70)
+Máx. beneficio consecutivo (número de ganancias) 8.66 (3) pérdidas consecutivas (número de pérdidas) -1.38 (1)
+Promedio ganancias consecutivas 2 pérdidas consecutivas 1
+# Tiempo Tipo Orden Volumen Precio S / L T / P Beneficios Balance
+1 2025.06.10 00:00 buy 1 0.01 1.14202 0.00000 0.00000
+2 2025.06.10 00:01 sell 2 0.02 1.14154 0.00000 0.00000
+3 2025.06.10 00:07 close 2 0.02 1.14216 0.00000 0.00000 -1.38 198.62
+4 2025.06.10 00:07 buy 3 0.03 1.14216 0.00000 0.00000
+5 2025.06.10 01:20 close 1 0.01 1.14229 0.00000 0.00000 0.20 198.82
+6 2025.06.10 01:20 close 3 0.03 1.14229 0.00000 0.00000 0.18 199.00
+7 2025.06.10 01:20 sell 4 0.01 1.14230 0.00000 0.00000
+8 2025.06.10 02:18 buy 5 0.02 1.14241 0.00000 0.00000
+9 2025.06.10 03:43 close 5 0.02 1.14215 0.00000 0.00000 -0.66 198.34
+10 2025.06.10 03:43 sell 6 0.03 1.14215 0.00000 0.00000
+11 2025.06.10 04:25 close 4 0.01 1.14210 0.00000 0.00000 0.13 198.47
+12 2025.06.10 04:25 close 6 0.03 1.14210 0.00000 0.00000 -0.06 198.41
+13 2025.06.10 04:25 buy 7 0.01 1.14209 0.00000 0.00000
+14 2025.06.10 04:25 sell 8 0.02 1.14196 0.00000 0.00000
+15 2025.06.10 13:26 close 8 0.02 1.14221 0.00000 0.00000 -0.64 197.77
+16 2025.06.10 13:26 buy 9 0.03 1.14221 0.00000 0.00000
+17 2025.06.10 14:26 close 7 0.01 1.14264 0.00000 0.00000 0.48 198.25
+18 2025.06.10 14:26 close 9 0.03 1.14264 0.00000 0.00000 1.08 199.33
+19 2025.06.10 14:26 sell 10 0.01 1.14265 0.00000 0.00000
+20 2025.06.10 14:27 buy 11 0.02 1.14276 0.00000 0.00000
+21 2025.06.10 14:31 close 11 0.02 1.14252 0.00000 0.00000 -0.62 198.71
+22 2025.06.10 14:31 sell 12 0.03 1.14252 0.00000 0.00000
+23 2025.06.10 18:00 close 10 0.01 1.14248 0.00000 0.00000 0.10 198.81
+24 2025.06.10 18:00 close 12 0.03 1.14248 0.00000 0.00000 -0.09 198.72
+25 2025.06.10 18:00 buy 13 0.01 1.14249 0.00000 0.00000
+26 2025.06.10 18:04 sell 14 0.02 1.14237 0.00000 0.00000
+27 2025.06.10 18:08 close 14 0.02 1.14263 0.00000 0.00000 -0.66 198.06
+28 2025.06.10 18:08 buy 15 0.03 1.14263 0.00000 0.00000
+29 2025.06.10 20:55 close 13 0.01 1.14269 0.00000 0.00000 0.13 198.19
+30 2025.06.10 20:55 close 15 0.03 1.14269 0.00000 0.00000 -0.03 198.16
+31 2025.06.10 20:55 sell 16 0.01 1.14268 0.00000 0.00000
+32 2025.06.10 22:16 buy 17 0.02 1.14279 0.00000 0.00000
+22/12/25, 14:48 Strategy Tester: Martim_ProtectorEA_V6
+file:///F:/IA/Expertos IA/Analisis de tendencias/Informe de Pruebas/StrategyTester Martim_ProtectorEA_V6.4 M5 P1.htm 1/2
+33 2025.06.10 22:57 close 17 0.02 1.14255 0.00000 0.00000 -0.62 197.54
+34 2025.06.10 22:57 sell 18 0.03 1.14255 0.00000 0.00000
+35 2025.06.10 23:35 close 16 0.01 1.14218 0.00000 0.00000 0.43 197.97
+36 2025.06.10 23:35 close 18 0.03 1.14218 0.00000 0.00000 0.90 198.87
+37 2025.06.10 23:35 buy 19 0.01 1.14219 0.00000 0.00000
+38 2025.06.10 23:35 sell 20 0.02 1.14208 0.00000 0.00000
+39 2025.06.10 23:48 close 20 0.02 1.14231 0.00000 0.00000 -0.60 198.27
+40 2025.06.10 23:48 buy 21 0.03 1.14231 0.00000 0.00000
+41 2025.06.11 01:15 close 19 0.01 1.14270 0.00000 0.00000 0.36 198.63
+42 2025.06.11 01:15 close 21 0.03 1.14270 0.00000 0.00000 0.71 199.33
+43 2025.06.11 01:15 sell 22 0.01 1.14271 0.00000 0.00000
+44 2025.06.11 01:20 buy 23 0.02 1.14282 0.00000 0.00000
+45 2025.06.11 01:38 close 23 0.02 1.14257 0.00000 0.00000 -0.64 198.69
+46 2025.06.11 01:38 sell 24 0.03 1.14257 0.00000 0.00000
+47 2025.06.11 04:09 close 22 0.01 1.14214 0.00000 0.00000 0.50 199.19
+48 2025.06.11 04:09 close 24 0.03 1.14214 0.00000 0.00000 1.08 200.27
+49 2025.06.11 04:09 buy 25 0.01 1.14216 0.00000 0.00000
+50 2025.06.11 04:12 sell 26 0.02 1.14205 0.00000 0.00000
+51 2025.06.11 04:15 close 26 0.02 1.14228 0.00000 0.00000 -0.60 199.67
+52 2025.06.11 04:15 buy 27 0.03 1.14228 0.00000 0.00000
+53 2025.06.11 04:26 close 25 0.01 1.14237 0.00000 0.00000 0.14 199.81
+54 2025.06.11 04:26 close 27 0.03 1.14237 0.00000 0.00000 0.06 199.87
+55 2025.06.11 04:26 sell 28 0.01 1.14238 0.00000 0.00000
+56 2025.06.11 04:31 buy 29 0.02 1.14249 0.00000 0.00000
+57 2025.06.11 04:34 close 29 0.02 1.14225 0.00000 0.00000 -0.62 199.25
+58 2025.06.11 04:34 sell 30 0.03 1.14225 0.00000 0.00000
+59 2025.06.11 05:05 close 28 0.01 1.14100 0.00000 0.00000 1.31 200.56
+60 2025.06.11 05:05 close 30 0.03 1.14100 0.00000 0.00000 3.54 204.10
+61 2025.06.11 05:05 buy 31 0.01 1.14098 0.00000 0.00000
+62 2025.06.11 05:05 sell 32 0.02 1.14087 0.00000 0.00000
+63 2025.06.11 05:09 close 32 0.02 1.14110 0.00000 0.00000 -0.60 203.50
+64 2025.06.11 05:09 buy 33 0.03 1.14110 0.00000 0.00000
+65 2025.06.11 05:25 close 31 0.01 1.14118 0.00000 0.00000 0.13 203.63
+66 2025.06.11 05:25 close 33 0.03 1.14118 0.00000 0.00000 0.03 203.66
+67 2025.06.11 05:25 sell 34 0.01 1.14120 0.00000 0.00000
+68 2025.06.11 05:30 buy 35 0.02 1.14131 0.00000 0.00000
+69 2025.06.11 09:27 close 35 0.02 1.14107 0.00000 0.00000 -0.62 203.04
+70 2025.06.11 09:27 sell 36 0.03 1.14107 0.00000 0.00000
+71 2025.06.11 10:20 close 34 0.01 1.14080 0.00000 0.00000 0.33 203.37
+72 2025.06.11 10:20 close 36 0.03 1.14080 0.00000 0.00000 0.60 203.97
+73 2025.06.11 10:20 buy 37 0.01 1.14079 0.00000 0.00000
+74 2025.06.11 23:59 close at stop 37 0.01 1.14859 0.00000 0.00000 7.73 211.70
+22/12/25, 14:48 Strategy Tester: Martim_ProtectorEA_V6
+file:///F:/IA/Expertos IA/Analisis de tendencias/Informe de Pruebas/StrategyTester Martim_ProtectorEA_V6.4 M5 P1.htm 
 
-Símbolo	EURUSD (euro frente a dólar estadounidense)
-Período	5 minutos (M5) 2025.06.10 00:00 - 2025.06.11 23:55 (2025.06.10 - 2025.06.12)
-Modelo	Cada tick (el método más preciso basado en todos los períodos menores disponibles)
-Parámetros	TO_Lot=0.01; Hedge1_Lot=0.02; Hedge2_Lot=0.03; Pips_de_pérdida_de_entrada=-1; Pips_de_activación_de_Hedge2=1; Ganancia_de_salida_mínima=1; Periodo_HMA=7; Indicador_HMA="Color_HMA"; Número_mágico=12363; Prefijo_de_comentario="MartimV6"; Habilitar_señales_de_prueba=verdadero; Intervalo_de_señal_de_prueba=300;
-Barras en el historial	1577	Garrapatas estampadas	101432	Calidad del modelado	90.00%
-Errores de desalineación de gráficos	0				
-Depósito inicial	200.00			Desparramar	2
-Beneficio neto total	1.34	Beneficio bruto	18,96	Pérdida bruta	-17.62
-Factor de beneficio	1.08	Beneficio esperado	0.03		
-Reducción absoluta	11.91	Máxima reducción	14,65 (7,23%)	Reducción relativa	7,23% (14,65)
-Total de transacciones	47	Posiciones cortas (% ganadoras)	23 (39,13%)	Posiciones largas (% ganadoras)	24 (50,00%)
-Transacciones rentables (% del total)	21 (44,68%)	Transacciones no rentables (% del total)	26 (55,32%)
-Alcalde	transacción rentable	12.16	transacción no rentable	-6.35
-Medios de comunicación	transacción rentable	0.90	transacción no rentable	-0,68
-Número máximo	ganancias consecutivas (beneficio en dinero)	2 (1.61)	pérdidas consecutivas (pérdidas en dinero)	2 (-0,70)
-Máx.	beneficio consecutivo (número de ganancias)	12.16 (1)	pérdidas consecutivas (número de pérdidas)	-6.35 (1)
-Promedio	ganancias consecutivas	1	pérdidas consecutivas	2
-Gráfico
-#	Tiempo	Tipo	Orden	Volumen	Precio	Talla S/L	T/P	Beneficios	Balance
-1	2025.06.10 00:00	comprar	1	0.01	1.14202	0.00000	0.00000	
-2	2025.06.10 00:01	vender	2	0.02	1.14154	0.00000	0.00000	
-3	2025.06.10 00:07	cerca	2	0.02	1.14216	0.00000	0.00000	-1.38	198.62
-4	2025.06.10 00:07	comprar	3	0.03	1.14216	0.00000	0.00000	
-5	2025.06.10 01:20	cerca	1	0.01	1.14229	0.00000	0.00000	0,20	198.82
-6	2025.06.10 01:20	cerca	3	0.03	1.14229	0.00000	0.00000	0,18	199.00
-7	2025.06.10 01:20	vender	4	0.01	1.14230	0.00000	0.00000	
-8	10/06/2025 02:18	comprar	5	0.02	1.14241	0.00000	0.00000	
-9	10/06/2025 03:43	cerca	5	0.02	1.14215	0.00000	0.00000	-0.66	198.34
-10	10/06/2025 03:43	vender	6	0.03	1.14215	0.00000	0.00000	
-11	2025.06.10 04:25	cerca	4	0.01	1.14210	0.00000	0.00000	0,13	198.47
-12	2025.06.10 04:25	cerca	6	0.03	1.14210	0.00000	0.00000	-0.06	198.41
-13	2025.06.10 04:25	comprar	7	0.01	1.14209	0.00000	0.00000	
-14	2025.06.10 04:25	vender	8	0.02	1.14196	0.00000	0.00000	
-15	10/06/2025 13:26	cerca	8	0.02	1.14221	0.00000	0.00000	-0.64	197,77
-16	10/06/2025 13:26	comprar	9	0.03	1.14221	0.00000	0.00000	
-17	10/06/2025 13:27	cerca	7	0.01	1.14225	0.00000	0.00000	0.09	197.86
-18	10/06/2025 13:27	cerca	9	0.03	1.14225	0.00000	0.00000	-0.09	197,77
-19	10/06/2025 13:27	vender	10	0.01	1.14224	0.00000	0.00000	
-20	2025.06.10 13:43	comprar	11	0.02	1.14236	0.00000	0.00000	
-21	2025.06.10 13:45	cerca	11	0.02	1.14211	0.00000	0.00000	-0.64	197.13
-22	2025.06.10 13:45	vender	12	0.03	1.14211	0.00000	0.00000	
-23	10/06/2025 13:47	cerca	10	0.01	1.14206	0.00000	0.00000	0.11	197.24
-24	10/06/2025 13:47	cerca	12	0.03	1.14206	0.00000	0.00000	-0.06	197.18
-25	10/06/2025 13:47	comprar	13	0.01	1.14207	0.00000	0.00000	
-26	2025.06.10 13:48	vender	14	0.02	1.14195	0.00000	0.00000	
-27	2025.06.10 13:51	cerca	14	0.02	1.14220	0.00000	0.00000	-0.64	196.54
-28	2025.06.10 13:51	comprar	15	0.03	1.14220	0.00000	0.00000	
-29	10/06/2025 14:26	cerca	13	0.01	1.14264	0.00000	0.00000	0,50	197.04
-30	10/06/2025 14:26	cerca	15	0.03	1.14264	0.00000	0.00000	1.11	198.15
-31	10/06/2025 14:26	vender	16	0.01	1.14265	0.00000	0.00000	
-32	10/06/2025 14:27	comprar	17	0.02	1.14276	0.00000	0.00000	
-33	2025.06.10 14:31	cerca	17	0.02	1.14252	0.00000	0.00000	-0,62	197.53
-34	2025.06.10 14:31	vender	18	0.03	1.14252	0.00000	0.00000	
-35	2025.06.10 18:00	cerca	16	0.01	1.14248	0.00000	0.00000	0.10	197.63
-36	2025.06.10 18:00	cerca	18	0.03	1.14248	0.00000	0.00000	-0.09	197.54
-37	2025.06.10 18:00	comprar	19	0.01	1.14249	0.00000	0.00000	
-38	2025.06.10 18:04	vender	20	0.02	1.14237	0.00000	0.00000	
-39	2025.06.10 18:08	cerca	20	0.02	1.14263	0.00000	0.00000	-0.66	196.88
-40	2025.06.10 18:08	comprar	21	0.03	1.14263	0.00000	0.00000	
-41	2025.06.10 20:55	cerca	19	0.01	1.14269	0.00000	0.00000	0,13	197.01
-42	2025.06.10 20:55	cerca	21	0.03	1.14269	0.00000	0.00000	-0.03	196,98
-43	2025.06.10 20:55	vender	22	0.01	1.14268	0.00000	0.00000	
-44	2025.06.10 22:16	comprar	23	0.02	1.14279	0.00000	0.00000	
-45	2025.06.10 22:57	cerca	23	0.02	1.14255	0.00000	0.00000	-0,62	196.36
-46	2025.06.10 22:57	vender	24	0.03	1.14255	0.00000	0.00000	
-47	2025.06.10 23:35	cerca	22	0.01	1.14218	0.00000	0.00000	0,43	196,79
-48	2025.06.10 23:35	cerca	24	0.03	1.14218	0.00000	0.00000	0.90	197.69
-49	2025.06.10 23:35	comprar	25	0.01	1.14219	0.00000	0.00000	
-50	2025.06.10 23:35	vender	26	0.02	1.14208	0.00000	0.00000	
-51	2025.06.10 23:48	cerca	26	0.02	1.14231	0.00000	0.00000	-0.60	197.09
-52	2025.06.10 23:48	comprar	27	0.03	1.14231	0.00000	0.00000	
-53	2025.06.10 23:50	cerca	25	0.01	1.14235	0.00000	0.00000	0.09	197.18
-54	2025.06.10 23:50	cerca	27	0.03	1.14235	0.00000	0.00000	-0.09	197.09
-55	2025.06.10 23:50	vender	28	0.01	1.14237	0.00000	0.00000	
-56	2025.06.10 23:54	comprar	29	0.02	1.14248	0.00000	0.00000	
-57	2025.06.10 23:56	cerca	29	0.02	1.14225	0.00000	0.00000	-0.60	196.49
-58	2025.06.10 23:56	vender	30	0.03	1.14225	0.00000	0.00000	
-59	2025.06.10 23:59	cerca	28	0.01	1.14220	0.00000	0.00000	0.10	196.59
-60	2025.06.10 23:59	cerca	30	0.03	1.14220	0.00000	0.00000	-0.06	196.53
-61	2025.06.10 23:59	comprar	31	0.01	1.14217	0.00000	0.00000	
-62	2025.06.10 23:59	vender	32	0.02	1.14203	0.00000	0.00000	
-63	2025.06.11 00:06	cerca	32	0.02	1.14247	0.00000	0.00000	-0,97	195.56
-64	2025.06.11 00:06	comprar	33	0.03	1.14247	0.00000	0.00000	
-65	2025.06.11 01:15	cerca	31	0.01	1.14270	0.00000	0.00000	0,38	195,94
-66	2025.06.11 01:15	cerca	33	0.03	1.14270	0.00000	0.00000	0,48	196.42
-67	2025.06.11 01:15	vender	34	0.01	1.14271	0.00000	0.00000	
-68	2025.06.11 01:20	comprar	35	0.02	1.14282	0.00000	0.00000	
-69	2025.06.11 01:38	cerca	35	0.02	1.14257	0.00000	0.00000	-0.64	195,78
-70	2025.06.11 01:38	vender	36	0.03	1.14257	0.00000	0.00000	
-71	2025.06.11 04:09	cerca	34	0.01	1.14214	0.00000	0.00000	0,50	196.28
-72	2025.06.11 04:09	cerca	36	0.03	1.14214	0.00000	0.00000	1.08	197.36
-73	2025.06.11 04:09	comprar	37	0.01	1.14216	0.00000	0.00000	
-74	2025.06.11 04:12	vender	38	0.02	1.14205	0.00000	0.00000	
-75	2025.06.11 04:15	cerca	38	0.02	1.14228	0.00000	0.00000	-0.60	196,76
-76	2025.06.11 04:15	comprar	39	0.03	1.14228	0.00000	0.00000	
-77	2025.06.11 04:15	cerca	37	0.01	1.14232	0.00000	0.00000	0.09	196.85
-78	2025.06.11 04:15	cerca	39	0.03	1.14232	0.00000	0.00000	-0.09	196,76
-79	2025.06.11 04:15	vender	40	0.01	1.14233	0.00000	0.00000	
-80	2025.06.11 04:18	comprar	41	0.02	1.14246	0.00000	0.00000	
-81	2025.06.11 04:28	cerca	41	0.02	1.14221	0.00000	0.00000	-0.64	196.12
-82	2025.06.11 04:28	vender	42	0.03	1.14221	0.00000	0.00000	
-83	2025.06.11 04:28	cerca	40	0.01	1.14217	0.00000	0.00000	0.09	196.21
-84	2025.06.11 04:28	cerca	42	0.03	1.14217	0.00000	0.00000	-0.09	196.12
-85	2025.06.11 04:28	comprar	43	0.01	1.14216	0.00000	0.00000	
-86	2025.06.11 04:34	vender	44	0.02	1.14204	0.00000	0.00000	
-87	2025.06.11 04:38	cerca	44	0.02	1.14229	0.00000	0.00000	-0.64	195.48
-88	2025.06.11 04:38	comprar	45	0.03	1.14229	0.00000	0.00000	
-89	2025.06.11 11:17	cerca	43	0.01	1.14234	0.00000	0.00000	0.11	195.59
-90	2025.06.11 11:17	cerca	45	0.03	1.14234	0.00000	0.00000	-0.06	195.53
-91	2025.06.11 11:17	vender	46	0.01	1.14233	0.00000	0.00000	
-92	2025.06.11 11:17	comprar	47	0.02	1.14244	0.00000	0.00000	
-93	2025.06.11 23:59	cerrar en la parada	47	0.02	1.14859	0.00000	0.00000	12.16	207.69
-94	2025.06.11 23:59	cerrar en la parada	46	0.01	1.14861	0.00000	0.00000	-6.35	201.34
+----------------------------
+Journal
 
-JOURNAL
------------------------------------------
+2025.12.22 14:44:05.629	EURUSD,M5: 100432 tick events (576 bars, 101432 bar states) processed in 0:00:00.485 (total time 0:00:00.500)
+2025.12.22 14:44:05.629	2025.06.11 23:59:48  Martim_ProtectorEA_V6 EURUSD,M5: Martim V6 detenido. Grupos activos: 1
+2025.12.22 14:44:05.629	2025.06.11 23:59:48  Tester: order #37 is closed
+2025.12.22 14:44:05.582	2025.06.11 10:20:03  Martim_ProtectorEA_V6 EURUSD,M5: ? Test Signal: BUY ticket 37
+2025.12.22 14:44:05.582	2025.06.11 10:20:03  Martim_ProtectorEA_V6 EURUSD,M5: open #37 buy 0.01 EURUSD at 1.14079 ok
+2025.12.22 14:44:05.582	2025.06.11 10:20:00  Martim_ProtectorEA_V6 EURUSD,M5: ? Grupo cerrado. Profit final: 930.00 pips
+2025.12.22 14:44:05.582	2025.06.11 10:20:00  Martim_ProtectorEA_V6 EURUSD,M5: close #36 sell 0.03 EURUSD at 1.14107 at price 1.14080
+2025.12.22 14:44:05.582	2025.06.11 10:20:00  Martim_ProtectorEA_V6 EURUSD,M5: close #34 sell 0.01 EURUSD at 1.14120 at price 1.14080
+2025.12.22 14:44:05.582	2025.06.11 10:20:00  Martim_ProtectorEA_V6 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.22 14:44:05.550	2025.06.11 09:27:26  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge2 activado. Ticket: 36 Type: SELL
+2025.12.22 14:44:05.550	2025.06.11 09:27:26  Martim_ProtectorEA_V6 EURUSD,M5: open #36 sell 0.03 EURUSD at 1.14107 ok
+2025.12.22 14:44:05.550	2025.06.11 09:27:26  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 cerrado. Ticket: 35
+2025.12.22 14:44:05.550	2025.06.11 09:27:26  Martim_ProtectorEA_V6 EURUSD,M5: close #35 buy 0.02 EURUSD at 1.14131 at price 1.14107
+2025.12.22 14:44:05.550	2025.06.11 09:27:26  Martim_ProtectorEA_V6 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.22 14:44:05.550	2025.06.11 05:30:14  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 activado. Ticket: 35 Type: BUY
+2025.12.22 14:44:05.550	2025.06.11 05:30:14  Martim_ProtectorEA_V6 EURUSD,M5: open #35 buy 0.02 EURUSD at 1.14131 ok
+2025.12.22 14:44:05.550	2025.06.11 05:30:14  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.22 14:44:05.550	2025.06.11 05:25:02  Martim_ProtectorEA_V6 EURUSD,M5: ? Test Signal: SELL ticket 34
+2025.12.22 14:44:05.550	2025.06.11 05:25:02  Martim_ProtectorEA_V6 EURUSD,M5: open #34 sell 0.01 EURUSD at 1.14120 ok
+2025.12.22 14:44:05.550	2025.06.11 05:25:00  Martim_ProtectorEA_V6 EURUSD,M5: ? Grupo cerrado. Profit final: 160.00 pips
+2025.12.22 14:44:05.550	2025.06.11 05:25:00  Martim_ProtectorEA_V6 EURUSD,M5: close #33 buy 0.03 EURUSD at 1.14110 at price 1.14118
+2025.12.22 14:44:05.550	2025.06.11 05:25:00  Martim_ProtectorEA_V6 EURUSD,M5: close #31 buy 0.01 EURUSD at 1.14098 at price 1.14118
+2025.12.22 14:44:05.550	2025.06.11 05:25:00  Martim_ProtectorEA_V6 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.22 14:44:05.550	2025.06.11 05:09:43  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge2 activado. Ticket: 33 Type: BUY
+2025.12.22 14:44:05.550	2025.06.11 05:09:43  Martim_ProtectorEA_V6 EURUSD,M5: open #33 buy 0.03 EURUSD at 1.14110 ok
+2025.12.22 14:44:05.550	2025.06.11 05:09:43  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 cerrado. Ticket: 32
+2025.12.22 14:44:05.550	2025.06.11 05:09:43  Martim_ProtectorEA_V6 EURUSD,M5: close #32 sell 0.02 EURUSD at 1.14087 at price 1.14110
+2025.12.22 14:44:05.550	2025.06.11 05:09:43  Martim_ProtectorEA_V6 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.22 14:44:05.550	2025.06.11 05:05:16  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 activado. Ticket: 32 Type: SELL
+2025.12.22 14:44:05.550	2025.06.11 05:05:16  Martim_ProtectorEA_V6 EURUSD,M5: open #32 sell 0.02 EURUSD at 1.14087 ok
+2025.12.22 14:44:05.550	2025.06.11 05:05:16  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.22 14:44:05.550	2025.06.11 05:05:01  Martim_ProtectorEA_V6 EURUSD,M5: ? Test Signal: BUY ticket 31
+2025.12.22 14:44:05.550	2025.06.11 05:05:01  Martim_ProtectorEA_V6 EURUSD,M5: open #31 buy 0.01 EURUSD at 1.14098 ok
+2025.12.22 14:44:05.550	2025.06.11 05:05:00  Martim_ProtectorEA_V6 EURUSD,M5: ? Grupo cerrado. Profit final: 4850.00 pips
+2025.12.22 14:44:05.550	2025.06.11 05:05:00  Martim_ProtectorEA_V6 EURUSD,M5: close #30 sell 0.03 EURUSD at 1.14225 at price 1.14100
+2025.12.22 14:44:05.550	2025.06.11 05:05:00  Martim_ProtectorEA_V6 EURUSD,M5: close #28 sell 0.01 EURUSD at 1.14238 at price 1.14100
+2025.12.22 14:44:05.550	2025.06.11 05:05:00  Martim_ProtectorEA_V6 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.22 14:44:05.535	2025.06.11 04:34:03  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge2 activado. Ticket: 30 Type: SELL
+2025.12.22 14:44:05.535	2025.06.11 04:34:03  Martim_ProtectorEA_V6 EURUSD,M5: open #30 sell 0.03 EURUSD at 1.14225 ok
+2025.12.22 14:44:05.535	2025.06.11 04:34:03  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 cerrado. Ticket: 29
+2025.12.22 14:44:05.535	2025.06.11 04:34:03  Martim_ProtectorEA_V6 EURUSD,M5: close #29 buy 0.02 EURUSD at 1.14249 at price 1.14225
+2025.12.22 14:44:05.535	2025.06.11 04:34:03  Martim_ProtectorEA_V6 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.22 14:44:05.535	2025.06.11 04:31:40  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 activado. Ticket: 29 Type: BUY
+2025.12.22 14:44:05.535	2025.06.11 04:31:40  Martim_ProtectorEA_V6 EURUSD,M5: open #29 buy 0.02 EURUSD at 1.14249 ok
+2025.12.22 14:44:05.535	2025.06.11 04:31:40  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.22 14:44:05.535	2025.06.11 04:26:21  Martim_ProtectorEA_V6 EURUSD,M5: ? Test Signal: SELL ticket 28
+2025.12.22 14:44:05.535	2025.06.11 04:26:21  Martim_ProtectorEA_V6 EURUSD,M5: open #28 sell 0.01 EURUSD at 1.14238 ok
+2025.12.22 14:44:05.535	2025.06.11 04:26:20  Martim_ProtectorEA_V6 EURUSD,M5: ? Grupo cerrado. Profit final: 200.00 pips
+2025.12.22 14:44:05.535	2025.06.11 04:26:20  Martim_ProtectorEA_V6 EURUSD,M5: close #27 buy 0.03 EURUSD at 1.14228 at price 1.14237
+2025.12.22 14:44:05.535	2025.06.11 04:26:20  Martim_ProtectorEA_V6 EURUSD,M5: close #25 buy 0.01 EURUSD at 1.14216 at price 1.14237
+2025.12.22 14:44:05.535	2025.06.11 04:26:20  Martim_ProtectorEA_V6 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.22 14:44:05.535	2025.06.11 04:15:28  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge2 activado. Ticket: 27 Type: BUY
+2025.12.22 14:44:05.535	2025.06.11 04:15:28  Martim_ProtectorEA_V6 EURUSD,M5: open #27 buy 0.03 EURUSD at 1.14228 ok
+2025.12.22 14:44:05.535	2025.06.11 04:15:28  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 cerrado. Ticket: 26
+2025.12.22 14:44:05.535	2025.06.11 04:15:28  Martim_ProtectorEA_V6 EURUSD,M5: close #26 sell 0.02 EURUSD at 1.14205 at price 1.14228
+2025.12.22 14:44:05.519	2025.06.11 04:15:28  Martim_ProtectorEA_V6 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.22 14:44:05.519	2025.06.11 04:12:27  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 activado. Ticket: 26 Type: SELL
+2025.12.22 14:44:05.519	2025.06.11 04:12:27  Martim_ProtectorEA_V6 EURUSD,M5: open #26 sell 0.02 EURUSD at 1.14205 ok
+2025.12.22 14:44:05.519	2025.06.11 04:12:27  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.22 14:44:05.519	2025.06.11 04:09:16  Martim_ProtectorEA_V6 EURUSD,M5: ? Test Signal: BUY ticket 25
+2025.12.22 14:44:05.519	2025.06.11 04:09:16  Martim_ProtectorEA_V6 EURUSD,M5: open #25 buy 0.01 EURUSD at 1.14216 ok
+2025.12.22 14:44:05.519	2025.06.11 04:09:15  Martim_ProtectorEA_V6 EURUSD,M5: ? Grupo cerrado. Profit final: 1580.00 pips
+2025.12.22 14:44:05.519	2025.06.11 04:09:15  Martim_ProtectorEA_V6 EURUSD,M5: close #24 sell 0.03 EURUSD at 1.14257 at price 1.14214
+2025.12.22 14:44:05.519	2025.06.11 04:09:15  Martim_ProtectorEA_V6 EURUSD,M5: close #22 sell 0.01 EURUSD at 1.14271 at price 1.14214
+2025.12.22 14:44:05.519	2025.06.11 04:09:15  Martim_ProtectorEA_V6 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.22 14:44:05.472	2025.06.11 01:38:40  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge2 activado. Ticket: 24 Type: SELL
+2025.12.22 14:44:05.472	2025.06.11 01:38:40  Martim_ProtectorEA_V6 EURUSD,M5: open #24 sell 0.03 EURUSD at 1.14257 ok
+2025.12.22 14:44:05.472	2025.06.11 01:38:40  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 cerrado. Ticket: 23
+2025.12.22 14:44:05.472	2025.06.11 01:38:40  Martim_ProtectorEA_V6 EURUSD,M5: close #23 buy 0.02 EURUSD at 1.14282 at price 1.14257
+2025.12.22 14:44:05.472	2025.06.11 01:38:40  Martim_ProtectorEA_V6 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.22 14:44:05.472	2025.06.11 01:20:24  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 activado. Ticket: 23 Type: BUY
+2025.12.22 14:44:05.472	2025.06.11 01:20:24  Martim_ProtectorEA_V6 EURUSD,M5: open #23 buy 0.02 EURUSD at 1.14282 ok
+2025.12.22 14:44:05.472	2025.06.11 01:20:24  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.22 14:44:05.472	2025.06.11 01:15:03  Martim_ProtectorEA_V6 EURUSD,M5: ? Test Signal: SELL ticket 22
+2025.12.22 14:44:05.472	2025.06.11 01:15:03  Martim_ProtectorEA_V6 EURUSD,M5: open #22 sell 0.01 EURUSD at 1.14271 ok
+2025.12.22 14:44:05.472	2025.06.11 01:15:00  Martim_ProtectorEA_V6 EURUSD,M5: ? Grupo cerrado. Profit final: 1064.24 pips
+2025.12.22 14:44:05.472	2025.06.11 01:15:00  Martim_ProtectorEA_V6 EURUSD,M5: close #21 buy 0.03 EURUSD at 1.14231 at price 1.14270
+2025.12.22 14:44:05.472	2025.06.11 01:15:00  Martim_ProtectorEA_V6 EURUSD,M5: close #19 buy 0.01 EURUSD at 1.14219 at price 1.14270
+2025.12.22 14:44:05.472	2025.06.11 01:15:00  Martim_ProtectorEA_V6 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.22 14:44:05.472	2025.06.10 23:48:15  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge2 activado. Ticket: 21 Type: BUY
+2025.12.22 14:44:05.472	2025.06.10 23:48:15  Martim_ProtectorEA_V6 EURUSD,M5: open #21 buy 0.03 EURUSD at 1.14231 ok
+2025.12.22 14:44:05.472	2025.06.10 23:48:15  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 cerrado. Ticket: 20
+2025.12.22 14:44:05.472	2025.06.10 23:48:15  Martim_ProtectorEA_V6 EURUSD,M5: close #20 sell 0.02 EURUSD at 1.14208 at price 1.14231
+2025.12.22 14:44:05.472	2025.06.10 23:48:15  Martim_ProtectorEA_V6 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.22 14:44:05.472	2025.06.10 23:35:43  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 activado. Ticket: 20 Type: SELL
+2025.12.22 14:44:05.472	2025.06.10 23:35:43  Martim_ProtectorEA_V6 EURUSD,M5: open #20 sell 0.02 EURUSD at 1.14208 ok
+2025.12.22 14:44:05.472	2025.06.10 23:35:43  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.22 14:44:05.472	2025.06.10 23:35:06  Martim_ProtectorEA_V6 EURUSD,M5: ? Test Signal: BUY ticket 19
+2025.12.22 14:44:05.472	2025.06.10 23:35:06  Martim_ProtectorEA_V6 EURUSD,M5: open #19 buy 0.01 EURUSD at 1.14219 ok
+2025.12.22 14:44:05.472	2025.06.10 23:35:00  Martim_ProtectorEA_V6 EURUSD,M5: ? Grupo cerrado. Profit final: 1330.00 pips
+2025.12.22 14:44:05.472	2025.06.10 23:35:00  Martim_ProtectorEA_V6 EURUSD,M5: close #18 sell 0.03 EURUSD at 1.14255 at price 1.14218
+2025.12.22 14:44:05.472	2025.06.10 23:35:00  Martim_ProtectorEA_V6 EURUSD,M5: close #16 sell 0.01 EURUSD at 1.14268 at price 1.14218
+2025.12.22 14:44:05.472	2025.06.10 23:35:00  Martim_ProtectorEA_V6 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.22 14:44:05.457	2025.06.10 22:57:28  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge2 activado. Ticket: 18 Type: SELL
+2025.12.22 14:44:05.457	2025.06.10 22:57:28  Martim_ProtectorEA_V6 EURUSD,M5: open #18 sell 0.03 EURUSD at 1.14255 ok
+2025.12.22 14:44:05.457	2025.06.10 22:57:28  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 cerrado. Ticket: 17
+2025.12.22 14:44:05.457	2025.06.10 22:57:28  Martim_ProtectorEA_V6 EURUSD,M5: close #17 buy 0.02 EURUSD at 1.14279 at price 1.14255
+2025.12.22 14:44:05.457	2025.06.10 22:57:28  Martim_ProtectorEA_V6 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.22 14:44:05.457	2025.06.10 22:16:38  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 activado. Ticket: 17 Type: BUY
+2025.12.22 14:44:05.457	2025.06.10 22:16:38  Martim_ProtectorEA_V6 EURUSD,M5: open #17 buy 0.02 EURUSD at 1.14279 ok
+2025.12.22 14:44:05.457	2025.06.10 22:16:38  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.22 14:44:05.457	2025.06.10 20:55:10  Martim_ProtectorEA_V6 EURUSD,M5: ? Test Signal: SELL ticket 16
+2025.12.22 14:44:05.457	2025.06.10 20:55:10  Martim_ProtectorEA_V6 EURUSD,M5: open #16 sell 0.01 EURUSD at 1.14268 ok
+2025.12.22 14:44:05.457	2025.06.10 20:55:00  Martim_ProtectorEA_V6 EURUSD,M5: ? Grupo cerrado. Profit final: 100.00 pips
+2025.12.22 14:44:05.457	2025.06.10 20:55:00  Martim_ProtectorEA_V6 EURUSD,M5: close #15 buy 0.03 EURUSD at 1.14263 at price 1.14269
+2025.12.22 14:44:05.457	2025.06.10 20:55:00  Martim_ProtectorEA_V6 EURUSD,M5: close #13 buy 0.01 EURUSD at 1.14249 at price 1.14269
+2025.12.22 14:44:05.457	2025.06.10 20:55:00  Martim_ProtectorEA_V6 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.22 14:44:05.425	2025.06.10 18:08:40  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge2 activado. Ticket: 15 Type: BUY
+2025.12.22 14:44:05.425	2025.06.10 18:08:40  Martim_ProtectorEA_V6 EURUSD,M5: open #15 buy 0.03 EURUSD at 1.14263 ok
+2025.12.22 14:44:05.425	2025.06.10 18:08:40  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 cerrado. Ticket: 14
+2025.12.22 14:44:05.425	2025.06.10 18:08:40  Martim_ProtectorEA_V6 EURUSD,M5: close #14 sell 0.02 EURUSD at 1.14237 at price 1.14263
+2025.12.22 14:44:05.425	2025.06.10 18:08:40  Martim_ProtectorEA_V6 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.22 14:44:05.425	2025.06.10 18:04:48  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 activado. Ticket: 14 Type: SELL
+2025.12.22 14:44:05.425	2025.06.10 18:04:48  Martim_ProtectorEA_V6 EURUSD,M5: open #14 sell 0.02 EURUSD at 1.14237 ok
+2025.12.22 14:44:05.425	2025.06.10 18:04:48  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.22 14:44:05.410	2025.06.10 18:00:05  Martim_ProtectorEA_V6 EURUSD,M5: ? Test Signal: BUY ticket 13
+2025.12.22 14:44:05.410	2025.06.10 18:00:05  Martim_ProtectorEA_V6 EURUSD,M5: open #13 buy 0.01 EURUSD at 1.14249 ok
+2025.12.22 14:44:05.410	2025.06.10 18:00:05  Martim_ProtectorEA_V6 EURUSD,M5: ? Grupo cerrado. Profit final: 10.00 pips
+2025.12.22 14:44:05.410	2025.06.10 18:00:05  Martim_ProtectorEA_V6 EURUSD,M5: close #12 sell 0.03 EURUSD at 1.14252 at price 1.14248
+2025.12.22 14:44:05.410	2025.06.10 18:00:05  Martim_ProtectorEA_V6 EURUSD,M5: close #10 sell 0.01 EURUSD at 1.14265 at price 1.14248
+2025.12.22 14:44:05.410	2025.06.10 18:00:05  Martim_ProtectorEA_V6 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.22 14:44:05.321	2025.06.10 14:31:37  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge2 activado. Ticket: 12 Type: SELL
+2025.12.22 14:44:05.321	2025.06.10 14:31:37  Martim_ProtectorEA_V6 EURUSD,M5: open #12 sell 0.03 EURUSD at 1.14252 ok
+2025.12.22 14:44:05.321	2025.06.10 14:31:37  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 cerrado. Ticket: 11
+2025.12.22 14:44:05.321	2025.06.10 14:31:37  Martim_ProtectorEA_V6 EURUSD,M5: close #11 buy 0.02 EURUSD at 1.14276 at price 1.14252
+2025.12.22 14:44:05.321	2025.06.10 14:31:37  Martim_ProtectorEA_V6 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.22 14:44:05.321	2025.06.10 14:27:16  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 activado. Ticket: 11 Type: BUY
+2025.12.22 14:44:05.321	2025.06.10 14:27:16  Martim_ProtectorEA_V6 EURUSD,M5: open #11 buy 0.02 EURUSD at 1.14276 ok
+2025.12.22 14:44:05.321	2025.06.10 14:27:16  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.22 14:44:05.321	2025.06.10 14:26:21  Martim_ProtectorEA_V6 EURUSD,M5: ? Test Signal: SELL ticket 10
+2025.12.22 14:44:05.321	2025.06.10 14:26:21  Martim_ProtectorEA_V6 EURUSD,M5: open #10 sell 0.01 EURUSD at 1.14265 ok
+2025.12.22 14:44:05.321	2025.06.10 14:26:20  Martim_ProtectorEA_V6 EURUSD,M5: ? Grupo cerrado. Profit final: 1560.00 pips
+2025.12.22 14:44:05.321	2025.06.10 14:26:20  Martim_ProtectorEA_V6 EURUSD,M5: close #9 buy 0.03 EURUSD at 1.14221 at price 1.14264
+2025.12.22 14:44:05.321	2025.06.10 14:26:20  Martim_ProtectorEA_V6 EURUSD,M5: close #7 buy 0.01 EURUSD at 1.14209 at price 1.14264
+2025.12.22 14:44:05.321	2025.06.10 14:26:20  Martim_ProtectorEA_V6 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.22 14:44:05.305	2025.06.10 13:26:38  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge2 activado. Ticket: 9 Type: BUY
+2025.12.22 14:44:05.305	2025.06.10 13:26:38  Martim_ProtectorEA_V6 EURUSD,M5: open #9 buy 0.03 EURUSD at 1.14221 ok
+2025.12.22 14:44:05.305	2025.06.10 13:26:38  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 cerrado. Ticket: 8
+2025.12.22 14:44:05.305	2025.06.10 13:26:38  Martim_ProtectorEA_V6 EURUSD,M5: close #8 sell 0.02 EURUSD at 1.14196 at price 1.14221
+2025.12.22 14:44:05.305	2025.06.10 13:26:38  Martim_ProtectorEA_V6 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.22 14:44:05.259	2025.06.10 04:25:20  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 activado. Ticket: 8 Type: SELL
+2025.12.22 14:44:05.259	2025.06.10 04:25:20  Martim_ProtectorEA_V6 EURUSD,M5: open #8 sell 0.02 EURUSD at 1.14196 ok
+2025.12.22 14:44:05.259	2025.06.10 04:25:20  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.22 14:44:05.259	2025.06.10 04:25:03  Martim_ProtectorEA_V6 EURUSD,M5: ? Test Signal: BUY ticket 7
+2025.12.22 14:44:05.259	2025.06.10 04:25:03  Martim_ProtectorEA_V6 EURUSD,M5: open #7 buy 0.01 EURUSD at 1.14209 ok
+2025.12.22 14:44:05.259	2025.06.10 04:25:00  Martim_ProtectorEA_V6 EURUSD,M5: ? Grupo cerrado. Profit final: 70.00 pips
+2025.12.22 14:44:05.259	2025.06.10 04:25:00  Martim_ProtectorEA_V6 EURUSD,M5: close #6 sell 0.03 EURUSD at 1.14215 at price 1.14210
+2025.12.22 14:44:05.259	2025.06.10 04:25:00  Martim_ProtectorEA_V6 EURUSD,M5: close #4 sell 0.01 EURUSD at 1.14230 at price 1.14210
+2025.12.22 14:44:05.259	2025.06.10 04:25:00  Martim_ProtectorEA_V6 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.22 14:44:05.243	2025.06.10 03:43:05  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge2 activado. Ticket: 6 Type: SELL
+2025.12.22 14:44:05.243	2025.06.10 03:43:05  Martim_ProtectorEA_V6 EURUSD,M5: open #6 sell 0.03 EURUSD at 1.14215 ok
+2025.12.22 14:44:05.243	2025.06.10 03:43:05  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 cerrado. Ticket: 5
+2025.12.22 14:44:05.243	2025.06.10 03:43:05  Martim_ProtectorEA_V6 EURUSD,M5: close #5 buy 0.02 EURUSD at 1.14241 at price 1.14215
+2025.12.22 14:44:05.243	2025.06.10 03:43:05  Martim_ProtectorEA_V6 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.22 14:44:05.243	2025.06.10 02:18:46  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 activado. Ticket: 5 Type: BUY
+2025.12.22 14:44:05.243	2025.06.10 02:18:46  Martim_ProtectorEA_V6 EURUSD,M5: open #5 buy 0.02 EURUSD at 1.14241 ok
+2025.12.22 14:44:05.243	2025.06.10 02:18:46  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.22 14:44:05.243	2025.06.10 01:20:15  Martim_ProtectorEA_V6 EURUSD,M5: ? Test Signal: SELL ticket 4
+2025.12.22 14:44:05.243	2025.06.10 01:20:15  Martim_ProtectorEA_V6 EURUSD,M5: open #4 sell 0.01 EURUSD at 1.14230 ok
+2025.12.22 14:44:05.243	2025.06.10 01:20:13  Martim_ProtectorEA_V6 EURUSD,M5: ? Grupo cerrado. Profit final: 380.00 pips
+2025.12.22 14:44:05.243	2025.06.10 01:20:13  Martim_ProtectorEA_V6 EURUSD,M5: close #3 buy 0.03 EURUSD at 1.14216 at price 1.14229
+2025.12.22 14:44:05.243	2025.06.10 01:20:13  Martim_ProtectorEA_V6 EURUSD,M5: close #1 buy 0.01 EURUSD at 1.14202 at price 1.14229
+2025.12.22 14:44:05.243	2025.06.10 01:20:13  Martim_ProtectorEA_V6 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.22 14:44:05.212	2025.06.10 00:07:00  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge2 activado. Ticket: 3 Type: BUY
+2025.12.22 14:44:05.212	2025.06.10 00:07:00  Martim_ProtectorEA_V6 EURUSD,M5: open #3 buy 0.03 EURUSD at 1.14216 ok
+2025.12.22 14:44:05.212	2025.06.10 00:07:00  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 cerrado. Ticket: 2
+2025.12.22 14:44:05.212	2025.06.10 00:07:00  Martim_ProtectorEA_V6 EURUSD,M5: close #2 sell 0.02 EURUSD at 1.14154 at price 1.14216
+2025.12.22 14:44:05.212	2025.06.10 00:07:00  Martim_ProtectorEA_V6 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.22 14:44:05.212	2025.06.10 00:01:00  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 activado. Ticket: 2 Type: SELL
+2025.12.22 14:44:05.212	2025.06.10 00:01:00  Martim_ProtectorEA_V6 EURUSD,M5: open #2 sell 0.02 EURUSD at 1.14154 ok
+2025.12.22 14:44:05.212	2025.06.10 00:01:00  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.22 14:44:05.212	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: ? Test Signal: BUY ticket 1
+2025.12.22 14:44:05.212	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: open #1 buy 0.01 EURUSD at 1.14202 ok
+2025.12.22 14:44:05.212	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: Grupos cargados: 0
+2025.12.22 14:44:05.175	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: ========================================
+2025.12.22 14:44:05.175	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: Test Signals: ENABLED
+2025.12.22 14:44:05.175	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: Magic Number: 12364
+2025.12.22 14:44:05.175	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: Min/Max Lot: 0.01/200.0
+2025.12.22 14:44:05.175	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: Point Value: 0.0001
+2025.12.22 14:44:05.175	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: Symbol: EURUSD
+2025.12.22 14:44:05.175	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: ========================================
+2025.12.22 14:44:05.175	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: MARTIM PROTECTOR V6 - EPIC REBUILD
+2025.12.22 14:44:05.175	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: ========================================
+2025.12.22 14:44:05.144	2025.06.10 00:00:00  Martim_ProtectorEA_V6 inputs: TO_Lot=0.01; Hedge1_Lot=0.02; Hedge2_Lot=0.03; Entry_Loss_Pips=-1; Hedge2_Trigger_Pips=1; Min_Exit_Profit=1; HMA_Period=7; Magic_Number=12364; Enable_Test_Signals=1; Test_Signal_Interval=300; 
+2025.12.22 14:44:05.128	TestGenerator: spread set to 2
+2025.12.22 14:43:56.942	Expert Martim_ProtectorEA_V6 EURUSD,M5: loaded successfully
+2025.12.22 14:43:56.926	Expert Martim_ProtectorEA_V6 EURUSD,M5: removed
 2025.12.22 14:14:11.882	EURUSD,M5: 100432 tick events (576 bars, 101432 bar states) processed in 0:00:00.469 (total time 0:00:00.485)
 2025.12.22 14:14:11.882	2025.06.11 23:59:48  Martim_ProtectorEA_V6 EURUSD,M5: Martim V6 detenido. Grupos activos: 1
 2025.12.22 14:14:11.882	2025.06.11 23:59:48  Tester: order #46 is closed
@@ -443,108 +617,3 @@ JOURNAL
 2025.12.22 12:54:45.453	2025.06.10 18:35:27  Martim_ProtectorEA_V6 EURUSD,M5: open #22 buy 0.02 EURUSD at 1.14177 ok
 2025.12.22 12:54:45.453	2025.06.10 18:35:27  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
 2025.12.22 12:54:45.453	2025.06.10 18:35:15  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge2 activado. Ticket: 21 Type: SELL
-2025.12.22 12:54:45.453	2025.06.10 18:35:15  Martim_ProtectorEA_V6 EURUSD,M5: open #21 sell 0.03 EURUSD at 1.14151 ok
-2025.12.22 12:54:45.453	2025.06.10 18:35:15  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 cerrado. Ticket: 20
-2025.12.22 12:54:45.453	2025.06.10 18:35:15  Martim_ProtectorEA_V6 EURUSD,M5: close #20 buy 0.02 EURUSD at 1.14175 at price 1.14151
-2025.12.22 12:54:45.453	2025.06.10 18:35:15  Martim_ProtectorEA_V6 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
-2025.12.22 12:54:45.420	2025.06.10 13:21:37  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 activado. Ticket: 20 Type: BUY
-2025.12.22 12:54:45.420	2025.06.10 13:21:37  Martim_ProtectorEA_V6 EURUSD,M5: open #20 buy 0.02 EURUSD at 1.14175 ok
-2025.12.22 12:54:45.420	2025.06.10 13:21:37  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
-2025.12.22 12:54:45.420	2025.06.10 13:00:01  Martim_ProtectorEA_V6 EURUSD,M5: ? Test Signal: SELL ticket 19
-2025.12.22 12:54:45.420	2025.06.10 13:00:01  Martim_ProtectorEA_V6 EURUSD,M5: open #19 sell 0.01 EURUSD at 1.14164 ok
-2025.12.22 12:54:45.420	2025.06.10 13:00:00  Martim_ProtectorEA_V6 EURUSD,M5: ? Grupo cerrado. Profit final: 550.00 pips
-2025.12.22 12:54:45.420	2025.06.10 13:00:00  Martim_ProtectorEA_V6 EURUSD,M5: close #17 buy 0.03 EURUSD at 1.14095 at price 1.14163
-2025.12.22 12:54:45.420	2025.06.10 13:00:00  Martim_ProtectorEA_V6 EURUSD,M5: close #18 sell 0.02 EURUSD at 1.14071 at price 1.14165
-2025.12.22 12:54:45.420	2025.06.10 13:00:00  Martim_ProtectorEA_V6 EURUSD,M5: close #15 buy 0.01 EURUSD at 1.14082 at price 1.14163
-2025.12.22 12:54:45.420	2025.06.10 13:00:00  Martim_ProtectorEA_V6 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
-2025.12.22 12:54:45.295	2025.06.10 09:15:30  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 activado. Ticket: 18 Type: SELL
-2025.12.22 12:54:45.295	2025.06.10 09:15:30  Martim_ProtectorEA_V6 EURUSD,M5: open #18 sell 0.02 EURUSD at 1.14071 ok
-2025.12.22 12:54:45.295	2025.06.10 09:15:30  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
-2025.12.22 12:54:45.295	2025.06.10 09:13:44  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge2 activado. Ticket: 17 Type: BUY
-2025.12.22 12:54:45.295	2025.06.10 09:13:44  Martim_ProtectorEA_V6 EURUSD,M5: open #17 buy 0.03 EURUSD at 1.14095 ok
-2025.12.22 12:54:45.295	2025.06.10 09:13:44  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 cerrado. Ticket: 16
-2025.12.22 12:54:45.295	2025.06.10 09:13:44  Martim_ProtectorEA_V6 EURUSD,M5: close #16 sell 0.02 EURUSD at 1.14070 at price 1.14095
-2025.12.22 12:54:45.295	2025.06.10 09:13:44  Martim_ProtectorEA_V6 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
-2025.12.22 12:54:45.295	2025.06.10 08:38:48  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 activado. Ticket: 16 Type: SELL
-2025.12.22 12:54:45.295	2025.06.10 08:38:48  Martim_ProtectorEA_V6 EURUSD,M5: open #16 sell 0.02 EURUSD at 1.14070 ok
-2025.12.22 12:54:45.295	2025.06.10 08:38:48  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
-2025.12.22 12:54:45.295	2025.06.10 08:38:36  Martim_ProtectorEA_V6 EURUSD,M5: ? Test Signal: BUY ticket 15
-2025.12.22 12:54:45.295	2025.06.10 08:38:36  Martim_ProtectorEA_V6 EURUSD,M5: open #15 buy 0.01 EURUSD at 1.14082 ok
-2025.12.22 12:54:45.295	2025.06.10 08:38:36  Martim_ProtectorEA_V6 EURUSD,M5: ? Grupo cerrado. Profit final: 10.00 pips
-2025.12.22 12:54:45.295	2025.06.10 08:38:36  Martim_ProtectorEA_V6 EURUSD,M5: close #14 sell 0.03 EURUSD at 1.14085 at price 1.14081
-2025.12.22 12:54:45.295	2025.06.10 08:38:36  Martim_ProtectorEA_V6 EURUSD,M5: close #12 sell 0.01 EURUSD at 1.14098 at price 1.14081
-2025.12.22 12:54:45.295	2025.06.10 08:38:36  Martim_ProtectorEA_V6 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
-2025.12.22 12:54:45.295	2025.06.10 08:37:40  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge2 activado. Ticket: 14 Type: SELL
-2025.12.22 12:54:45.295	2025.06.10 08:37:40  Martim_ProtectorEA_V6 EURUSD,M5: open #14 sell 0.03 EURUSD at 1.14085 ok
-2025.12.22 12:54:45.295	2025.06.10 08:37:40  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 cerrado. Ticket: 13
-2025.12.22 12:54:45.295	2025.06.10 08:37:40  Martim_ProtectorEA_V6 EURUSD,M5: close #13 buy 0.02 EURUSD at 1.14109 at price 1.14085
-2025.12.22 12:54:45.295	2025.06.10 08:37:40  Martim_ProtectorEA_V6 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
-2025.12.22 12:54:45.295	2025.06.10 08:33:29  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 activado. Ticket: 13 Type: BUY
-2025.12.22 12:54:45.295	2025.06.10 08:33:29  Martim_ProtectorEA_V6 EURUSD,M5: open #13 buy 0.02 EURUSD at 1.14109 ok
-2025.12.22 12:54:45.295	2025.06.10 08:33:29  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
-2025.12.22 12:54:45.295	2025.06.10 08:33:16  Martim_ProtectorEA_V6 EURUSD,M5: ? Test Signal: SELL ticket 12
-2025.12.22 12:54:45.295	2025.06.10 08:33:16  Martim_ProtectorEA_V6 EURUSD,M5: open #12 sell 0.01 EURUSD at 1.14098 ok
-2025.12.22 12:54:45.295	2025.06.10 08:33:15  Martim_ProtectorEA_V6 EURUSD,M5: ? Grupo cerrado. Profit final: 0.00 pips
-2025.12.22 12:54:45.295	2025.06.10 08:33:15  Martim_ProtectorEA_V6 EURUSD,M5: close #11 buy 0.03 EURUSD at 1.14093 at price 1.14097
-2025.12.22 12:54:45.295	2025.06.10 08:33:15  Martim_ProtectorEA_V6 EURUSD,M5: close #9 buy 0.01 EURUSD at 1.14081 at price 1.14097
-2025.12.22 12:54:45.295	2025.06.10 08:33:15  Martim_ProtectorEA_V6 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: Emergency
-2025.12.22 12:54:45.295	2025.06.10 08:33:04  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge2 activado. Ticket: 11 Type: BUY
-2025.12.22 12:54:45.295	2025.06.10 08:33:04  Martim_ProtectorEA_V6 EURUSD,M5: open #11 buy 0.03 EURUSD at 1.14093 ok
-2025.12.22 12:54:45.295	2025.06.10 08:33:04  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 cerrado. Ticket: 10
-2025.12.22 12:54:45.295	2025.06.10 08:33:04  Martim_ProtectorEA_V6 EURUSD,M5: close #10 sell 0.02 EURUSD at 1.14068 at price 1.14093
-2025.12.22 12:54:45.295	2025.06.10 08:33:04  Martim_ProtectorEA_V6 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
-2025.12.22 12:54:45.279	2025.06.10 04:47:37  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 activado. Ticket: 10 Type: SELL
-2025.12.22 12:54:45.279	2025.06.10 04:47:37  Martim_ProtectorEA_V6 EURUSD,M5: open #10 sell 0.02 EURUSD at 1.14068 ok
-2025.12.22 12:54:45.279	2025.06.10 04:47:37  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
-2025.12.22 12:54:45.279	2025.06.10 04:45:05  Martim_ProtectorEA_V6 EURUSD,M5: ? Test Signal: BUY ticket 9
-2025.12.22 12:54:45.279	2025.06.10 04:45:05  Martim_ProtectorEA_V6 EURUSD,M5: open #9 buy 0.01 EURUSD at 1.14081 ok
-2025.12.22 12:54:45.279	2025.06.10 04:45:00  Martim_ProtectorEA_V6 EURUSD,M5: ? Grupo cerrado. Profit final: 2350.00 pips
-2025.12.22 12:54:45.279	2025.06.10 04:45:00  Martim_ProtectorEA_V6 EURUSD,M5: close #7 sell 0.03 EURUSD at 1.14243 at price 1.14085
-2025.12.22 12:54:45.279	2025.06.10 04:45:00  Martim_ProtectorEA_V6 EURUSD,M5: close #8 buy 0.02 EURUSD at 1.14267 at price 1.14083
-2025.12.22 12:54:45.279	2025.06.10 04:45:00  Martim_ProtectorEA_V6 EURUSD,M5: close #5 sell 0.01 EURUSD at 1.14256 at price 1.14085
-2025.12.22 12:54:45.279	2025.06.10 04:45:00  Martim_ProtectorEA_V6 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
-2025.12.22 12:54:45.232	2025.06.10 03:03:04  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 activado. Ticket: 8 Type: BUY
-2025.12.22 12:54:45.232	2025.06.10 03:03:04  Martim_ProtectorEA_V6 EURUSD,M5: open #8 buy 0.02 EURUSD at 1.14267 ok
-2025.12.22 12:54:45.232	2025.06.10 03:03:04  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
-2025.12.22 12:54:45.232	2025.06.10 03:00:17  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge2 activado. Ticket: 7 Type: SELL
-2025.12.22 12:54:45.232	2025.06.10 03:00:17  Martim_ProtectorEA_V6 EURUSD,M5: open #7 sell 0.03 EURUSD at 1.14243 ok
-2025.12.22 12:54:45.232	2025.06.10 03:00:17  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 cerrado. Ticket: 6
-2025.12.22 12:54:45.232	2025.06.10 03:00:17  Martim_ProtectorEA_V6 EURUSD,M5: close #6 buy 0.02 EURUSD at 1.14267 at price 1.14243
-2025.12.22 12:54:45.232	2025.06.10 03:00:17  Martim_ProtectorEA_V6 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
-2025.12.22 12:54:45.232	2025.06.10 02:54:01  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 activado. Ticket: 6 Type: BUY
-2025.12.22 12:54:45.232	2025.06.10 02:54:01  Martim_ProtectorEA_V6 EURUSD,M5: open #6 buy 0.02 EURUSD at 1.14267 ok
-2025.12.22 12:54:45.232	2025.06.10 02:54:01  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
-2025.12.22 12:54:45.232	2025.06.10 02:40:33  Martim_ProtectorEA_V6 EURUSD,M5: ? Test Signal: SELL ticket 5
-2025.12.22 12:54:45.232	2025.06.10 02:40:33  Martim_ProtectorEA_V6 EURUSD,M5: open #5 sell 0.01 EURUSD at 1.14256 ok
-2025.12.22 12:54:45.232	2025.06.10 02:40:30  Martim_ProtectorEA_V6 EURUSD,M5: ? Grupo cerrado. Profit final: 0.00 pips
-2025.12.22 12:54:45.232	2025.06.10 02:40:30  Martim_ProtectorEA_V6 EURUSD,M5: close #3 buy 0.03 EURUSD at 1.14216 at price 1.14257
-2025.12.22 12:54:45.232	2025.06.10 02:40:30  Martim_ProtectorEA_V6 EURUSD,M5: close #4 sell 0.02 EURUSD at 1.14191 at price 1.14259
-2025.12.22 12:54:45.232	2025.06.10 02:40:30  Martim_ProtectorEA_V6 EURUSD,M5: close #1 buy 0.01 EURUSD at 1.14202 at price 1.14257
-2025.12.22 12:54:45.232	2025.06.10 02:40:30  Martim_ProtectorEA_V6 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: Emergency
-2025.12.22 12:54:45.201	2025.06.10 00:08:07  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 activado. Ticket: 4 Type: SELL
-2025.12.22 12:54:45.201	2025.06.10 00:08:07  Martim_ProtectorEA_V6 EURUSD,M5: open #4 sell 0.02 EURUSD at 1.14191 ok
-2025.12.22 12:54:45.201	2025.06.10 00:08:07  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
-2025.12.22 12:54:45.201	2025.06.10 00:07:00  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge2 activado. Ticket: 3 Type: BUY
-2025.12.22 12:54:45.201	2025.06.10 00:07:00  Martim_ProtectorEA_V6 EURUSD,M5: open #3 buy 0.03 EURUSD at 1.14216 ok
-2025.12.22 12:54:45.201	2025.06.10 00:07:00  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 cerrado. Ticket: 2
-2025.12.22 12:54:45.201	2025.06.10 00:07:00  Martim_ProtectorEA_V6 EURUSD,M5: close #2 sell 0.02 EURUSD at 1.14154 at price 1.14216
-2025.12.22 12:54:45.201	2025.06.10 00:07:00  Martim_ProtectorEA_V6 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
-2025.12.22 12:54:45.201	2025.06.10 00:01:00  Martim_ProtectorEA_V6 EURUSD,M5: ? Hedge1 activado. Ticket: 2 Type: SELL
-2025.12.22 12:54:45.201	2025.06.10 00:01:00  Martim_ProtectorEA_V6 EURUSD,M5: open #2 sell 0.02 EURUSD at 1.14154 ok
-2025.12.22 12:54:45.201	2025.06.10 00:01:00  Martim_ProtectorEA_V6 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
-2025.12.22 12:54:45.201	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: ? Test Signal: BUY ticket 1
-2025.12.22 12:54:45.201	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: open #1 buy 0.01 EURUSD at 1.14202 ok
-2025.12.22 12:54:45.201	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: Grupos cargados: 0
-2025.12.22 12:54:45.154	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: ========================================
-2025.12.22 12:54:45.154	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: Test Signals: ENABLED
-2025.12.22 12:54:45.154	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: Magic Number: 12352
-2025.12.22 12:54:45.154	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: Min/Max Lot: 0.01/200.0
-2025.12.22 12:54:45.154	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: Point Value: 0.0001
-2025.12.22 12:54:45.154	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: Symbol: EURUSD
-2025.12.22 12:54:45.154	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: ========================================
-2025.12.22 12:54:45.154	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: MARTIM PROTECTOR V6 - EPIC REBUILD
-2025.12.22 12:54:45.154	2025.06.10 00:00:00  Martim_ProtectorEA_V6 EURUSD,M5: ========================================
-2025.12.22 12:54:45.138	2025.06.10 00:00:00  Martim_ProtectorEA_V6 inputs: TO_Lot=0.01; Hedge1_Lot=0.02; Hedge2_Lot=0.03; Entry_Loss_Pips=-1; Hedge2_Trigger_Pips=1; Min_Exit_Profit=1; Max_Exit_Profit=2; Emergency_Loss_Pips=-0.5; HMA_Period=7; Magic_Number=12352; Enable_Test_Signals=1; Test_Signal_Interval=300; 
-2025.12.22 12:54:45.123	TestGenerator: spread set to 2
-2025.12.22 12:54:44.951	Expert Martim_ProtectorEA_V6 EURUSD,M5: loaded successfully
-2025.12.22 12:54:44.935	Expert Martim_ProtectorEA_V6 EURUSD,M5: removed
