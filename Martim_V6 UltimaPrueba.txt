@@ -1,537 +1,468 @@
 Strategy Tester Report
-Martim_ProtectorEA_V6.12
+Martim_ProtectorEA_V6.13
 ICMarketsSC-Demo04 (Build 1441)
 
 Símbolo	EURUSD (Euro vs US Dollar)
 Período	5 minutos (M5) 2025.06.10 00:00 - 2025.06.11 23:55 (2025.06.10 - 2025.06.12)
 Modelo	Cada tick (el método más preciso basado en todos los períodos menores disponibles)
-Parámetros	TO_Lot=0.01; Hedge1_Lot=0.02; Hedge2_Lot=0.03; Entry_Loss_Pips=-1; Hedge2_Trigger_Pips=1; Min_Exit_Profit=1; HMA_Period=7; HMA_Indicator="HMA_Color"; RSI_Period=2; RSI_Lower_Level=10; RSI_Upper_Level=90; RSI_Extreme_Min=5; HMA_Change_Window=5; First_Bar_Seconds=60; Enable_First_Bar_Check=false; Magic_Number=12312; Comment_Prefix="MartimV6"; Enable_Test_Signals=false; Enable_Smart_Signals=true; Signal_Interval=10;
+Parámetros	TO_Lot=0.01; Hedge1_Lot=0.02; Hedge2_Lot=0.03; Entry_Loss_Pips=-1; Hedge2_Trigger_Pips=1; Min_Exit_Profit=1; HMA_Period=7; HMA_Indicator="HMA_Color"; RSI_Period=2; RSI_Lower_Level=10; RSI_Upper_Level=90; RSI_Extreme_Min=5; HMA_Change_Window=5; First_Bar_Seconds=60; Enable_First_Bar_Check=false; Magic_Number=12313; Comment_Prefix="MartimV6"; Enable_Test_Signals=false; Enable_Smart_signals=true; Signal_Interval=10; Enable_Smart_Signals=true;
 Barras en el historial	1577	Ticks modelados	101432	Calidad del modelado	90.00%
 Errores de desalineación de gráficos	0				
 Depósito inicial	200.00			Spread	2
-Beneficio neto total	7.31	Beneficio bruto	10.17	Pérdida bruta	-2.86
-Factor de beneficio	3.56	Beneficio esperado	0.43		
-Drawdown absoluto	3.03	Drawdown máximo	4.33 (2.13%)	Drawdown relativo	2.13% (4.33)
-Total de transacciones	17	Posiciones cortas (% ganadoras)	8 (0.00%)	Posiciones largas (% ganadoras)	9 (11.11%)
-Transacciones rentables (% del total)	1 (5.88%)	Transacciones no rentables (% del total)	16 (94.12%)
-Mayor	transacción rentable	10.17	transacción no rentable	-0.25
-Media	transacción rentable	10.17	transacción no rentable	-0.18
-Número máximo	ganancias consecutivas (beneficio en dinero)	1 (10.17)	pérdidas consecutivas (pérdidas en dinero)	16 (-2.86)
-Máx.	beneficio consecutivo (número de ganancias)	10.17 (1)	pérdidas consecutivas (número de pérdidas)	-2.86 (16)
-Promedio	ganancias consecutivas	1	pérdidas consecutivas	16
+Beneficio neto total	12.00	Beneficio bruto	17.11	Pérdida bruta	-5.11
+Factor de beneficio	3.35	Beneficio esperado	0.67		
+Drawdown absoluto	19.43	Drawdown máximo	23.29 (11.42%)	Drawdown relativo	11.42% (23.29)
+Total de transacciones	18	Posiciones cortas (% ganadoras)	6 (0.00%)	Posiciones largas (% ganadoras)	12 (83.33%)
+Transacciones rentables (% del total)	10 (55.56%)	Transacciones no rentables (% del total)	8 (44.44%)
+Mayor	transacción rentable	7.59	transacción no rentable	-1.11
+Media	transacción rentable	1.71	transacción no rentable	-0.64
+Número máximo	ganancias consecutivas (beneficio en dinero)	2 (10.27)	pérdidas consecutivas (pérdidas en dinero)	3 (-1.97)
+Máx.	beneficio consecutivo (número de ganancias)	10.27 (2)	pérdidas consecutivas (número de pérdidas)	-1.97 (3)
+Promedio	ganancias consecutivas	2	pérdidas consecutivas	1
 Graph
 #	Tiempo	Tipo	Orden	Volumen	Precio	S / L	T / P	Beneficios	Balance
 1	2025.06.10 01:41	buy	1	0.01	1.14223	0.00000	0.00000	
 2	2025.06.10 01:41	sell	2	0.02	1.14211	0.00000	0.00000	
-3	2025.06.10 01:41	close	1	0.01	1.14212	0.00000	0.00000	-0.18	199.82
-4	2025.06.10 01:41	close	2	0.02	1.14214	0.00000	0.00000	-0.20	199.62
-5	2025.06.10 01:41	buy	3	0.01	1.14211	0.00000	0.00000	
-6	2025.06.10 01:42	sell	4	0.02	1.14200	0.00000	0.00000	
-7	2025.06.10 01:42	close	3	0.01	1.14201	0.00000	0.00000	-0.17	199.45
-8	2025.06.10 01:42	close	4	0.02	1.14203	0.00000	0.00000	-0.20	199.25
-9	2025.06.10 01:42	buy	5	0.01	1.14199	0.00000	0.00000	
-10	2025.06.10 04:14	sell	6	0.02	1.14188	0.00000	0.00000	
-11	2025.06.10 04:14	close	5	0.01	1.14189	0.00000	0.00000	-0.17	199.08
-12	2025.06.10 04:14	close	6	0.02	1.14191	0.00000	0.00000	-0.20	198.88
-13	2025.06.10 04:45	buy	7	0.01	1.14081	0.00000	0.00000	
-14	2025.06.10 04:47	sell	8	0.02	1.14068	0.00000	0.00000	
-15	2025.06.10 04:47	close	7	0.01	1.14064	0.00000	0.00000	-0.24	198.64
-16	2025.06.10 04:47	close	8	0.02	1.14066	0.00000	0.00000	-0.10	198.54
-17	2025.06.10 04:47	buy	9	0.01	1.14062	0.00000	0.00000	
-18	2025.06.10 04:49	sell	10	0.02	1.14049	0.00000	0.00000	
-19	2025.06.10 04:49	close	9	0.01	1.14046	0.00000	0.00000	-0.23	198.31
-20	2025.06.10 04:49	close	10	0.02	1.14048	0.00000	0.00000	-0.12	198.19
-21	2025.06.10 04:49	buy	11	0.01	1.14049	0.00000	0.00000	
-22	2025.06.10 04:49	sell	12	0.02	1.14037	0.00000	0.00000	
-23	2025.06.10 04:49	close	11	0.01	1.14034	0.00000	0.00000	-0.22	197.97
-24	2025.06.10 04:49	close	12	0.02	1.14036	0.00000	0.00000	-0.12	197.85
-25	2025.06.10 04:49	buy	13	0.01	1.14037	0.00000	0.00000	
-26	2025.06.10 04:49	sell	14	0.02	1.14023	0.00000	0.00000	
-27	2025.06.10 04:49	close	13	0.01	1.14019	0.00000	0.00000	-0.25	197.60
-28	2025.06.10 04:49	close	14	0.02	1.14021	0.00000	0.00000	-0.10	197.50
-29	2025.06.10 05:10	buy	15	0.01	1.13894	0.00000	0.00000	
-30	2025.06.10 10:06	sell	16	0.02	1.13881	0.00000	0.00000	
-31	2025.06.10 10:06	close	15	0.01	1.13879	0.00000	0.00000	-0.22	197.28
-32	2025.06.10 10:06	close	16	0.02	1.13881	0.00000	0.00000	-0.14	197.14
-33	2025.06.10 10:20	buy	17	0.01	1.13825	0.00000	0.00000	
-34	2025.06.11 23:59	close at stop	17	0.01	1.14859	0.00000	0.00000	10.17	207.31
+3	2025.06.10 02:18	close	2	0.02	1.14235	0.00000	0.00000	-0.62	199.38
+4	2025.06.10 02:18	buy	3	0.03	1.14235	0.00000	0.00000	
+5	2025.06.10 03:35	close	1	0.01	1.14295	0.00000	0.00000	0.65	200.03
+6	2025.06.10 03:35	close	3	0.03	1.14295	0.00000	0.00000	1.59	201.62
+7	2025.06.10 03:54	buy	4	0.01	1.14219	0.00000	0.00000	
+8	2025.06.10 04:02	sell	5	0.02	1.14208	0.00000	0.00000	
+9	2025.06.10 04:04	close	5	0.02	1.14232	0.00000	0.00000	-0.62	201.00
+10	2025.06.10 04:04	buy	6	0.03	1.14232	0.00000	0.00000	
+11	2025.06.10 14:25	close	4	0.01	1.14276	0.00000	0.00000	0.50	201.50
+12	2025.06.10 14:25	close	6	0.03	1.14276	0.00000	0.00000	1.11	202.61
+13	2025.06.10 17:25	buy	7	0.01	1.14327	0.00000	0.00000	
+14	2025.06.10 17:26	sell	8	0.02	1.14316	0.00000	0.00000	
+15	2025.06.10 17:32	close	8	0.02	1.14341	0.00000	0.00000	-0.64	201.97
+16	2025.06.10 17:32	buy	9	0.03	1.14341	0.00000	0.00000	
+17	2025.06.11 12:16	close	7	0.01	1.14382	0.00000	0.00000	0.38	202.35
+18	2025.06.11 12:16	close	9	0.03	1.14382	0.00000	0.00000	0.73	203.08
+19	2025.06.11 13:05	buy	10	0.01	1.14354	0.00000	0.00000	
+20	2025.06.11 13:06	sell	11	0.02	1.14343	0.00000	0.00000	
+21	2025.06.11 13:09	close	11	0.02	1.14369	0.00000	0.00000	-0.66	202.42
+22	2025.06.11 13:09	buy	12	0.03	1.14369	0.00000	0.00000	
+23	2025.06.11 15:53	close	10	0.01	1.14629	0.00000	0.00000	2.68	205.10
+24	2025.06.11 15:53	close	12	0.03	1.14629	0.00000	0.00000	7.59	212.69
+25	2025.06.11 19:20	buy	13	0.01	1.14843	0.00000	0.00000	
+26	2025.06.11 19:20	sell	14	0.02	1.14832	0.00000	0.00000	
+27	2025.06.11 19:24	close	14	0.02	1.14855	0.00000	0.00000	-0.60	212.09
+28	2025.06.11 19:24	buy	15	0.03	1.14855	0.00000	0.00000	
+29	2025.06.11 19:46	close	13	0.01	1.14906	0.00000	0.00000	0.56	212.65
+30	2025.06.11 19:46	close	15	0.03	1.14906	0.00000	0.00000	1.32	213.97
+31	2025.06.11 21:35	buy	16	0.01	1.14876	0.00000	0.00000	
+32	2025.06.11 21:43	sell	17	0.02	1.14865	0.00000	0.00000	
+33	2025.06.11 21:56	close	17	0.02	1.14889	0.00000	0.00000	-0.62	213.35
+34	2025.06.11 21:56	buy	18	0.03	1.14889	0.00000	0.00000	
+35	2025.06.11 23:59	close at stop	18	0.03	1.14859	0.00000	0.00000	-1.11	212.24
+36	2025.06.11 23:59	close at stop	16	0.01	1.14859	0.00000	0.00000	-0.24	212.00
+-----------------------------------------------------------------
 JOURNAL
-----------------
-2025.12.29 00:58:18.466	EURUSD,M5: 100432 tick events (576 bars, 101432 bar states) processed in 0:00:00.297 (total time 0:00:00.344)
-2025.12.29 00:58:18.466	2025.06.11 23:59:48  Martim_ProtectorEA_V6.12 EURUSD,M5: Martim V6.12 detenido. Reason: 0
-2025.12.29 00:58:18.466	2025.06.11 23:59:48  Tester: order #17 is closed
-2025.12.29 00:58:18.309	2025.06.10 10:20:00  Martim_ProtectorEA_V6.12 EURUSD,M5: ? TO abierto: 17 | BUY
-2025.12.29 00:58:18.309	2025.06.10 10:20:00  Martim_ProtectorEA_V6.12 EURUSD,M5: open #17 buy 0.01 EURUSD at 1.13825 ok
-2025.12.29 00:58:18.309	2025.06.10 10:20:00  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(2): 7.79 | RSI(1): 52.83
-2025.12.29 00:58:18.309	2025.06.10 10:20:00  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? SEÑAL BUY: HMA cambió hace 0 barras + RSI cruzó 10
-2025.12.29 00:58:18.309	2025.06.10 10:20:00  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
-2025.12.29 00:58:18.309	2025.06.10 10:16:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:58:18.309	2025.06.10 10:16:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA bajista: 1694
-2025.12.29 00:58:18.309	2025.06.10 10:16:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA alcista: 58
-2025.12.29 00:58:18.309	2025.06.10 10:16:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(0): 5.54 | RSI(1): 7.79 | RSI(2): 0.74
-2025.12.29 00:58:18.309	2025.06.10 10:16:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA dn: 1.137112857142857 (prev: 1.137557142857143)
-2025.12.29 00:58:18.309	2025.06.10 10:16:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:58:18.309	2025.06.10 10:16:20  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? Estado indicadores (evaluación #695):
-2025.12.29 00:58:18.309	2025.06.10 10:11:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:58:18.309	2025.06.10 10:11:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA bajista: 1665
-2025.12.29 00:58:18.309	2025.06.10 10:11:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA alcista: 29
-2025.12.29 00:58:18.309	2025.06.10 10:11:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(0): 0.72 | RSI(1): 0.74 | RSI(2): 10.44
-2025.12.29 00:58:18.309	2025.06.10 10:11:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA dn: 1.137512142857143 (prev: 1.138390198412698)
-2025.12.29 00:58:18.309	2025.06.10 10:11:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:58:18.309	2025.06.10 10:11:20  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? Estado indicadores (evaluación #666):
-2025.12.29 00:58:18.309	2025.06.10 10:06:19  Martim_ProtectorEA_V6.12 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:58:18.309	2025.06.10 10:06:19  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA bajista: 1637
-2025.12.29 00:58:18.309	2025.06.10 10:06:19  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA alcista: 1
-2025.12.29 00:58:18.309	2025.06.10 10:06:19  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(0): 1.88 | RSI(1): 10.44 | RSI(2): 15.10
-2025.12.29 00:58:18.309	2025.06.10 10:06:19  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA dn: 1.138945198412718 (prev: 1.139148452380972)
-2025.12.29 00:58:18.309	2025.06.10 10:06:19  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA up: 2147483647.0 (prev: 1.139148452380972)
-2025.12.29 00:58:18.309	2025.06.10 10:06:19  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? Estado indicadores (evaluación #638):
-2025.12.29 00:58:18.309	2025.06.10 10:06:18  Martim_ProtectorEA_V6.12 EURUSD,M5: close #16 sell 0.02 EURUSD at 1.13881 at price 1.13881
-2025.12.29 00:58:18.309	2025.06.10 10:06:18  Martim_ProtectorEA_V6.12 EURUSD,M5: close #15 buy 0.01 EURUSD at 1.13894 at price 1.13879
-2025.12.29 00:58:18.309	2025.06.10 10:06:18  Martim_ProtectorEA_V6.12 EURUSD,M5:    Profit final: $-0.36
-2025.12.29 00:58:18.309	2025.06.10 10:06:18  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? CERRAR GRUPO: 15
-2025.12.29 00:58:18.309	2025.06.10 10:06:18  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? EMERGENCY EXIT activado
-2025.12.29 00:58:18.309	2025.06.10 10:06:17  Martim_ProtectorEA_V6.12 EURUSD,M5: ? H1 activado: 16
-2025.12.29 00:58:18.309	2025.06.10 10:06:17  Martim_ProtectorEA_V6.12 EURUSD,M5: open #16 sell 0.02 EURUSD at 1.13881 ok
-2025.12.29 00:58:18.309	2025.06.10 10:06:17  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? ACTIVAR H1: TO perdiendo -1.30p
-2025.12.29 00:58:18.294	2025.06.10 05:10:00  Martim_ProtectorEA_V6.12 EURUSD,M5: ? TO abierto: 15 | BUY
-2025.12.29 00:58:18.294	2025.06.10 05:10:00  Martim_ProtectorEA_V6.12 EURUSD,M5: open #15 buy 0.01 EURUSD at 1.13894 ok
-2025.12.29 00:58:18.294	2025.06.10 05:10:00  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(2): 3.05 | RSI(1): 29.80
-2025.12.29 00:58:18.294	2025.06.10 05:10:00  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? SEÑAL BUY: HMA cambió hace 0 barras + RSI cruzó 10
-2025.12.29 00:58:18.294	2025.06.10 05:10:00  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
-2025.12.29 00:58:18.294	2025.06.10 05:09:40  Martim_ProtectorEA_V6.12 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:58:18.294	2025.06.10 05:09:40  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA bajista: 1634
-2025.12.29 00:58:18.294	2025.06.10 05:09:40  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA alcista: 117
-2025.12.29 00:58:18.294	2025.06.10 05:09:40  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(0): 30.60 | RSI(1): 3.05 | RSI(2): 12.82
-2025.12.29 00:58:18.294	2025.06.10 05:09:40  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA dn: 1.138511547619047 (prev: 1.138779722222222)
-2025.12.29 00:58:18.294	2025.06.10 05:09:40  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:58:18.294	2025.06.10 05:09:40  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? Estado indicadores (evaluación #635):
-2025.12.29 00:58:18.294	2025.06.10 05:04:40  Martim_ProtectorEA_V6.12 EURUSD,M5:    Cruces RSI: UP=true | DOWN=false
-2025.12.29 00:58:18.294	2025.06.10 05:04:40  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA bajista: 1606
-2025.12.29 00:58:18.294	2025.06.10 05:04:40  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA alcista: 89
-2025.12.29 00:58:18.294	2025.06.10 05:04:40  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(0): 3.34 | RSI(1): 12.82 | RSI(2): 3.13
-2025.12.29 00:58:18.294	2025.06.10 05:04:40  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA dn: 1.138834722222221 (prev: 1.139306269841269)
-2025.12.29 00:58:18.294	2025.06.10 05:04:40  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:58:18.294	2025.06.10 05:04:40  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? Estado indicadores (evaluación #607):
-2025.12.29 00:58:18.294	2025.06.10 04:59:35  Martim_ProtectorEA_V6.12 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:58:18.294	2025.06.10 04:59:35  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA bajista: 1577
-2025.12.29 00:58:18.294	2025.06.10 04:59:35  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA alcista: 60
-2025.12.29 00:58:18.294	2025.06.10 04:59:35  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(0): 20.75 | RSI(1): 3.13 | RSI(2): 7.36
-2025.12.29 00:58:18.294	2025.06.10 04:59:35  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA dn: 1.139336269841271 (prev: 1.139671230158731)
-2025.12.29 00:58:18.294	2025.06.10 04:59:35  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:58:18.294	2025.06.10 04:59:35  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? Estado indicadores (evaluación #578):
-2025.12.29 00:58:18.294	2025.06.10 04:54:31  Martim_ProtectorEA_V6.12 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:58:18.294	2025.06.10 04:54:31  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA bajista: 1548
-2025.12.29 00:58:18.294	2025.06.10 04:54:31  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA alcista: 31
-2025.12.29 00:58:18.294	2025.06.10 04:54:31  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(0): 3.45 | RSI(1): 7.36 | RSI(2): 24.27
-2025.12.29 00:58:18.294	2025.06.10 04:54:31  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA dn: 1.139721230158732 (prev: 1.140194126984128)
-2025.12.29 00:58:18.294	2025.06.10 04:54:31  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:58:18.294	2025.06.10 04:54:31  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? Estado indicadores (evaluación #549):
-2025.12.29 00:58:18.294	2025.06.10 04:49:48  Martim_ProtectorEA_V6.12 EURUSD,M5: close #14 sell 0.02 EURUSD at 1.14023 at price 1.14021
-2025.12.29 00:58:18.294	2025.06.10 04:49:48  Martim_ProtectorEA_V6.12 EURUSD,M5: close #13 buy 0.01 EURUSD at 1.14037 at price 1.14019
-2025.12.29 00:58:18.294	2025.06.10 04:49:48  Martim_ProtectorEA_V6.12 EURUSD,M5:    Profit final: $-0.35
-2025.12.29 00:58:18.294	2025.06.10 04:49:48  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? CERRAR GRUPO: 13
-2025.12.29 00:58:18.294	2025.06.10 04:49:48  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? EMERGENCY EXIT activado
-2025.12.29 00:58:18.294	2025.06.10 04:49:46  Martim_ProtectorEA_V6.12 EURUSD,M5: ? H1 activado: 14
-2025.12.29 00:58:18.294	2025.06.10 04:49:46  Martim_ProtectorEA_V6.12 EURUSD,M5: open #14 sell 0.02 EURUSD at 1.14023 ok
-2025.12.29 00:58:18.294	2025.06.10 04:49:46  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? ACTIVAR H1: TO perdiendo -1.40p
-2025.12.29 00:58:18.294	2025.06.10 04:49:37  Martim_ProtectorEA_V6.12 EURUSD,M5: ? TO abierto: 13 | BUY
-2025.12.29 00:58:18.294	2025.06.10 04:49:37  Martim_ProtectorEA_V6.12 EURUSD,M5: open #13 buy 0.01 EURUSD at 1.14037 ok
-2025.12.29 00:58:18.294	2025.06.10 04:49:37  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(2): 1.21 | RSI(1): 24.27
-2025.12.29 00:58:18.294	2025.06.10 04:49:37  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? SEÑAL BUY: HMA cambió hace 3 barras + RSI cruzó 10
-2025.12.29 00:58:18.294	2025.06.10 04:49:36  Martim_ProtectorEA_V6.12 EURUSD,M5: close #12 sell 0.02 EURUSD at 1.14037 at price 1.14036
-2025.12.29 00:58:18.294	2025.06.10 04:49:36  Martim_ProtectorEA_V6.12 EURUSD,M5: close #11 buy 0.01 EURUSD at 1.14049 at price 1.14034
-2025.12.29 00:58:18.294	2025.06.10 04:49:36  Martim_ProtectorEA_V6.12 EURUSD,M5:    Profit final: $-0.34
-2025.12.29 00:58:18.294	2025.06.10 04:49:36  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? CERRAR GRUPO: 11
-2025.12.29 00:58:18.294	2025.06.10 04:49:36  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? EMERGENCY EXIT activado
-2025.12.29 00:58:18.294	2025.06.10 04:49:35  Martim_ProtectorEA_V6.12 EURUSD,M5: ? H1 activado: 12
-2025.12.29 00:58:18.294	2025.06.10 04:49:35  Martim_ProtectorEA_V6.12 EURUSD,M5: open #12 sell 0.02 EURUSD at 1.14037 ok
-2025.12.29 00:58:18.294	2025.06.10 04:49:35  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? ACTIVAR H1: TO perdiendo -1.20p
-2025.12.29 00:58:18.294	2025.06.10 04:49:25  Martim_ProtectorEA_V6.12 EURUSD,M5: ? TO abierto: 11 | BUY
-2025.12.29 00:58:18.294	2025.06.10 04:49:25  Martim_ProtectorEA_V6.12 EURUSD,M5: open #11 buy 0.01 EURUSD at 1.14049 ok
-2025.12.29 00:58:18.294	2025.06.10 04:49:25  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(2): 1.21 | RSI(1): 24.27
-2025.12.29 00:58:18.294	2025.06.10 04:49:25  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? SEÑAL BUY: HMA cambió hace 2 barras + RSI cruzó 10
-2025.12.29 00:58:18.294	2025.06.10 04:49:25  Martim_ProtectorEA_V6.12 EURUSD,M5:    Cruces RSI: UP=true | DOWN=false
-2025.12.29 00:58:18.294	2025.06.10 04:49:25  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA bajista: 1519
-2025.12.29 00:58:18.294	2025.06.10 04:49:25  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA alcista: 2
-2025.12.29 00:58:18.294	2025.06.10 04:49:25  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(0): 10.59 | RSI(1): 24.27 | RSI(2): 1.21
-2025.12.29 00:58:18.294	2025.06.10 04:49:25  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA dn: 1.140334126984128 (prev: 1.140491150793651)
-2025.12.29 00:58:18.294	2025.06.10 04:49:25  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:58:18.294	2025.06.10 04:49:25  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? Estado indicadores (evaluación #520):
-2025.12.29 00:58:18.294	2025.06.10 04:49:24  Martim_ProtectorEA_V6.12 EURUSD,M5: close #10 sell 0.02 EURUSD at 1.14049 at price 1.14048
-2025.12.29 00:58:18.294	2025.06.10 04:49:24  Martim_ProtectorEA_V6.12 EURUSD,M5: close #9 buy 0.01 EURUSD at 1.14062 at price 1.14046
-2025.12.29 00:58:18.294	2025.06.10 04:49:24  Martim_ProtectorEA_V6.12 EURUSD,M5:    Profit final: $-0.35
-2025.12.29 00:58:18.294	2025.06.10 04:49:24  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? CERRAR GRUPO: 9
-2025.12.29 00:58:18.294	2025.06.10 04:49:24  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? EMERGENCY EXIT activado
-2025.12.29 00:58:18.294	2025.06.10 04:49:22  Martim_ProtectorEA_V6.12 EURUSD,M5: ? H1 activado: 10
-2025.12.29 00:58:18.294	2025.06.10 04:49:22  Martim_ProtectorEA_V6.12 EURUSD,M5: open #10 sell 0.02 EURUSD at 1.14049 ok
-2025.12.29 00:58:18.294	2025.06.10 04:49:22  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? ACTIVAR H1: TO perdiendo -1.30p
-2025.12.29 00:58:18.294	2025.06.10 04:47:40  Martim_ProtectorEA_V6.12 EURUSD,M5: ? TO abierto: 9 | BUY
-2025.12.29 00:58:18.294	2025.06.10 04:47:40  Martim_ProtectorEA_V6.12 EURUSD,M5: open #9 buy 0.01 EURUSD at 1.14062 ok
-2025.12.29 00:58:18.294	2025.06.10 04:47:40  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(2): 1.21 | RSI(1): 24.27
-2025.12.29 00:58:18.294	2025.06.10 04:47:40  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? SEÑAL BUY: HMA cambió hace 1 barras + RSI cruzó 10
-2025.12.29 00:58:18.294	2025.06.10 04:47:38  Martim_ProtectorEA_V6.12 EURUSD,M5: close #8 sell 0.02 EURUSD at 1.14068 at price 1.14066
-2025.12.29 00:58:18.294	2025.06.10 04:47:38  Martim_ProtectorEA_V6.12 EURUSD,M5: close #7 buy 0.01 EURUSD at 1.14081 at price 1.14064
-2025.12.29 00:58:18.294	2025.06.10 04:47:38  Martim_ProtectorEA_V6.12 EURUSD,M5:    Profit final: $-0.34
-2025.12.29 00:58:18.294	2025.06.10 04:47:38  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? CERRAR GRUPO: 7
-2025.12.29 00:58:18.294	2025.06.10 04:47:38  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? EMERGENCY EXIT activado
-2025.12.29 00:58:18.294	2025.06.10 04:47:37  Martim_ProtectorEA_V6.12 EURUSD,M5: ? H1 activado: 8
-2025.12.29 00:58:18.294	2025.06.10 04:47:37  Martim_ProtectorEA_V6.12 EURUSD,M5: open #8 sell 0.02 EURUSD at 1.14068 ok
-2025.12.29 00:58:18.294	2025.06.10 04:47:37  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? ACTIVAR H1: TO perdiendo -1.30p
-2025.12.29 00:58:18.294	2025.06.10 04:45:05  Martim_ProtectorEA_V6.12 EURUSD,M5: ? TO abierto: 7 | BUY
-2025.12.29 00:58:18.294	2025.06.10 04:45:05  Martim_ProtectorEA_V6.12 EURUSD,M5: open #7 buy 0.01 EURUSD at 1.14081 ok
-2025.12.29 00:58:18.294	2025.06.10 04:45:05  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(2): 1.21 | RSI(1): 24.27
-2025.12.29 00:58:18.294	2025.06.10 04:45:05  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? SEÑAL BUY: HMA cambió hace 0 barras + RSI cruzó 10
-2025.12.29 00:58:18.294	2025.06.10 04:45:05  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
-2025.12.29 00:58:18.294	2025.06.10 04:44:21  Martim_ProtectorEA_V6.12 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:58:18.294	2025.06.10 04:44:21  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA bajista: 1513
-2025.12.29 00:58:18.294	2025.06.10 04:44:21  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA alcista: 111
-2025.12.29 00:58:18.294	2025.06.10 04:44:21  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(0): 22.88 | RSI(1): 1.21 | RSI(2): 3.10
-2025.12.29 00:58:18.294	2025.06.10 04:44:21  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA dn: 1.140486150793652 (prev: 1.140748531746033)
-2025.12.29 00:58:18.294	2025.06.10 04:44:21  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:58:18.294	2025.06.10 04:44:21  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? Estado indicadores (evaluación #514):
-2025.12.29 00:58:18.278	2025.06.10 04:39:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:58:18.278	2025.06.10 04:39:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA bajista: 1484
-2025.12.29 00:58:18.278	2025.06.10 04:39:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA alcista: 82
-2025.12.29 00:58:18.278	2025.06.10 04:39:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(0): 1.16 | RSI(1): 3.10 | RSI(2): 6.13
-2025.12.29 00:58:18.278	2025.06.10 04:39:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA dn: 1.140728531746031 (prev: 1.141289642857142)
-2025.12.29 00:58:18.278	2025.06.10 04:39:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:58:18.278	2025.06.10 04:39:20  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? Estado indicadores (evaluación #485):
-2025.12.29 00:58:18.278	2025.06.10 04:34:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:58:18.278	2025.06.10 04:34:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA bajista: 1454
-2025.12.29 00:58:18.278	2025.06.10 04:34:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA alcista: 52
-2025.12.29 00:58:18.278	2025.06.10 04:34:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(0): 3.20 | RSI(1): 6.13 | RSI(2): 28.37
-2025.12.29 00:58:18.278	2025.06.10 04:34:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA dn: 1.141299642857143 (prev: 1.141705753968254)
-2025.12.29 00:58:18.278	2025.06.10 04:34:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:58:18.278	2025.06.10 04:34:20  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? Estado indicadores (evaluación #455):
-2025.12.29 00:58:18.278	2025.06.10 04:29:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:58:18.278	2025.06.10 04:29:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA bajista: 1427
-2025.12.29 00:58:18.278	2025.06.10 04:29:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA alcista: 25
-2025.12.29 00:58:18.278	2025.06.10 04:29:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(0): 5.34 | RSI(1): 28.37 | RSI(2): 34.23
-2025.12.29 00:58:18.278	2025.06.10 04:29:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA dn: 1.141655753968255 (prev: 1.141967698412699)
-2025.12.29 00:58:18.278	2025.06.10 04:29:20  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:58:18.278	2025.06.10 04:29:20  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? Estado indicadores (evaluación #428):
-2025.12.29 00:58:18.278	2025.06.10 04:25:00  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
-2025.12.29 00:58:18.278	2025.06.10 04:24:13  Martim_ProtectorEA_V6.12 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:58:18.278	2025.06.10 04:24:13  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA bajista: 1398
-2025.12.29 00:58:18.278	2025.06.10 04:24:13  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA alcista: 59
-2025.12.29 00:58:18.278	2025.06.10 04:24:13  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(0): 61.36 | RSI(1): 34.23 | RSI(2): 12.56
-2025.12.29 00:58:18.278	2025.06.10 04:24:13  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA dn: 1.142077698412699 (prev: 1.142117896825397)
-2025.12.29 00:58:18.278	2025.06.10 04:24:13  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:58:18.278	2025.06.10 04:24:13  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? Estado indicadores (evaluación #399):
-2025.12.29 00:58:18.278	2025.06.10 04:19:10  Martim_ProtectorEA_V6.12 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:58:18.278	2025.06.10 04:19:10  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA bajista: 1370
-2025.12.29 00:58:18.278	2025.06.10 04:19:10  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA alcista: 31
-2025.12.29 00:58:18.278	2025.06.10 04:19:10  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(0): 35.56 | RSI(1): 12.56 | RSI(2): 84.30
-2025.12.29 00:58:18.278	2025.06.10 04:19:10  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA dn: 1.142122896825397 (prev: 1.14241007936508)
-2025.12.29 00:58:18.278	2025.06.10 04:19:10  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:58:18.278	2025.06.10 04:19:10  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? Estado indicadores (evaluación #371):
-2025.12.29 00:58:18.278	2025.06.10 04:14:07  Martim_ProtectorEA_V6.12 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:58:18.278	2025.06.10 04:14:07  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA bajista: 1342
-2025.12.29 00:58:18.278	2025.06.10 04:14:07  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA alcista: 3
-2025.12.29 00:58:18.278	2025.06.10 04:14:07  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(0): 10.66 | RSI(1): 84.30 | RSI(2): 81.78
-2025.12.29 00:58:18.278	2025.06.10 04:14:07  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA dn: 1.142345079365098 (prev: 1.142631031746049)
-2025.12.29 00:58:18.278	2025.06.10 04:14:07  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA up: 2147483647.0 (prev: 1.142631031746049)
-2025.12.29 00:58:18.278	2025.06.10 04:14:07  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? Estado indicadores (evaluación #343):
-2025.12.29 00:58:18.278	2025.06.10 04:14:06  Martim_ProtectorEA_V6.12 EURUSD,M5: close #6 sell 0.02 EURUSD at 1.14188 at price 1.14191
-2025.12.29 00:58:18.278	2025.06.10 04:14:06  Martim_ProtectorEA_V6.12 EURUSD,M5: close #5 buy 0.01 EURUSD at 1.14199 at price 1.14189
-2025.12.29 00:58:18.278	2025.06.10 04:14:06  Martim_ProtectorEA_V6.12 EURUSD,M5:    Profit final: $-0.37
-2025.12.29 00:58:18.278	2025.06.10 04:14:06  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? CERRAR GRUPO: 5
-2025.12.29 00:58:18.278	2025.06.10 04:14:06  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? EMERGENCY EXIT activado
-2025.12.29 00:58:18.278	2025.06.10 04:14:05  Martim_ProtectorEA_V6.12 EURUSD,M5: ? H1 activado: 6
-2025.12.29 00:58:18.278	2025.06.10 04:14:05  Martim_ProtectorEA_V6.12 EURUSD,M5: open #6 sell 0.02 EURUSD at 1.14188 ok
-2025.12.29 00:58:18.278	2025.06.10 04:14:05  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? ACTIVAR H1: TO perdiendo -1.10p
-2025.12.29 00:58:18.278	2025.06.10 01:42:30  Martim_ProtectorEA_V6.12 EURUSD,M5: ? TO abierto: 5 | BUY
-2025.12.29 00:58:18.278	2025.06.10 01:42:30  Martim_ProtectorEA_V6.12 EURUSD,M5: open #5 buy 0.01 EURUSD at 1.14199 ok
-2025.12.29 00:58:18.278	2025.06.10 01:42:30  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(2): 8.81 | RSI(1): 38.63
-2025.12.29 00:58:18.278	2025.06.10 01:42:30  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? SEÑAL BUY: HMA cambió hace 2 barras + RSI cruzó 10
-2025.12.29 00:58:18.278	2025.06.10 01:42:30  Martim_ProtectorEA_V6.12 EURUSD,M5:    Cruces RSI: UP=true | DOWN=false
-2025.12.29 00:58:18.278	2025.06.10 01:42:30  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA bajista: 1341
-2025.12.29 00:58:18.278	2025.06.10 01:42:30  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA alcista: 2
-2025.12.29 00:58:18.278	2025.06.10 01:42:30  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(0): 9.41 | RSI(1): 38.63 | RSI(2): 8.81
-2025.12.29 00:58:18.278	2025.06.10 01:42:30  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA dn: 1.142015476190475 (prev: 1.14211988095238)
-2025.12.29 00:58:18.278	2025.06.10 01:42:30  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:58:18.278	2025.06.10 01:42:30  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? Estado indicadores (evaluación #342):
-2025.12.29 00:58:18.278	2025.06.10 01:42:24  Martim_ProtectorEA_V6.12 EURUSD,M5: close #4 sell 0.02 EURUSD at 1.14200 at price 1.14203
-2025.12.29 00:58:18.278	2025.06.10 01:42:24  Martim_ProtectorEA_V6.12 EURUSD,M5: close #3 buy 0.01 EURUSD at 1.14211 at price 1.14201
-2025.12.29 00:58:18.278	2025.06.10 01:42:24  Martim_ProtectorEA_V6.12 EURUSD,M5:    Profit final: $-0.37
-2025.12.29 00:58:18.278	2025.06.10 01:42:24  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? CERRAR GRUPO: 3
-2025.12.29 00:58:18.278	2025.06.10 01:42:24  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? EMERGENCY EXIT activado
-2025.12.29 00:58:18.278	2025.06.10 01:42:18  Martim_ProtectorEA_V6.12 EURUSD,M5: ? H1 activado: 4
-2025.12.29 00:58:18.278	2025.06.10 01:42:18  Martim_ProtectorEA_V6.12 EURUSD,M5: open #4 sell 0.02 EURUSD at 1.14200 ok
-2025.12.29 00:58:18.278	2025.06.10 01:42:18  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? ACTIVAR H1: TO perdiendo -1.10p
-2025.12.29 00:58:18.278	2025.06.10 01:41:27  Martim_ProtectorEA_V6.12 EURUSD,M5: ? TO abierto: 3 | BUY
-2025.12.29 00:58:18.278	2025.06.10 01:41:27  Martim_ProtectorEA_V6.12 EURUSD,M5: open #3 buy 0.01 EURUSD at 1.14211 ok
-2025.12.29 00:58:18.278	2025.06.10 01:41:27  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(2): 8.81 | RSI(1): 38.63
-2025.12.29 00:58:18.278	2025.06.10 01:41:27  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? SEÑAL BUY: HMA cambió hace 1 barras + RSI cruzó 10
-2025.12.29 00:58:18.278	2025.06.10 01:41:24  Martim_ProtectorEA_V6.12 EURUSD,M5: close #2 sell 0.02 EURUSD at 1.14211 at price 1.14214
-2025.12.29 00:58:18.278	2025.06.10 01:41:24  Martim_ProtectorEA_V6.12 EURUSD,M5: close #1 buy 0.01 EURUSD at 1.14223 at price 1.14212
-2025.12.29 00:58:18.278	2025.06.10 01:41:24  Martim_ProtectorEA_V6.12 EURUSD,M5:    Profit final: $-0.38
-2025.12.29 00:58:18.278	2025.06.10 01:41:24  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? CERRAR GRUPO: 1
-2025.12.29 00:58:18.278	2025.06.10 01:41:24  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? EMERGENCY EXIT activado
-2025.12.29 00:58:18.278	2025.06.10 01:41:18  Martim_ProtectorEA_V6.12 EURUSD,M5: ? H1 activado: 2
-2025.12.29 00:58:18.278	2025.06.10 01:41:18  Martim_ProtectorEA_V6.12 EURUSD,M5: open #2 sell 0.02 EURUSD at 1.14211 ok
-2025.12.29 00:58:18.278	2025.06.10 01:41:18  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? ACTIVAR H1: TO perdiendo -1.20p
-2025.12.29 00:58:18.278	2025.06.10 01:41:00  Martim_ProtectorEA_V6.12 EURUSD,M5: ? TO abierto: 1 | BUY
-2025.12.29 00:58:18.278	2025.06.10 01:41:00  Martim_ProtectorEA_V6.12 EURUSD,M5: open #1 buy 0.01 EURUSD at 1.14223 ok
-2025.12.29 00:58:18.278	2025.06.10 01:41:00  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(2): 8.81 | RSI(1): 38.63
-2025.12.29 00:58:18.278	2025.06.10 01:41:00  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? SEÑAL BUY: HMA cambió hace 0 barras + RSI cruzó 10
-2025.12.29 00:58:18.278	2025.06.10 01:41:00  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
-2025.12.29 00:58:18.278	2025.06.10 01:37:00  Martim_ProtectorEA_V6.12 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:58:18.278	2025.06.10 01:37:00  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA bajista: 1325
-2025.12.29 00:58:18.278	2025.06.10 01:37:00  Martim_ProtectorEA_V6.12 EURUSD,M5:    Barras desde HMA alcista: 149
-2025.12.29 00:58:18.278	2025.06.10 01:37:00  Martim_ProtectorEA_V6.12 EURUSD,M5:    RSI(0): 43.27 | RSI(1): 8.81 | RSI(2): 26.54
-2025.12.29 00:58:18.278	2025.06.10 01:37:00  Martim_ProtectorEA_V6.12 EURUSD,M5:    HMA dn: 1.14212488095238 (prev: 1.142197063492063)
-2025.12.29 00:58:18.215	2025.06.10 00:00:00  Martim_ProtectorEA_V6.12 EURUSD,M5:    Window: 5 barras
-2025.12.29 00:58:18.215	2025.06.10 00:00:00  Martim_ProtectorEA_V6.12 EURUSD,M5:    FIX: Detección correcta cambio HMA
-2025.12.29 00:58:18.215	2025.06.10 00:00:00  Martim_ProtectorEA_V6.12 EURUSD,M5: ?? MARTIM V6.12 INICIALIZADO
-2025.12.29 00:58:18.215	2025.06.10 00:00:00  Martim_ProtectorEA_V6.12 EURUSD,M5: ========================================
-2025.12.29 00:58:18.184	2025.06.10 00:00:00  Martim_ProtectorEA_V6.12 inputs: TO_Lot=0.01; Hedge1_Lot=0.02; Hedge2_Lot=0.03; Entry_Loss_Pips=-1; Hedge2_Trigger_Pips=1; Min_Exit_Profit=1; HMA_Period=7; RSI_Period=2; RSI_Lower_Level=10; RSI_Upper_Level=90; RSI_Extreme_Min=5; HMA_Change_Window=5; First_Bar_Seconds=60; Enable_First_Bar_Check=0; Magic_Number=12312; Enable_Test_Signals=0; Enable_Smart_Signals=1; Signal_Interval=10; 
-2025.12.29 00:58:18.137	TestGenerator: spread set to 2
-2025.12.29 00:58:18.106	Expert Martim_ProtectorEA_V6.12 EURUSD,M5: loaded successfully
-2025.12.29 00:58:18.074	Expert Martim_ProtectorEA_V6.11 EURUSD,M5: removed
-2025.12.29 00:28:58.733	EURUSD,M5: 100432 tick events (576 bars, 101432 bar states) processed in 0:00:00.265 (total time 0:00:00.297)
-2025.12.29 00:28:58.733	2025.06.11 23:59:48  Martim_ProtectorEA_V6.11 EURUSD,M5: Martim V6.11 detenido. Reason: 0
-2025.12.29 00:28:58.733	2025.06.11 23:57:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.733	2025.06.11 23:57:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 16251
-2025.12.29 00:28:58.733	2025.06.11 23:57:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 16251
-2025.12.29 00:28:58.733	2025.06.11 23:57:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 92.99 | RSI(1): 89.93 | RSI(2): 38.33
-2025.12.29 00:28:58.733	2025.06.11 23:57:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.733	2025.06.11 23:57:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 1.148703055555557 (prev: 1.14855642857143)
-2025.12.29 00:28:58.733	2025.06.11 23:57:00  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #15252):
-2025.12.29 00:28:58.733	2025.06.11 23:52:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.733	2025.06.11 23:52:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 16227
-2025.12.29 00:28:58.733	2025.06.11 23:52:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 16227
-2025.12.29 00:28:58.733	2025.06.11 23:52:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 70.82 | RSI(1): 38.33 | RSI(2): 57.56
-2025.12.29 00:28:58.733	2025.06.11 23:52:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 1.148466428571428 (prev: 1.148466587301587)
-2025.12.29 00:28:58.733	2025.06.11 23:52:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.733	2025.06.11 23:52:00  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #15228):
-2025.12.29 00:28:58.733	2025.06.11 23:47:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.733	2025.06.11 23:47:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 16204
-2025.12.29 00:28:58.733	2025.06.11 23:47:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 16204
-2025.12.29 00:28:58.733	2025.06.11 23:47:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 31.35 | RSI(1): 57.56 | RSI(2): 43.35
-2025.12.29 00:28:58.733	2025.06.11 23:47:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 1.148456587301588 (prev: 1.148508769841271)
-2025.12.29 00:28:58.733	2025.06.11 23:47:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.733	2025.06.11 23:47:00  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #15205):
-2025.12.29 00:28:58.733	2025.06.11 23:42:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=true
-2025.12.29 00:28:58.733	2025.06.11 23:42:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 16179
-2025.12.29 00:28:58.733	2025.06.11 23:42:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 16179
-2025.12.29 00:28:58.733	2025.06.11 23:42:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 60.84 | RSI(1): 43.35 | RSI(2): 98.12
-2025.12.29 00:28:58.733	2025.06.11 23:42:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 1.148513769841269 (prev: 1.1485325)
-2025.12.29 00:28:58.733	2025.06.11 23:42:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 2147483647.0 (prev: 1.1485325)
-2025.12.29 00:28:58.733	2025.06.11 23:42:00  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #15180):
-2025.12.29 00:28:58.733	2025.06.11 23:37:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.733	2025.06.11 23:37:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 16155
-2025.12.29 00:28:58.733	2025.06.11 23:37:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 16155
-2025.12.29 00:28:58.733	2025.06.11 23:37:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 98.12 | RSI(1): 98.12 | RSI(2): 95.63
-2025.12.29 00:28:58.733	2025.06.11 23:37:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.733	2025.06.11 23:37:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 1.1485825 (prev: 1.148505357142857)
-2025.12.29 00:28:58.733	2025.06.11 23:37:00  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #15156):
-2025.12.29 00:28:58.733	2025.06.11 23:32:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.733	2025.06.11 23:32:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 16132
-2025.12.29 00:28:58.733	2025.06.11 23:32:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 16132
-2025.12.29 00:28:58.733	2025.06.11 23:32:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 97.99 | RSI(1): 95.63 | RSI(2): 64.08
-2025.12.29 00:28:58.733	2025.06.11 23:32:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.733	2025.06.11 23:32:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 1.148500357142858 (prev: 1.148403253968255)
-2025.12.29 00:28:58.733	2025.06.11 23:32:00  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #15133):
-2025.12.29 00:28:58.733	2025.06.11 23:27:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.733	2025.06.11 23:27:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 16107
-2025.12.29 00:28:58.733	2025.06.11 23:27:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 16107
-2025.12.29 00:28:58.733	2025.06.11 23:27:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 97.25 | RSI(1): 64.08 | RSI(2): 64.08
-2025.12.29 00:28:58.733	2025.06.11 23:27:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 1.148355119047618)
-2025.12.29 00:28:58.733	2025.06.11 23:27:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 1.148443253968254 (prev: 1.148355119047618)
-2025.12.29 00:28:58.733	2025.06.11 23:27:00  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #15108):
-2025.12.29 00:28:58.733	2025.06.11 23:22:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.733	2025.06.11 23:22:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 16082
-2025.12.29 00:28:58.733	2025.06.11 23:22:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 16082
-2025.12.29 00:28:58.733	2025.06.11 23:22:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 64.08 | RSI(1): 64.08 | RSI(2): 75.43
-2025.12.29 00:28:58.733	2025.06.11 23:22:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 1.148355119047619 (prev: 1.148357222222222)
-2025.12.29 00:28:58.733	2025.06.11 23:22:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 2147483647.0 (prev: 1.148357222222222)
-2025.12.29 00:28:58.733	2025.06.11 23:22:00  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #15083):
-2025.12.29 00:28:58.733	2025.06.11 23:17:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.733	2025.06.11 23:17:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 16062
-2025.12.29 00:28:58.733	2025.06.11 23:17:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 16062
-2025.12.29 00:28:58.733	2025.06.11 23:17:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 79.13 | RSI(1): 75.43 | RSI(2): 55.89
-2025.12.29 00:28:58.733	2025.06.11 23:17:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.733	2025.06.11 23:17:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 1.148367222222222 (prev: 1.148333333333333)
-2025.12.29 00:28:58.733	2025.06.11 23:17:00  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #15063):
-2025.12.29 00:28:58.733	2025.06.11 23:12:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.733	2025.06.11 23:12:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 16037
-2025.12.29 00:28:58.733	2025.06.11 23:12:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 16037
-2025.12.29 00:28:58.733	2025.06.11 23:12:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 55.89 | RSI(1): 55.89 | RSI(2): 73.40
-2025.12.29 00:28:58.733	2025.06.11 23:12:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.733	2025.06.11 23:12:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 1.148308333333333 (prev: 1.148267619047619)
-2025.12.29 00:28:58.733	2025.06.11 23:12:00  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #15038):
-2025.12.29 00:28:58.733	2025.06.11 23:07:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.733	2025.06.11 23:07:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 16015
-2025.12.29 00:28:58.733	2025.06.11 23:07:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 16015
-2025.12.29 00:28:58.733	2025.06.11 23:07:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 51.77 | RSI(1): 73.40 | RSI(2): 28.71
-2025.12.29 00:28:58.733	2025.06.11 23:07:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.733	2025.06.11 23:07:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 1.148262619047619 (prev: 1.148178571428571)
-2025.12.29 00:28:58.733	2025.06.11 23:07:00  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #15016):
-2025.12.29 00:28:58.717	2025.06.11 23:02:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=true | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 23:02:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15990
-2025.12.29 00:28:58.717	2025.06.11 23:02:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15990
-2025.12.29 00:28:58.717	2025.06.11 23:02:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 10.71 | RSI(1): 28.71 | RSI(2): 9.75
-2025.12.29 00:28:58.717	2025.06.11 23:02:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 1.148058571428572 (prev: 1.148115992063493)
-2025.12.29 00:28:58.717	2025.06.11 23:02:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.717	2025.06.11 23:02:00  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14991):
-2025.12.29 00:28:58.717	2025.06.11 22:57:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 22:57:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15963
-2025.12.29 00:28:58.717	2025.06.11 22:57:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15963
-2025.12.29 00:28:58.717	2025.06.11 22:57:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 6.01 | RSI(1): 9.75 | RSI(2): 13.28
-2025.12.29 00:28:58.717	2025.06.11 22:57:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 1.148065992063491 (prev: 1.148213928571428)
-2025.12.29 00:28:58.717	2025.06.11 22:57:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.717	2025.06.11 22:57:00  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14964):
-2025.12.29 00:28:58.717	2025.06.11 22:52:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 22:52:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15936
-2025.12.29 00:28:58.717	2025.06.11 22:52:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15936
-2025.12.29 00:28:58.717	2025.06.11 22:52:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 22.62 | RSI(1): 13.28 | RSI(2): 85.89
-2025.12.29 00:28:58.717	2025.06.11 22:52:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 1.148253928571428 (prev: 1.148395436507936)
-2025.12.29 00:28:58.717	2025.06.11 22:52:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.717	2025.06.11 22:52:00  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14937):
-2025.12.29 00:28:58.717	2025.06.11 22:47:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 22:47:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15909
-2025.12.29 00:28:58.717	2025.06.11 22:47:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15909
-2025.12.29 00:28:58.717	2025.06.11 22:47:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 15.10 | RSI(1): 85.89 | RSI(2): 72.43
-2025.12.29 00:28:58.717	2025.06.11 22:47:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 1.148415436507936 (prev: 1.148508412698412)
-2025.12.29 00:28:58.717	2025.06.11 22:47:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 2147483647.0 (prev: 1.148508412698412)
-2025.12.29 00:28:58.717	2025.06.11 22:47:00  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14910):
-2025.12.29 00:28:58.717	2025.06.11 22:42:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 22:42:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15882
-2025.12.29 00:28:58.717	2025.06.11 22:42:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15882
-2025.12.29 00:28:58.717	2025.06.11 22:42:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 92.86 | RSI(1): 72.43 | RSI(2): 72.43
-2025.12.29 00:28:58.717	2025.06.11 22:42:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.717	2025.06.11 22:42:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 1.148558412698411 (prev: 1.148457103174602)
-2025.12.29 00:28:58.717	2025.06.11 22:42:00  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14883):
-2025.12.29 00:28:58.717	2025.06.11 22:37:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 22:37:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15854
-2025.12.29 00:28:58.717	2025.06.11 22:37:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15854
-2025.12.29 00:28:58.717	2025.06.11 22:37:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 74.83 | RSI(1): 72.43 | RSI(2): 27.38
-2025.12.29 00:28:58.717	2025.06.11 22:37:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.717	2025.06.11 22:37:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 1.148462103174603 (prev: 1.148417063492063)
-2025.12.29 00:28:58.717	2025.06.11 22:37:00  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14855):
-2025.12.29 00:28:58.717	2025.06.11 22:32:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 22:32:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15828
-2025.12.29 00:28:58.717	2025.06.11 22:32:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15828
-2025.12.29 00:28:58.717	2025.06.11 22:32:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 14.57 | RSI(1): 27.38 | RSI(2): 73.68
-2025.12.29 00:28:58.717	2025.06.11 22:32:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 1.148317063492063 (prev: 1.148386111111111)
-2025.12.29 00:28:58.717	2025.06.11 22:32:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 2147483647.0 (prev: 1.148386111111111)
-2025.12.29 00:28:58.717	2025.06.11 22:32:00  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14829):
-2025.12.29 00:28:58.717	2025.06.11 22:27:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 22:27:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15800
-2025.12.29 00:28:58.717	2025.06.11 22:27:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15800
-2025.12.29 00:28:58.717	2025.06.11 22:27:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 33.74 | RSI(1): 73.68 | RSI(2): 60.23
-2025.12.29 00:28:58.717	2025.06.11 22:27:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.717	2025.06.11 22:27:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 1.14840111111111 (prev: 1.148367896825396)
-2025.12.29 00:28:58.717	2025.06.11 22:27:00  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14801):
-2025.12.29 00:28:58.717	2025.06.11 22:22:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 22:22:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15773
-2025.12.29 00:28:58.717	2025.06.11 22:22:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15773
-2025.12.29 00:28:58.717	2025.06.11 22:22:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 60.23 | RSI(1): 60.23 | RSI(2): 35.53
-2025.12.29 00:28:58.717	2025.06.11 22:22:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.717	2025.06.11 22:22:00  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 1.148347896825396 (prev: 1.148272222222222)
-2025.12.29 00:28:58.717	2025.06.11 22:22:00  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14774):
-2025.12.29 00:28:58.717	2025.06.11 22:16:44  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 22:16:44  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15746
-2025.12.29 00:28:58.717	2025.06.11 22:16:44  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15746
-2025.12.29 00:28:58.717	2025.06.11 22:16:44  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 19.44 | RSI(1): 35.53 | RSI(2): 13.02
-2025.12.29 00:28:58.717	2025.06.11 22:16:44  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 1.148202222222221 (prev: 1.148228214285714)
-2025.12.29 00:28:58.717	2025.06.11 22:16:44  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.717	2025.06.11 22:16:44  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14747):
-2025.12.29 00:28:58.717	2025.06.11 22:11:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 22:11:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15718
-2025.12.29 00:28:58.717	2025.06.11 22:11:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15718
-2025.12.29 00:28:58.717	2025.06.11 22:11:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 8.36 | RSI(1): 13.02 | RSI(2): 18.99
-2025.12.29 00:28:58.717	2025.06.11 22:11:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 1.148163214285714 (prev: 1.14831865079365)
-2025.12.29 00:28:58.717	2025.06.11 22:11:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.717	2025.06.11 22:11:40  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14719):
-2025.12.29 00:28:58.717	2025.06.11 22:06:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 22:06:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15690
-2025.12.29 00:28:58.717	2025.06.11 22:06:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15690
-2025.12.29 00:28:58.717	2025.06.11 22:06:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 18.99 | RSI(1): 18.99 | RSI(2): 40.81
-2025.12.29 00:28:58.717	2025.06.11 22:06:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 1.14836365079365 (prev: 1.148514801587301)
-2025.12.29 00:28:58.717	2025.06.11 22:06:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.717	2025.06.11 22:06:40  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14691):
-2025.12.29 00:28:58.717	2025.06.11 22:01:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 22:01:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15662
-2025.12.29 00:28:58.717	2025.06.11 22:01:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15662
-2025.12.29 00:28:58.717	2025.06.11 22:01:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 22.42 | RSI(1): 40.81 | RSI(2): 76.29
-2025.12.29 00:28:58.717	2025.06.11 22:01:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 1.148544801587301 (prev: 1.14861619047619)
-2025.12.29 00:28:58.717	2025.06.11 22:01:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 2147483647.0 (prev: 1.14861619047619)
-2025.12.29 00:28:58.717	2025.06.11 22:01:40  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14663):
-2025.12.29 00:28:58.717	2025.06.11 21:56:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 21:56:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15634
-2025.12.29 00:28:58.717	2025.06.11 21:56:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15634
-2025.12.29 00:28:58.717	2025.06.11 21:56:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 84.83 | RSI(1): 76.29 | RSI(2): 23.43
-2025.12.29 00:28:58.717	2025.06.11 21:56:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.717	2025.06.11 21:56:40  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 1.14875619047619 (prev: 1.148537936507936)
-2025.12.29 00:28:58.717	2025.06.11 21:56:40  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14635):
-2025.12.29 00:28:58.717	2025.06.11 21:51:33  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 21:51:33  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15606
-2025.12.29 00:28:58.717	2025.06.11 21:51:33  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15606
-2025.12.29 00:28:58.717	2025.06.11 21:51:33  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 71.13 | RSI(1): 23.43 | RSI(2): 12.60
-2025.12.29 00:28:58.717	2025.06.11 21:51:33  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 1.148458452380952)
-2025.12.29 00:28:58.717	2025.06.11 21:51:33  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 1.148502936507936 (prev: 1.148458452380952)
-2025.12.29 00:28:58.717	2025.06.11 21:51:33  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14607):
-2025.12.29 00:28:58.717	2025.06.11 21:46:31  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 21:46:31  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15579
-2025.12.29 00:28:58.717	2025.06.11 21:46:31  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15579
-2025.12.29 00:28:58.717	2025.06.11 21:46:31  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 26.47 | RSI(1): 12.60 | RSI(2): 51.27
-2025.12.29 00:28:58.717	2025.06.11 21:46:31  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 1.148463452380952 (prev: 1.148553333333333)
-2025.12.29 00:28:58.717	2025.06.11 21:46:31  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.717	2025.06.11 21:46:31  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14580):
-2025.12.29 00:28:58.717	2025.06.11 21:41:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 21:41:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15555
-2025.12.29 00:28:58.717	2025.06.11 21:41:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15555
-2025.12.29 00:28:58.717	2025.06.11 21:41:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 73.84 | RSI(1): 51.27 | RSI(2): 39.71
-2025.12.29 00:28:58.717	2025.06.11 21:41:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.717	2025.06.11 21:41:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 1.148758333333333 (prev: 1.14856746031746)
-2025.12.29 00:28:58.717	2025.06.11 21:41:30  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14556):
-2025.12.29 00:28:58.717	2025.06.11 21:36:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=true | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 21:36:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15527
-2025.12.29 00:28:58.717	2025.06.11 21:36:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15527
-2025.12.29 00:28:58.717	2025.06.11 21:36:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 75.12 | RSI(1): 39.71 | RSI(2): 1.88
-2025.12.29 00:28:58.717	2025.06.11 21:36:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.717	2025.06.11 21:36:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 1.14866746031746 (prev: 1.14840626984127)
-2025.12.29 00:28:58.717	2025.06.11 21:36:30  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14528):
-2025.12.29 00:28:58.717	2025.06.11 21:31:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 21:31:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15498
-2025.12.29 00:28:58.717	2025.06.11 21:31:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15498
-2025.12.29 00:28:58.717	2025.06.11 21:31:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 1.88 | RSI(1): 1.88 | RSI(2): 2.74
-2025.12.29 00:28:58.717	2025.06.11 21:31:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 1.14834126984127 (prev: 1.148403650793651)
-2025.12.29 00:28:58.717	2025.06.11 21:31:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.717	2025.06.11 21:31:30  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14499):
-2025.12.29 00:28:58.717	2025.06.11 21:26:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 21:26:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15469
-2025.12.29 00:28:58.717	2025.06.11 21:26:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15469
-2025.12.29 00:28:58.717	2025.06.11 21:26:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 12.02 | RSI(1): 2.74 | RSI(2): 4.01
-2025.12.29 00:28:58.717	2025.06.11 21:26:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 1.148483650793651 (prev: 1.148720753968254)
-2025.12.29 00:28:58.717	2025.06.11 21:26:30  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.717	2025.06.11 21:26:30  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14470):
-2025.12.29 00:28:58.717	2025.06.11 21:21:21  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 21:21:21  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15441
-2025.12.29 00:28:58.717	2025.06.11 21:21:21  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15441
-2025.12.29 00:28:58.717	2025.06.11 21:21:21  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 3.13 | RSI(1): 4.01 | RSI(2): 16.62
-2025.12.29 00:28:58.717	2025.06.11 21:21:21  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 1.148755753968254 (prev: 1.149241984126985)
-2025.12.29 00:28:58.717	2025.06.11 21:21:21  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.717	2025.06.11 21:21:21  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14442):
-2025.12.29 00:28:58.717	2025.06.11 21:16:20  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.717	2025.06.11 21:16:20  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15414
-2025.12.29 00:28:58.717	2025.06.11 21:16:20  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 15414
-2025.12.29 00:28:58.717	2025.06.11 21:16:20  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 7.47 | RSI(1): 16.62 | RSI(2): 82.83
-2025.12.29 00:28:58.717	2025.06.11 21:16:20  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 1.149421984126985 (prev: 1.149742857142858)
-2025.12.29 00:28:58.717	2025.06.11 21:16:20  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.717	2025.06.11 21:16:20  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #14415):
-2025.12.29 00:28:58.717	2025.06.11 21:11:20  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=true
-2025.12.29 00:28:58.717	2025.06.11 21:11:20  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 15387
-2025.12.29 00:28:58.591	2025.06.10 13:42:31  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
-2025.12.29 00:28:58.591	2025.06.10 13:42:31  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA bajista: 5256
-2025.12.29 00:28:58.591	2025.06.10 13:42:31  Martim_ProtectorEA_V6.11 EURUSD,M5:    Barras desde HMA alcista: 5256
-2025.12.29 00:28:58.591	2025.06.10 13:42:31  Martim_ProtectorEA_V6.11 EURUSD,M5:    RSI(0): 76.55 | RSI(1): 72.66 | RSI(2): 42.40
-2025.12.29 00:28:58.591	2025.06.10 13:42:31  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
-2025.12.29 00:28:58.591	2025.06.10 13:42:31  Martim_ProtectorEA_V6.11 EURUSD,M5:    HMA up: 1.142193134920635 (prev: 1.142115)
-2025.12.29 00:28:58.591	2025.06.10 13:42:31  Martim_ProtectorEA_V6.11 EURUSD,M5: ?? Estado indicadores (evaluación #4257):
-2025.12.29 00:28:58.591	2025.06.10 13:37:31  Martim_ProtectorEA_V6.11 EURUSD,M5:    Cruces RSI: UP=false | DOWN=true
-2025.12.29 00:28:42.157	Expert Martim_ProtectorEA_V6.11 EURUSD,M5: loaded successfully
-2025.12.29 00:28:42.141	Expert Martim_ProtectorEA_V6.10 EURUSD,M5: removed
+2025.12.29 01:54:34.424	EURUSD,M5: 100432 tick events (576 bars, 101432 bar states) processed in 0:00:00.235 (total time 0:00:00.266)
+2025.12.29 01:54:34.424	2025.06.11 23:59:48  Martim_ProtectorEA_V6.13 EURUSD,M5: Martim V6.13 detenido. Reason: 0
+2025.12.29 01:54:34.424	2025.06.11 23:59:48  Tester: order #16 is closed
+2025.12.29 01:54:34.424	2025.06.11 23:59:48  Tester: order #18 is closed
+2025.12.29 01:54:34.424	2025.06.11 21:56:45  Martim_ProtectorEA_V6.13 EURUSD,M5: ? H2 activado: 18
+2025.12.29 01:54:34.424	2025.06.11 21:56:45  Martim_ProtectorEA_V6.13 EURUSD,M5: open #18 buy 0.03 EURUSD at 1.14889 ok
+2025.12.29 01:54:34.424	2025.06.11 21:56:45  Martim_ProtectorEA_V6.13 EURUSD,M5: close #17 sell 0.02 EURUSD at 1.14865 at price 1.14889
+2025.12.29 01:54:34.424	2025.06.11 21:56:45  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? TO recuperó 1.10p ? TRANSICIÓN H2
+2025.12.29 01:54:34.424	2025.06.11 21:43:05  Martim_ProtectorEA_V6.13 EURUSD,M5: ? H1 activado: 17
+2025.12.29 01:54:34.424	2025.06.11 21:43:05  Martim_ProtectorEA_V6.13 EURUSD,M5: open #17 sell 0.02 EURUSD at 1.14865 ok
+2025.12.29 01:54:34.424	2025.06.11 21:43:05  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? ACTIVAR H1: TO perdiendo -1.10p
+2025.12.29 01:54:34.424	2025.06.11 21:35:00  Martim_ProtectorEA_V6.13 EURUSD,M5: ? TO abierto: 16 | BUY
+2025.12.29 01:54:34.424	2025.06.11 21:35:00  Martim_ProtectorEA_V6.13 EURUSD,M5: open #16 buy 0.01 EURUSD at 1.14876 ok
+2025.12.29 01:54:34.424	2025.06.11 21:35:00  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(2): 1.88 | RSI(1): 39.71
+2025.12.29 01:54:34.424	2025.06.11 21:35:00  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? SEÑAL BUY: HMA cambió hace 2 barras + RSI cruzó 10
+2025.12.29 01:54:34.424	2025.06.11 21:34:33  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 21:32:30  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
+2025.12.29 01:54:34.424	2025.06.11 21:32:30  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA bajista: 4473
+2025.12.29 01:54:34.424	2025.06.11 21:32:30  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 235
+2025.12.29 01:54:34.424	2025.06.11 21:32:30  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 1.23 | RSI(1): 1.88 | RSI(2): 2.74
+2025.12.29 01:54:34.424	2025.06.11 21:32:30  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 1.14828626984127 (prev: 1.148403650793651)
+2025.12.29 01:54:34.424	2025.06.11 21:32:30  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
+2025.12.29 01:54:34.424	2025.06.11 21:32:30  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #3474):
+2025.12.29 01:54:34.424	2025.06.11 21:27:30  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
+2025.12.29 01:54:34.424	2025.06.11 21:27:30  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA bajista: 4444
+2025.12.29 01:54:34.424	2025.06.11 21:27:30  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 206
+2025.12.29 01:54:34.424	2025.06.11 21:27:30  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 2.20 | RSI(1): 2.74 | RSI(2): 4.01
+2025.12.29 01:54:34.424	2025.06.11 21:27:30  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 1.148433650793651 (prev: 1.148720753968254)
+2025.12.29 01:54:34.424	2025.06.11 21:27:30  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
+2025.12.29 01:54:34.424	2025.06.11 21:27:30  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #3445):
+2025.12.29 01:54:34.424	2025.06.11 21:22:30  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
+2025.12.29 01:54:34.424	2025.06.11 21:22:30  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA bajista: 4416
+2025.12.29 01:54:34.424	2025.06.11 21:22:30  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 178
+2025.12.29 01:54:34.424	2025.06.11 21:22:30  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 3.55 | RSI(1): 4.01 | RSI(2): 16.62
+2025.12.29 01:54:34.424	2025.06.11 21:22:30  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 1.148785753968254 (prev: 1.149241984126985)
+2025.12.29 01:54:34.424	2025.06.11 21:22:30  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
+2025.12.29 01:54:34.424	2025.06.11 21:22:30  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #3417):
+2025.12.29 01:54:34.424	2025.06.11 21:17:21  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
+2025.12.29 01:54:34.424	2025.06.11 21:17:21  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA bajista: 4388
+2025.12.29 01:54:34.424	2025.06.11 21:17:21  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 150
+2025.12.29 01:54:34.424	2025.06.11 21:17:21  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 6.27 | RSI(1): 16.62 | RSI(2): 82.83
+2025.12.29 01:54:34.424	2025.06.11 21:17:21  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 1.149381984126985 (prev: 1.149742857142858)
+2025.12.29 01:54:34.424	2025.06.11 21:17:21  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
+2025.12.29 01:54:34.424	2025.06.11 21:17:21  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #3389):
+2025.12.29 01:54:34.424	2025.06.11 21:12:12  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=false | DOWN=true
+2025.12.29 01:54:34.424	2025.06.11 21:12:12  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA bajista: 4360
+2025.12.29 01:54:34.424	2025.06.11 21:12:12  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 122
+2025.12.29 01:54:34.424	2025.06.11 21:12:12  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 40.16 | RSI(1): 82.83 | RSI(2): 95.52
+2025.12.29 01:54:34.424	2025.06.11 21:12:12  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 1.149852857142856 (prev: 1.149901904761904)
+2025.12.29 01:54:34.424	2025.06.11 21:12:12  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 2147483647.0 (prev: 1.149901904761904)
+2025.12.29 01:54:34.424	2025.06.11 21:12:12  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #3361):
+2025.12.29 01:54:34.424	2025.06.11 21:07:10  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
+2025.12.29 01:54:34.424	2025.06.11 21:07:10  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA bajista: 4332
+2025.12.29 01:54:34.424	2025.06.11 21:07:10  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 94
+2025.12.29 01:54:34.424	2025.06.11 21:07:10  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 96.12 | RSI(1): 95.52 | RSI(2): 91.08
+2025.12.29 01:54:34.424	2025.06.11 21:07:10  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
+2025.12.29 01:54:34.424	2025.06.11 21:07:10  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 1.149921904761904 (prev: 1.14982873015873)
+2025.12.29 01:54:34.424	2025.06.11 21:07:10  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #3333):
+2025.12.29 01:54:34.424	2025.06.11 21:02:10  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
+2025.12.29 01:54:34.424	2025.06.11 21:02:10  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA bajista: 4304
+2025.12.29 01:54:34.424	2025.06.11 21:02:10  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 66
+2025.12.29 01:54:34.424	2025.06.11 21:02:10  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 96.12 | RSI(1): 91.08 | RSI(2): 77.12
+2025.12.29 01:54:34.424	2025.06.11 21:02:10  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
+2025.12.29 01:54:34.424	2025.06.11 21:02:10  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 1.14984873015873 (prev: 1.149690277777778)
+2025.12.29 01:54:34.424	2025.06.11 21:02:10  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #3305):
+2025.12.29 01:54:34.424	2025.06.11 20:57:10  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
+2025.12.29 01:54:34.424	2025.06.11 20:57:10  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA bajista: 4275
+2025.12.29 01:54:34.424	2025.06.11 20:57:10  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 37
+2025.12.29 01:54:34.424	2025.06.11 20:57:10  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 93.17 | RSI(1): 77.12 | RSI(2): 77.12
+2025.12.29 01:54:34.424	2025.06.11 20:57:10  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
+2025.12.29 01:54:34.424	2025.06.11 20:57:10  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 1.149730277777779 (prev: 1.149544841269842)
+2025.12.29 01:54:34.424	2025.06.11 20:57:10  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #3276):
+2025.12.29 01:54:34.424	2025.06.11 20:52:07  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
+2025.12.29 01:54:34.424	2025.06.11 20:52:07  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA bajista: 4250
+2025.12.29 01:54:34.424	2025.06.11 20:52:07  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 12
+2025.12.29 01:54:34.424	2025.06.11 20:52:07  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 78.19 | RSI(1): 77.12 | RSI(2): 65.22
+2025.12.29 01:54:34.424	2025.06.11 20:52:07  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
+2025.12.29 01:54:34.424	2025.06.11 20:52:07  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 1.149549841269841 (prev: 1.149361825396825)
+2025.12.29 01:54:34.424	2025.06.11 20:52:07  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #3251):
+2025.12.29 01:54:34.424	2025.06.11 20:49:43  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:49:33  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:49:22  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:49:12  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:49:00  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:48:45  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:48:35  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:48:23  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:48:13  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:48:02  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:47:52  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:47:42  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:47:30  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:47:20  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:47:10  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:47:00  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=true | DOWN=false
+2025.12.29 01:54:34.424	2025.06.11 20:47:00  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA bajista: 4223
+2025.12.29 01:54:34.424	2025.06.11 20:47:00  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 0
+2025.12.29 01:54:34.424	2025.06.11 20:47:00  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 62.88 | RSI(1): 65.22 | RSI(2): 9.98
+2025.12.29 01:54:34.424	2025.06.11 20:47:00  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 1.149187063492063)
+2025.12.29 01:54:34.424	2025.06.11 20:47:00  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 1.149286825396825 (prev: 1.149187063492063)
+2025.12.29 01:54:34.424	2025.06.11 20:47:00  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #3224):
+2025.12.29 01:54:34.424	2025.06.11 20:47:00  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:46:39  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:46:24  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:46:12  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:46:00  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:45:45  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:45:35  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:45:22  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:45:12  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:45:00  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:42:00  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
+2025.12.29 01:54:34.424	2025.06.11 20:42:00  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA bajista: 4199
+2025.12.29 01:54:34.424	2025.06.11 20:42:00  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 93
+2025.12.29 01:54:34.424	2025.06.11 20:42:00  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 24.51 | RSI(1): 9.98 | RSI(2): 30.58
+2025.12.29 01:54:34.424	2025.06.11 20:42:00  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 1.149042063492064 (prev: 1.14923630952381)
+2025.12.29 01:54:34.424	2025.06.11 20:42:00  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
+2025.12.29 01:54:34.424	2025.06.11 20:42:00  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #3200):
+2025.12.29 01:54:34.424	2025.06.11 20:36:50  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
+2025.12.29 01:54:34.424	2025.06.11 20:36:50  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA bajista: 4172
+2025.12.29 01:54:34.424	2025.06.11 20:36:50  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 66
+2025.12.29 01:54:34.424	2025.06.11 20:36:50  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 12.74 | RSI(1): 30.58 | RSI(2): 63.19
+2025.12.29 01:54:34.424	2025.06.11 20:36:50  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 1.149281309523809 (prev: 1.149473174603174)
+2025.12.29 01:54:34.424	2025.06.11 20:36:50  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
+2025.12.29 01:54:34.424	2025.06.11 20:36:50  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #3173):
+2025.12.29 01:54:34.424	2025.06.11 20:31:42  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
+2025.12.29 01:54:34.424	2025.06.11 20:31:42  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA bajista: 4144
+2025.12.29 01:54:34.424	2025.06.11 20:31:42  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 38
+2025.12.29 01:54:34.424	2025.06.11 20:31:42  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 39.27 | RSI(1): 63.19 | RSI(2): 78.06
+2025.12.29 01:54:34.424	2025.06.11 20:31:42  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 1.149503174603174 (prev: 1.149521111111111)
+2025.12.29 01:54:34.424	2025.06.11 20:31:42  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 2147483647.0 (prev: 1.149521111111111)
+2025.12.29 01:54:34.424	2025.06.11 20:31:42  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #3145):
+2025.12.29 01:54:34.424	2025.06.11 20:26:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
+2025.12.29 01:54:34.424	2025.06.11 20:26:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA bajista: 4116
+2025.12.29 01:54:34.424	2025.06.11 20:26:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 10
+2025.12.29 01:54:34.424	2025.06.11 20:26:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 58.72 | RSI(1): 78.06 | RSI(2): 43.51
+2025.12.29 01:54:34.424	2025.06.11 20:26:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
+2025.12.29 01:54:34.424	2025.06.11 20:26:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 1.149511111111111 (prev: 1.149439563492063)
+2025.12.29 01:54:34.424	2025.06.11 20:26:40  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #3117):
+2025.12.29 01:54:34.424	2025.06.11 20:24:50  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:24:40  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:24:30  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:24:20  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:24:10  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:24:00  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:23:42  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:23:32  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:23:22  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:23:12  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:23:02  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:22:50  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:22:40  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:22:30  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:22:20  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:22:10  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:22:00  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:21:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
+2025.12.29 01:54:34.424	2025.06.11 20:21:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA bajista: 4089
+2025.12.29 01:54:34.424	2025.06.11 20:21:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 90
+2025.12.29 01:54:34.424	2025.06.11 20:21:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 61.95 | RSI(1): 43.51 | RSI(2): 65.24
+2025.12.29 01:54:34.424	2025.06.11 20:21:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 1.149349563492063 (prev: 1.149357738095238)
+2025.12.29 01:54:34.424	2025.06.11 20:21:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
+2025.12.29 01:54:34.424	2025.06.11 20:21:40  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #3090):
+2025.12.29 01:54:34.424	2025.06.11 20:16:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
+2025.12.29 01:54:34.424	2025.06.11 20:16:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA bajista: 4063
+2025.12.29 01:54:34.424	2025.06.11 20:16:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 64
+2025.12.29 01:54:34.424	2025.06.11 20:16:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 47.85 | RSI(1): 65.24 | RSI(2): 47.29
+2025.12.29 01:54:34.424	2025.06.11 20:16:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
+2025.12.29 01:54:34.424	2025.06.11 20:16:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 1.149372738095238 (prev: 1.149366150793651)
+2025.12.29 01:54:34.424	2025.06.11 20:16:40  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #3064):
+2025.12.29 01:54:34.424	2025.06.11 20:11:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
+2025.12.29 01:54:34.424	2025.06.11 20:11:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA bajista: 4036
+2025.12.29 01:54:34.424	2025.06.11 20:11:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 37
+2025.12.29 01:54:34.424	2025.06.11 20:11:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 37.08 | RSI(1): 47.29 | RSI(2): 74.06
+2025.12.29 01:54:34.424	2025.06.11 20:11:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 1.149251150793651 (prev: 1.149252301587301)
+2025.12.29 01:54:34.424	2025.06.11 20:11:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 2147483647.0 (prev: 1.149252301587301)
+2025.12.29 01:54:34.424	2025.06.11 20:11:40  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #3037):
+2025.12.29 01:54:34.424	2025.06.11 20:06:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
+2025.12.29 01:54:34.424	2025.06.11 20:06:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA bajista: 4009
+2025.12.29 01:54:34.424	2025.06.11 20:06:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 10
+2025.12.29 01:54:34.424	2025.06.11 20:06:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 48.97 | RSI(1): 74.06 | RSI(2): 13.25
+2025.12.29 01:54:34.424	2025.06.11 20:06:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
+2025.12.29 01:54:34.424	2025.06.11 20:06:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 1.149262301587301 (prev: 1.14914996031746)
+2025.12.29 01:54:34.424	2025.06.11 20:06:40  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #3010):
+2025.12.29 01:54:34.424	2025.06.11 20:04:50  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:04:40  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:04:30  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:04:20  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.424	2025.06.11 20:01:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
+2025.12.29 01:54:34.424	2025.06.11 20:01:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA bajista: 3982
+2025.12.29 01:54:34.424	2025.06.11 20:01:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 82
+2025.12.29 01:54:34.424	2025.06.11 20:01:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 11.67 | RSI(1): 13.25 | RSI(2): 51.72
+2025.12.29 01:54:34.424	2025.06.11 20:01:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 1.14887496031746 (prev: 1.149079365079365)
+2025.12.29 01:54:34.424	2025.06.11 20:01:40  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
+2025.12.29 01:54:34.424	2025.06.11 20:01:40  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #2983):
+2025.12.29 01:54:34.424	2025.06.11 19:56:34  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
+2025.12.29 01:54:34.424	2025.06.11 19:56:34  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA bajista: 3955
+2025.12.29 01:54:34.424	2025.06.11 19:56:34  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 55
+2025.12.29 01:54:34.424	2025.06.11 19:56:34  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 51.72 | RSI(1): 51.72 | RSI(2): 56.71
+2025.12.29 01:54:34.424	2025.06.11 19:56:34  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 1.149244365079365 (prev: 1.149287182539682)
+2025.12.29 01:54:34.424	2025.06.11 19:56:34  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
+2025.12.29 01:54:34.424	2025.06.11 19:56:34  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #2956):
+2025.12.29 01:54:34.424	2025.06.11 19:51:24  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=false | DOWN=false
+2025.12.29 01:54:34.424	2025.06.11 19:51:24  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA bajista: 3928
+2025.12.29 01:54:34.424	2025.06.11 19:51:24  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 28
+2025.12.29 01:54:34.424	2025.06.11 19:51:24  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 42.39 | RSI(1): 56.71 | RSI(2): 41.07
+2025.12.29 01:54:34.424	2025.06.11 19:51:24  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 1.149262182539682 (prev: 1.149426746031745)
+2025.12.29 01:54:34.424	2025.06.11 19:51:24  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 2147483647.0 (prev: 2147483647.0)
+2025.12.29 01:54:34.424	2025.06.11 19:51:24  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #2929):
+2025.12.29 01:54:34.409	2025.06.11 19:46:16  Martim_ProtectorEA_V6.13 EURUSD,M5:    Cruces RSI: UP=false | DOWN=true
+2025.12.29 01:54:34.252	2025.06.10 00:21:00  Martim_ProtectorEA_V6.13 EURUSD,M5:    Barras desde HMA alcista: 1
+2025.12.29 01:54:34.252	2025.06.10 00:21:00  Martim_ProtectorEA_V6.13 EURUSD,M5:    RSI(0): 64.16 | RSI(1): 67.05 | RSI(2): 37.34
+2025.12.29 01:54:34.252	2025.06.10 00:21:00  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA dn: 2147483647.0 (prev: 2147483647.0)
+2025.12.29 01:54:34.252	2025.06.10 00:21:00  Martim_ProtectorEA_V6.13 EURUSD,M5:    HMA up: 1.141883373015874 (prev: 1.141797301587302)
+2025.12.29 01:54:34.252	2025.06.10 00:21:00  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? Estado indicadores (evaluación #51):
+2025.12.29 01:54:34.252	2025.06.10 00:19:59  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.252	2025.06.10 00:19:00  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:34.252	2025.06.10 00:17:59  Martim_ProtectorEA_V6.13 EURUSD,M5: ?? HMA CAMBIÓ A ALCISTA - Contador reseteado
+2025.12.29 01:54:24.938	Expert Martim_ProtectorEA_V6.13 EURUSD,M5: loaded successfully
+2025.12.29 01:54:24.922	Expert Martim_ProtectorEA_V6.4 EURUSD,M5: removed
+2025.12.29 01:06:07.678	EURUSD,M5: 100432 tick events (576 bars, 101432 bar states) processed in 0:00:00.485 (total time 0:00:00.500)
+2025.12.29 01:06:07.678	2025.06.11 23:59:48  Martim_ProtectorEA_V6.4 EURUSD,M5: Martim V6 detenido. Grupos activos: 1
+2025.12.29 01:06:07.678	2025.06.11 23:59:48  Tester: order #37 is closed
+2025.12.29 01:06:07.631	2025.06.11 10:20:03  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Test Signal: BUY ticket 37
+2025.12.29 01:06:07.631	2025.06.11 10:20:03  Martim_ProtectorEA_V6.4 EURUSD,M5: open #37 buy 0.01 EURUSD at 1.14079 ok
+2025.12.29 01:06:07.631	2025.06.11 10:20:00  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Grupo cerrado. Profit final: 930.00 pips
+2025.12.29 01:06:07.631	2025.06.11 10:20:00  Martim_ProtectorEA_V6.4 EURUSD,M5: close #36 sell 0.03 EURUSD at 1.14107 at price 1.14080
+2025.12.29 01:06:07.631	2025.06.11 10:20:00  Martim_ProtectorEA_V6.4 EURUSD,M5: close #34 sell 0.01 EURUSD at 1.14120 at price 1.14080
+2025.12.29 01:06:07.631	2025.06.11 10:20:00  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.29 01:06:07.600	2025.06.11 09:27:26  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge2 activado. Ticket: 36 Type: SELL
+2025.12.29 01:06:07.600	2025.06.11 09:27:26  Martim_ProtectorEA_V6.4 EURUSD,M5: open #36 sell 0.03 EURUSD at 1.14107 ok
+2025.12.29 01:06:07.600	2025.06.11 09:27:26  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 cerrado. Ticket: 35
+2025.12.29 01:06:07.600	2025.06.11 09:27:26  Martim_ProtectorEA_V6.4 EURUSD,M5: close #35 buy 0.02 EURUSD at 1.14131 at price 1.14107
+2025.12.29 01:06:07.600	2025.06.11 09:27:26  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.29 01:06:07.600	2025.06.11 05:30:14  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 activado. Ticket: 35 Type: BUY
+2025.12.29 01:06:07.600	2025.06.11 05:30:14  Martim_ProtectorEA_V6.4 EURUSD,M5: open #35 buy 0.02 EURUSD at 1.14131 ok
+2025.12.29 01:06:07.600	2025.06.11 05:30:14  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.29 01:06:07.600	2025.06.11 05:25:02  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Test Signal: SELL ticket 34
+2025.12.29 01:06:07.600	2025.06.11 05:25:02  Martim_ProtectorEA_V6.4 EURUSD,M5: open #34 sell 0.01 EURUSD at 1.14120 ok
+2025.12.29 01:06:07.600	2025.06.11 05:25:00  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Grupo cerrado. Profit final: 160.00 pips
+2025.12.29 01:06:07.600	2025.06.11 05:25:00  Martim_ProtectorEA_V6.4 EURUSD,M5: close #33 buy 0.03 EURUSD at 1.14110 at price 1.14118
+2025.12.29 01:06:07.600	2025.06.11 05:25:00  Martim_ProtectorEA_V6.4 EURUSD,M5: close #31 buy 0.01 EURUSD at 1.14098 at price 1.14118
+2025.12.29 01:06:07.600	2025.06.11 05:25:00  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.29 01:06:07.584	2025.06.11 05:09:43  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge2 activado. Ticket: 33 Type: BUY
+2025.12.29 01:06:07.584	2025.06.11 05:09:43  Martim_ProtectorEA_V6.4 EURUSD,M5: open #33 buy 0.03 EURUSD at 1.14110 ok
+2025.12.29 01:06:07.584	2025.06.11 05:09:43  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 cerrado. Ticket: 32
+2025.12.29 01:06:07.584	2025.06.11 05:09:43  Martim_ProtectorEA_V6.4 EURUSD,M5: close #32 sell 0.02 EURUSD at 1.14087 at price 1.14110
+2025.12.29 01:06:07.584	2025.06.11 05:09:43  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.29 01:06:07.584	2025.06.11 05:05:16  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 activado. Ticket: 32 Type: SELL
+2025.12.29 01:06:07.584	2025.06.11 05:05:16  Martim_ProtectorEA_V6.4 EURUSD,M5: open #32 sell 0.02 EURUSD at 1.14087 ok
+2025.12.29 01:06:07.584	2025.06.11 05:05:16  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.29 01:06:07.584	2025.06.11 05:05:01  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Test Signal: BUY ticket 31
+2025.12.29 01:06:07.584	2025.06.11 05:05:01  Martim_ProtectorEA_V6.4 EURUSD,M5: open #31 buy 0.01 EURUSD at 1.14098 ok
+2025.12.29 01:06:07.584	2025.06.11 05:05:00  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Grupo cerrado. Profit final: 4850.00 pips
+2025.12.29 01:06:07.584	2025.06.11 05:05:00  Martim_ProtectorEA_V6.4 EURUSD,M5: close #30 sell 0.03 EURUSD at 1.14225 at price 1.14100
+2025.12.29 01:06:07.584	2025.06.11 05:05:00  Martim_ProtectorEA_V6.4 EURUSD,M5: close #28 sell 0.01 EURUSD at 1.14238 at price 1.14100
+2025.12.29 01:06:07.584	2025.06.11 05:05:00  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.29 01:06:07.584	2025.06.11 04:34:03  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge2 activado. Ticket: 30 Type: SELL
+2025.12.29 01:06:07.584	2025.06.11 04:34:03  Martim_ProtectorEA_V6.4 EURUSD,M5: open #30 sell 0.03 EURUSD at 1.14225 ok
+2025.12.29 01:06:07.584	2025.06.11 04:34:03  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 cerrado. Ticket: 29
+2025.12.29 01:06:07.584	2025.06.11 04:34:03  Martim_ProtectorEA_V6.4 EURUSD,M5: close #29 buy 0.02 EURUSD at 1.14249 at price 1.14225
+2025.12.29 01:06:07.584	2025.06.11 04:34:03  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.29 01:06:07.584	2025.06.11 04:31:40  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 activado. Ticket: 29 Type: BUY
+2025.12.29 01:06:07.584	2025.06.11 04:31:40  Martim_ProtectorEA_V6.4 EURUSD,M5: open #29 buy 0.02 EURUSD at 1.14249 ok
+2025.12.29 01:06:07.584	2025.06.11 04:31:40  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.29 01:06:07.584	2025.06.11 04:26:21  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Test Signal: SELL ticket 28
+2025.12.29 01:06:07.584	2025.06.11 04:26:21  Martim_ProtectorEA_V6.4 EURUSD,M5: open #28 sell 0.01 EURUSD at 1.14238 ok
+2025.12.29 01:06:07.584	2025.06.11 04:26:20  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Grupo cerrado. Profit final: 200.00 pips
+2025.12.29 01:06:07.584	2025.06.11 04:26:20  Martim_ProtectorEA_V6.4 EURUSD,M5: close #27 buy 0.03 EURUSD at 1.14228 at price 1.14237
+2025.12.29 01:06:07.584	2025.06.11 04:26:20  Martim_ProtectorEA_V6.4 EURUSD,M5: close #25 buy 0.01 EURUSD at 1.14216 at price 1.14237
+2025.12.29 01:06:07.584	2025.06.11 04:26:20  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.29 01:06:07.569	2025.06.11 04:15:28  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge2 activado. Ticket: 27 Type: BUY
+2025.12.29 01:06:07.569	2025.06.11 04:15:28  Martim_ProtectorEA_V6.4 EURUSD,M5: open #27 buy 0.03 EURUSD at 1.14228 ok
+2025.12.29 01:06:07.569	2025.06.11 04:15:28  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 cerrado. Ticket: 26
+2025.12.29 01:06:07.569	2025.06.11 04:15:28  Martim_ProtectorEA_V6.4 EURUSD,M5: close #26 sell 0.02 EURUSD at 1.14205 at price 1.14228
+2025.12.29 01:06:07.569	2025.06.11 04:15:28  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.29 01:06:07.569	2025.06.11 04:12:27  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 activado. Ticket: 26 Type: SELL
+2025.12.29 01:06:07.569	2025.06.11 04:12:27  Martim_ProtectorEA_V6.4 EURUSD,M5: open #26 sell 0.02 EURUSD at 1.14205 ok
+2025.12.29 01:06:07.569	2025.06.11 04:12:27  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.29 01:06:07.569	2025.06.11 04:09:16  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Test Signal: BUY ticket 25
+2025.12.29 01:06:07.569	2025.06.11 04:09:16  Martim_ProtectorEA_V6.4 EURUSD,M5: open #25 buy 0.01 EURUSD at 1.14216 ok
+2025.12.29 01:06:07.569	2025.06.11 04:09:15  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Grupo cerrado. Profit final: 1580.00 pips
+2025.12.29 01:06:07.569	2025.06.11 04:09:15  Martim_ProtectorEA_V6.4 EURUSD,M5: close #24 sell 0.03 EURUSD at 1.14257 at price 1.14214
+2025.12.29 01:06:07.569	2025.06.11 04:09:15  Martim_ProtectorEA_V6.4 EURUSD,M5: close #22 sell 0.01 EURUSD at 1.14271 at price 1.14214
+2025.12.29 01:06:07.569	2025.06.11 04:09:15  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.29 01:06:07.538	2025.06.11 01:38:40  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge2 activado. Ticket: 24 Type: SELL
+2025.12.29 01:06:07.538	2025.06.11 01:38:40  Martim_ProtectorEA_V6.4 EURUSD,M5: open #24 sell 0.03 EURUSD at 1.14257 ok
+2025.12.29 01:06:07.538	2025.06.11 01:38:40  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 cerrado. Ticket: 23
+2025.12.29 01:06:07.538	2025.06.11 01:38:40  Martim_ProtectorEA_V6.4 EURUSD,M5: close #23 buy 0.02 EURUSD at 1.14282 at price 1.14257
+2025.12.29 01:06:07.538	2025.06.11 01:38:40  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.29 01:06:07.538	2025.06.11 01:20:24  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 activado. Ticket: 23 Type: BUY
+2025.12.29 01:06:07.538	2025.06.11 01:20:24  Martim_ProtectorEA_V6.4 EURUSD,M5: open #23 buy 0.02 EURUSD at 1.14282 ok
+2025.12.29 01:06:07.538	2025.06.11 01:20:24  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.29 01:06:07.538	2025.06.11 01:15:03  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Test Signal: SELL ticket 22
+2025.12.29 01:06:07.538	2025.06.11 01:15:03  Martim_ProtectorEA_V6.4 EURUSD,M5: open #22 sell 0.01 EURUSD at 1.14271 ok
+2025.12.29 01:06:07.538	2025.06.11 01:15:00  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Grupo cerrado. Profit final: 1007.44 pips
+2025.12.29 01:06:07.538	2025.06.11 01:15:00  Martim_ProtectorEA_V6.4 EURUSD,M5: close #21 buy 0.03 EURUSD at 1.14231 at price 1.14270
+2025.12.29 01:06:07.538	2025.06.11 01:15:00  Martim_ProtectorEA_V6.4 EURUSD,M5: close #19 buy 0.01 EURUSD at 1.14219 at price 1.14270
+2025.12.29 01:06:07.538	2025.06.11 01:15:00  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.29 01:06:07.522	2025.06.10 23:48:15  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge2 activado. Ticket: 21 Type: BUY
+2025.12.29 01:06:07.522	2025.06.10 23:48:15  Martim_ProtectorEA_V6.4 EURUSD,M5: open #21 buy 0.03 EURUSD at 1.14231 ok
+2025.12.29 01:06:07.522	2025.06.10 23:48:15  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 cerrado. Ticket: 20
+2025.12.29 01:06:07.522	2025.06.10 23:48:15  Martim_ProtectorEA_V6.4 EURUSD,M5: close #20 sell 0.02 EURUSD at 1.14208 at price 1.14231
+2025.12.29 01:06:07.522	2025.06.10 23:48:15  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.29 01:06:07.522	2025.06.10 23:35:43  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 activado. Ticket: 20 Type: SELL
+2025.12.29 01:06:07.522	2025.06.10 23:35:43  Martim_ProtectorEA_V6.4 EURUSD,M5: open #20 sell 0.02 EURUSD at 1.14208 ok
+2025.12.29 01:06:07.522	2025.06.10 23:35:43  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.29 01:06:07.522	2025.06.10 23:35:06  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Test Signal: BUY ticket 19
+2025.12.29 01:06:07.522	2025.06.10 23:35:06  Martim_ProtectorEA_V6.4 EURUSD,M5: open #19 buy 0.01 EURUSD at 1.14219 ok
+2025.12.29 01:06:07.522	2025.06.10 23:35:00  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Grupo cerrado. Profit final: 1330.00 pips
+2025.12.29 01:06:07.522	2025.06.10 23:35:00  Martim_ProtectorEA_V6.4 EURUSD,M5: close #18 sell 0.03 EURUSD at 1.14255 at price 1.14218
+2025.12.29 01:06:07.522	2025.06.10 23:35:00  Martim_ProtectorEA_V6.4 EURUSD,M5: close #16 sell 0.01 EURUSD at 1.14268 at price 1.14218
+2025.12.29 01:06:07.522	2025.06.10 23:35:00  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.29 01:06:07.506	2025.06.10 22:57:28  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge2 activado. Ticket: 18 Type: SELL
+2025.12.29 01:06:07.506	2025.06.10 22:57:28  Martim_ProtectorEA_V6.4 EURUSD,M5: open #18 sell 0.03 EURUSD at 1.14255 ok
+2025.12.29 01:06:07.506	2025.06.10 22:57:28  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 cerrado. Ticket: 17
+2025.12.29 01:06:07.506	2025.06.10 22:57:28  Martim_ProtectorEA_V6.4 EURUSD,M5: close #17 buy 0.02 EURUSD at 1.14279 at price 1.14255
+2025.12.29 01:06:07.506	2025.06.10 22:57:28  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.29 01:06:07.506	2025.06.10 22:16:38  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 activado. Ticket: 17 Type: BUY
+2025.12.29 01:06:07.506	2025.06.10 22:16:38  Martim_ProtectorEA_V6.4 EURUSD,M5: open #17 buy 0.02 EURUSD at 1.14279 ok
+2025.12.29 01:06:07.506	2025.06.10 22:16:38  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.29 01:06:07.506	2025.06.10 20:55:10  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Test Signal: SELL ticket 16
+2025.12.29 01:06:07.506	2025.06.10 20:55:10  Martim_ProtectorEA_V6.4 EURUSD,M5: open #16 sell 0.01 EURUSD at 1.14268 ok
+2025.12.29 01:06:07.506	2025.06.10 20:55:00  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Grupo cerrado. Profit final: 100.00 pips
+2025.12.29 01:06:07.506	2025.06.10 20:55:00  Martim_ProtectorEA_V6.4 EURUSD,M5: close #15 buy 0.03 EURUSD at 1.14263 at price 1.14269
+2025.12.29 01:06:07.506	2025.06.10 20:55:00  Martim_ProtectorEA_V6.4 EURUSD,M5: close #13 buy 0.01 EURUSD at 1.14249 at price 1.14269
+2025.12.29 01:06:07.506	2025.06.10 20:55:00  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.29 01:06:07.459	2025.06.10 18:08:40  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge2 activado. Ticket: 15 Type: BUY
+2025.12.29 01:06:07.459	2025.06.10 18:08:40  Martim_ProtectorEA_V6.4 EURUSD,M5: open #15 buy 0.03 EURUSD at 1.14263 ok
+2025.12.29 01:06:07.459	2025.06.10 18:08:40  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 cerrado. Ticket: 14
+2025.12.29 01:06:07.459	2025.06.10 18:08:40  Martim_ProtectorEA_V6.4 EURUSD,M5: close #14 sell 0.02 EURUSD at 1.14237 at price 1.14263
+2025.12.29 01:06:07.459	2025.06.10 18:08:40  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.29 01:06:07.459	2025.06.10 18:04:48  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 activado. Ticket: 14 Type: SELL
+2025.12.29 01:06:07.459	2025.06.10 18:04:48  Martim_ProtectorEA_V6.4 EURUSD,M5: open #14 sell 0.02 EURUSD at 1.14237 ok
+2025.12.29 01:06:07.459	2025.06.10 18:04:48  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.29 01:06:07.459	2025.06.10 18:00:05  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Test Signal: BUY ticket 13
+2025.12.29 01:06:07.459	2025.06.10 18:00:05  Martim_ProtectorEA_V6.4 EURUSD,M5: open #13 buy 0.01 EURUSD at 1.14249 ok
+2025.12.29 01:06:07.459	2025.06.10 18:00:05  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Grupo cerrado. Profit final: 10.00 pips
+2025.12.29 01:06:07.459	2025.06.10 18:00:05  Martim_ProtectorEA_V6.4 EURUSD,M5: close #12 sell 0.03 EURUSD at 1.14252 at price 1.14248
+2025.12.29 01:06:07.459	2025.06.10 18:00:05  Martim_ProtectorEA_V6.4 EURUSD,M5: close #10 sell 0.01 EURUSD at 1.14265 at price 1.14248
+2025.12.29 01:06:07.459	2025.06.10 18:00:05  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.29 01:06:07.381	2025.06.10 14:31:37  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge2 activado. Ticket: 12 Type: SELL
+2025.12.29 01:06:07.381	2025.06.10 14:31:37  Martim_ProtectorEA_V6.4 EURUSD,M5: open #12 sell 0.03 EURUSD at 1.14252 ok
+2025.12.29 01:06:07.381	2025.06.10 14:31:37  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 cerrado. Ticket: 11
+2025.12.29 01:06:07.381	2025.06.10 14:31:37  Martim_ProtectorEA_V6.4 EURUSD,M5: close #11 buy 0.02 EURUSD at 1.14276 at price 1.14252
+2025.12.29 01:06:07.381	2025.06.10 14:31:37  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.29 01:06:07.381	2025.06.10 14:27:16  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 activado. Ticket: 11 Type: BUY
+2025.12.29 01:06:07.381	2025.06.10 14:27:16  Martim_ProtectorEA_V6.4 EURUSD,M5: open #11 buy 0.02 EURUSD at 1.14276 ok
+2025.12.29 01:06:07.381	2025.06.10 14:27:16  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.29 01:06:07.381	2025.06.10 14:26:21  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Test Signal: SELL ticket 10
+2025.12.29 01:06:07.381	2025.06.10 14:26:21  Martim_ProtectorEA_V6.4 EURUSD,M5: open #10 sell 0.01 EURUSD at 1.14265 ok
+2025.12.29 01:06:07.381	2025.06.10 14:26:20  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Grupo cerrado. Profit final: 1560.00 pips
+2025.12.29 01:06:07.381	2025.06.10 14:26:20  Martim_ProtectorEA_V6.4 EURUSD,M5: close #9 buy 0.03 EURUSD at 1.14221 at price 1.14264
+2025.12.29 01:06:07.381	2025.06.10 14:26:20  Martim_ProtectorEA_V6.4 EURUSD,M5: close #7 buy 0.01 EURUSD at 1.14209 at price 1.14264
+2025.12.29 01:06:07.381	2025.06.10 14:26:20  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.29 01:06:07.350	2025.06.10 13:26:38  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge2 activado. Ticket: 9 Type: BUY
+2025.12.29 01:06:07.350	2025.06.10 13:26:38  Martim_ProtectorEA_V6.4 EURUSD,M5: open #9 buy 0.03 EURUSD at 1.14221 ok
+2025.12.29 01:06:07.350	2025.06.10 13:26:38  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 cerrado. Ticket: 8
+2025.12.29 01:06:07.350	2025.06.10 13:26:38  Martim_ProtectorEA_V6.4 EURUSD,M5: close #8 sell 0.02 EURUSD at 1.14196 at price 1.14221
+2025.12.29 01:06:07.350	2025.06.10 13:26:38  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.29 01:06:07.318	2025.06.10 04:25:20  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 activado. Ticket: 8 Type: SELL
+2025.12.29 01:06:07.318	2025.06.10 04:25:20  Martim_ProtectorEA_V6.4 EURUSD,M5: open #8 sell 0.02 EURUSD at 1.14196 ok
+2025.12.29 01:06:07.318	2025.06.10 04:25:20  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.29 01:06:07.318	2025.06.10 04:25:03  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Test Signal: BUY ticket 7
+2025.12.29 01:06:07.318	2025.06.10 04:25:03  Martim_ProtectorEA_V6.4 EURUSD,M5: open #7 buy 0.01 EURUSD at 1.14209 ok
+2025.12.29 01:06:07.318	2025.06.10 04:25:00  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Grupo cerrado. Profit final: 70.00 pips
+2025.12.29 01:06:07.318	2025.06.10 04:25:00  Martim_ProtectorEA_V6.4 EURUSD,M5: close #6 sell 0.03 EURUSD at 1.14215 at price 1.14210
+2025.12.29 01:06:07.318	2025.06.10 04:25:00  Martim_ProtectorEA_V6.4 EURUSD,M5: close #4 sell 0.01 EURUSD at 1.14230 at price 1.14210
+2025.12.29 01:06:07.318	2025.06.10 04:25:00  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.29 01:06:07.303	2025.06.10 03:43:05  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge2 activado. Ticket: 6 Type: SELL
+2025.12.29 01:06:07.303	2025.06.10 03:43:05  Martim_ProtectorEA_V6.4 EURUSD,M5: open #6 sell 0.03 EURUSD at 1.14215 ok
+2025.12.29 01:06:07.303	2025.06.10 03:43:05  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 cerrado. Ticket: 5
+2025.12.29 01:06:07.303	2025.06.10 03:43:05  Martim_ProtectorEA_V6.4 EURUSD,M5: close #5 buy 0.02 EURUSD at 1.14241 at price 1.14215
+2025.12.29 01:06:07.303	2025.06.10 03:43:05  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.29 01:06:07.287	2025.06.10 02:18:46  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 activado. Ticket: 5 Type: BUY
+2025.12.29 01:06:07.287	2025.06.10 02:18:46  Martim_ProtectorEA_V6.4 EURUSD,M5: open #5 buy 0.02 EURUSD at 1.14241 ok
+2025.12.29 01:06:07.287	2025.06.10 02:18:46  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.29 01:06:07.287	2025.06.10 01:20:15  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Test Signal: SELL ticket 4
+2025.12.29 01:06:07.287	2025.06.10 01:20:15  Martim_ProtectorEA_V6.4 EURUSD,M5: open #4 sell 0.01 EURUSD at 1.14230 ok
+2025.12.29 01:06:07.287	2025.06.10 01:20:13  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Grupo cerrado. Profit final: 380.00 pips
+2025.12.29 01:06:07.287	2025.06.10 01:20:13  Martim_ProtectorEA_V6.4 EURUSD,M5: close #3 buy 0.03 EURUSD at 1.14216 at price 1.14229
+2025.12.29 01:06:07.287	2025.06.10 01:20:13  Martim_ProtectorEA_V6.4 EURUSD,M5: close #1 buy 0.01 EURUSD at 1.14202 at price 1.14229
+2025.12.29 01:06:07.287	2025.06.10 01:20:13  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> CERRANDO GRUPO 0 - Razón: NoSupport
+2025.12.29 01:06:07.271	2025.06.10 00:07:00  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge2 activado. Ticket: 3 Type: BUY
+2025.12.29 01:06:07.271	2025.06.10 00:07:00  Martim_ProtectorEA_V6.4 EURUSD,M5: open #3 buy 0.03 EURUSD at 1.14216 ok
+2025.12.29 01:06:07.271	2025.06.10 00:07:00  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 cerrado. Ticket: 2
+2025.12.29 01:06:07.271	2025.06.10 00:07:00  Martim_ProtectorEA_V6.4 EURUSD,M5: close #2 sell 0.02 EURUSD at 1.14154 at price 1.14216
+2025.12.29 01:06:07.271	2025.06.10 00:07:00  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> TRANSICIÓN A HEDGE2 - Grupo 0
+2025.12.29 01:06:07.271	2025.06.10 00:01:00  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Hedge1 activado. Ticket: 2 Type: SELL
+2025.12.29 01:06:07.271	2025.06.10 00:01:00  Martim_ProtectorEA_V6.4 EURUSD,M5: open #2 sell 0.02 EURUSD at 1.14154 ok
+2025.12.29 01:06:07.271	2025.06.10 00:01:00  Martim_ProtectorEA_V6.4 EURUSD,M5: >>> ACTIVANDO HEDGE1 - Grupo 0
+2025.12.29 01:06:07.271	2025.06.10 00:00:00  Martim_ProtectorEA_V6.4 EURUSD,M5: ? Test Signal: BUY ticket 1
+2025.12.29 01:06:07.271	2025.06.10 00:00:00  Martim_ProtectorEA_V6.4 EURUSD,M5: open #1 buy 0.01 EURUSD at 1.14202 ok
+2025.12.29 01:06:07.271	2025.06.10 00:00:00  Martim_ProtectorEA_V6.4 EURUSD,M5: Grupos cargados: 0
+2025.12.29 01:06:07.240	2025.06.10 00:00:00  Martim_ProtectorEA_V6.4 EURUSD,M5: ========================================
+2025.12.29 01:06:07.240	2025.06.10 00:00:00  Martim_ProtectorEA_V6.4 EURUSD,M5: Test Signals: ENABLED
+2025.12.29 01:06:07.240	2025.06.10 00:00:00  Martim_ProtectorEA_V6.4 EURUSD,M5: Magic Number: 12364
+2025.12.29 01:06:07.240	2025.06.10 00:00:00  Martim_ProtectorEA_V6.4 EURUSD,M5: Min/Max Lot: 0.01/200.0
+2025.12.29 01:06:07.240	2025.06.10 00:00:00  Martim_ProtectorEA_V6.4 EURUSD,M5: Point Value: 0.0001
+2025.12.29 01:06:07.240	2025.06.10 00:00:00  Martim_ProtectorEA_V6.4 EURUSD,M5: Symbol: EURUSD
+2025.12.29 01:06:07.240	2025.06.10 00:00:00  Martim_ProtectorEA_V6.4 EURUSD,M5: ========================================
+2025.12.29 01:06:07.240	2025.06.10 00:00:00  Martim_ProtectorEA_V6.4 EURUSD,M5: MARTIM PROTECTOR V6 - EPIC REBUILD
+2025.12.29 01:06:07.240	2025.06.10 00:00:00  Martim_ProtectorEA_V6.4 EURUSD,M5: ========================================
+2025.12.29 01:06:07.193	2025.06.10 00:00:00  Martim_ProtectorEA_V6.4 inputs: TO_Lot=0.01; Hedge1_Lot=0.02; Hedge2_Lot=0.03; Entry_Loss_Pips=-1; Hedge2_Trigger_Pips=1; Min_Exit_Profit=1; HMA_Period=7; Magic_Number=12364; Enable_Test_Signals=1; Test_Signal_Interval=300; 
+2025.12.29 01:06:07.177	TestGenerator: spread set to 2
+2025.12.29 01:06:07.177	Expert Martim_ProtectorEA_V6.4 EURUSD,M5: loaded successfully
+2025.12.29 01:06:07.162	Expert Martim_ProtectorEA_V6.12 EURUSD,M5: removed
