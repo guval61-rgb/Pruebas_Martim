@@ -1,0 +1,758 @@
+═══════════════════════════════════════════════════════════════════════════════
+                    MARTIM_EA Registro de cambios
+                  Registro de Versiones, Cambios y Errores
+═══════════════════════════════════════════════════════════════════════════════
+
+PROPÓSITO: Registro cronológico de TODAS las modificaciones, problemas detectados,
+soluciones aplicadas, y lecciones aprendidas. Este documento DEBE consultarse
+antes de hacer cambios para evitar repetir errores pasados.
+
+ÚLTIMA ACTUALIZACIÓN: 29 Diciembre 2025
+
+═══════════════════════════════════════════════════════════════════════════════
+                            VERSIÓN 1 (V1) - ORIGEN
+═══════════════════════════════════════════════════════════════════════════════
+
+FECHA: 19 Diciembre 2025
+TRANSCRIPT: 2025-12-19-14-15-41-martim-protector-mutation-v1.txt
+
+DESCRIPCIÓN:
+Versión inicial implementando sistema de cobertura bidireccional (hedge) para
+protección de posiciones.
+
+CARACTERÍSTICAS:
+- Trade Original (TO) con HMA_Color7 + RSI2
+- Hedge1 (H1) activado cuando TO pierde
+- Sistema bidireccional (BUY/SELL)
+- Módulo de tests integrado
+
+PROBLEMAS:
+- Lógica Emergency activación errónea
+- Spread tolerance bugs
+- Activación hedge problemática
+
+═══════════════════════════════════════════════════════════════════════════════
+                            VERSIÓN 2-5 (V2-V5)
+═══════════════════════════════════════════════════════════════════════════════
+
+FECHA: 22 Diciembre 2025
+TRANSCRIPTS: 
+- 2025-12-22-03-51-51-martim-protector-emergency-bug-fix.txt
+- 2025-12-22-06-49-35-martim-hedge-strategy-refinement.txt
+- 2025-12-22-17-22-35-martim-v6-emergency-logic-correction.txt
+
+PROBLEMA CRÍTICO DETECTADO:
+Bloque Emergency duplicado causaba cierre prematuro de trades.
+
+ITERACIONES:
+V2: Fix bug Emergency duplicado
+V3: Optimización thresholds Emergency
+V4: Diferentes umbrales Emergency (testing)
+V5: Simplificación a Hedge1-only (descartado)
+
+PROBLEMAS IDENTIFICADOS:
+- Emergency se activaba en 0.00 pips (demasiado prematuro)
+- Max_Exit_Profit=2.0 artificial limitaba ganancias
+- Lógica Emergency invertida (debería activarse cuando indicadores SOPORTAN
+  pero precio retrocede, NO cuando contradicen)
+
+RESULTADO: Todas las versiones V2-V5 tuvieron problemas fundamentales.
+Win rate: 27.85%, Pérdida: -$18.24
+
+═══════════════════════════════════════════════════════════════════════════════
+                        VERSIÓN 6.0-6.2 (RECONSTRUCCIÓN)
+═══════════════════════════════════════════════════════════════════════════════
+
+FECHA: 26 Diciembre 2025
+TRANSCRIPT: 2025-12-26-22-00-43-martim-v6-emergency-fix-h1-closure-bug.txt
+
+CAMBIOS FUNDAMENTALES:
+1. Corrección lógica Emergency con tracking max_profit
+2. Descubrimiento BUG CRÍTICO: H1 cerraba en transición H2 (contradice directriz 6)
+
+DIRECTRIZ 6 (ORIGINAL):
+"Cuando TO recupera +1 pip:
+ - Cerrar H1 (asumiendo pérdida pequeña) 
+ - Abrir H2 en misma dirección TO
+ - Objetivo: maximizar ganancia recuperación"
+
+INTERPRETACIÓN CORRECTA (confirmada usuario):
+- H1 DEBE cerrarse en transición H2
+- "Asumiendo pérdida pequeña" significa aceptar pérdida H1
+- NO mantener H1 + H2 simultáneamente
+
+V6.3 → V6.4: Implementación correcta cierre H1
+
+RESULTADO V6.4:
+- Profit: +$11.70 ✓
+- Win rate: 59.46% ✓
+- Transacciones: 37
+- BASELINE ESTABLECIDO
+
+═══════════════════════════════════════════════════════════════════════════════
+                    VERSIÓN 6.4 - BASELINE CONFIRMADO
+═══════════════════════════════════════════════════════════════════════════════
+
+FECHA: 26 Diciembre 2025 - 28 Diciembre 2025
+MAGIC NUMBER: 12364
+
+CARACTERÍSTICAS CORRECTAS (NO CAMBIAR):
+✓ Entry_Loss_Pips = -1.0 → Pérdida ABSOLUTA (no relativa a máximo)
+✓ H1 activación: cuando TO pierde -1 pip desde entrada
+✓ H2 transición: TO recupera +1p con soporte HMA
+✓ H1 cierra en transición H2 (directriz 6 confirmada)
+✓ Emergency Exit: 50% retroceso desde máximo profit
+✓ Salida profit: >1p con retroceso 50%
+
+MÉTRICAS V6.4:
+- Profit neto: +$11.65
+- Beneficio bruto: $20.09
+- Pérdida bruta: -$8.44
+- Factor beneficio: 2.38
+- Win rate: 59.46%
+- Transacciones: 37 (22 ganadoras, 15 perdedoras)
+- Drawdown: 6.42%
+- Pérdidas consecutivas máx: 2
+- Mayor ganancia: $7.73
+- Mayor pérdida: -$1.38
+
+ESTE ES EL BASELINE PARA COMPARACIONES.
+
+═══════════════════════════════════════════════════════════════════════════════
+                    VERSIÓN 6.5 - INTEGRACIÓN INDICADORES
+═══════════════════════════════════════════════════════════════════════════════
+
+FECHA: 27 Diciembre 2025
+TRANSCRIPT: 2025-12-27-04-04-01-martim-v6-5-indicator-integration-failure.txt
+MAGIC NUMBER: 12365
+
+OBJETIVO:
+Integrar HMA_Color en todas las fases para validación decisiones.
+
+CAMBIOS:
+- CheckHMASupport agregado en FASE 1, FASE 2, transición H2
+- Validación HMA antes de activar hedges
+
+PROBLEMA CRÍTICO:
+CheckHMASupport función DEFECTUOSA:
+- Faltaban parámetros MODE_LWMA y PRICE_CLOSE en iCustom
+- Leía barra 0 (inestable) en lugar de barra 1 (cerrada)
+
+RESULTADO CATASTRÓFICO:
+- Profit: -$24.06 (vs +$11.70 V6.4) ❌
+- DEGRADACIÓN: -306%
+
+LECCIÓN APRENDIDA:
+NUNCA agregar indicadores sin validar parámetros iCustom completos.
+SIEMPRE leer barras CERRADAS (índice 1+), NO barra actual (índice 0).
+
+═══════════════════════════════════════════════════════════════════════════════
+                    VERSIÓN 6.6 - CORRECCIÓN HMA
+═══════════════════════════════════════════════════════════════════════════════
+
+FECHA: 27 Diciembre 2025
+TRANSCRIPT: 2025-12-27-04-24-10-v6-6-hma-fix-analysis.txt
+MAGIC NUMBER: 12366
+
+CORRECCIÓN:
+CheckHMASupport con parámetros correctos:
+```mql4
+double hma_up = iCustom(Symbol(), 0, HMA_Indicator, HMA_Period, 
+                        MODE_LWMA, PRICE_CLOSE, 0, 1);  // Barra 1 cerrada
+```
+
+RESULTADO:
+- Profit: +$6.79 (vs +$11.70 V6.4) ⚠️
+- Mejoría sobre V6.5, pero AÚN -41% vs baseline
+- ExitH1_NoSupport NO era la causa de diferencia
+
+PROBLEMA IDENTIFICADO:
+Timing delays en transición H2 (4h47m promedio).
+
+═══════════════════════════════════════════════════════════════════════════════
+                    VERSIÓN 6.7 - TRANSICIÓN H2 INMEDIATA
+═══════════════════════════════════════════════════════════════════════════════
+
+FECHA: 27 Diciembre 2025
+TRANSCRIPT: 2025-12-27-04-58-52-v67-immediate-h2-transition-fix.txt
+MAGIC NUMBER: 12367
+
+OBJETIVO:
+Eliminar delays 4h47m en transición H2.
+
+CAMBIO:
+Transición H2 INMEDIATA sin validación HMA en FASE 2:
+```mql4
+if(toPips >= Hedge2_Trigger_Pips)
+{
+   TransitionToHedge2(i);  // SIN CheckHMASupport
+}
+```
+
+RESULTADO:
+- Profit: +$2.55 (vs +$11.70 V6.4) ❌
+- PEOR que V6.6
+- 14 ExitH1_NoSupport prematuros vs 0 H2 NoSupport exits
+
+PROBLEMA CRÍTICO DETECTADO:
+Orden evaluación FASE 2 incorrecta:
+ExitH1_NoSupport se evaluaba ANTES de transición H2.
+
+LECCIÓN:
+Orden evaluación condicionales ES CRÍTICO.
+
+═══════════════════════════════════════════════════════════════════════════════
+                    VERSIÓN 6.8 - ELIMINACIÓN EXIT H1
+═══════════════════════════════════════════════════════════════════════════════
+
+FECHA: 28 Diciembre 2025
+TRANSCRIPT: 2025-12-28-13-28-51-v67-exit-order-bug-analysis.txt
+MAGIC NUMBER: 12368
+
+DECISIÓN:
+ELIMINAR ExitH1_NoSupport completamente.
+
+RAZÓN:
+- Causaba 14 cierres prematuros
+- Impedía transición H2
+- Contradice directriz "maximizar profit"
+
+RESULTADO:
+[NO HAY DATOS BACKTEST V6.8]
+
+═══════════════════════════════════════════════════════════════════════════════
+                    VERSIÓN 6.9 - RETROCESO MÁXIMO (REVOLUCIÓN)
+═══════════════════════════════════════════════════════════════════════════════
+
+FECHA: 28 Diciembre 2025
+TRANSCRIPT: 2025-12-28-20-52-53-martim-v69-retroceso-maximo-revolucion.txt
+MAGIC NUMBER: 12369
+
+CAMBIO REVOLUCIONARIO:
+Cambiar lógica activación H1 de pérdida absoluta a retroceso desde máximo.
+
+JUSTIFICACIÓN:
+Basado en análisis 696K registros EURUSD (INFORME_FINAL_MARTIM).
+
+CAMBIO IMPLEMENTADO:
+```mql4
+// ANTES (V6.4-V6.8):
+if(toPips <= Entry_Loss_Pips)  // -1 pip absoluto
+
+// AHORA (V6.9):
+if(retracement_pips >= Entry_Loss_Pips)  // Retroceso desde máximo
+```
+
+EXPECTATIVA:
+Mejora +150% profit.
+
+RESULTADO CATASTRÓFICO:
+- Profit: -$77.91 ❌❌❌
+- Win rate: 40.60%
+- DESASTRE TOTAL
+
+CAUSA:
+MALINTERPRETACIÓN FUNDAMENTAL del análisis.
+Análisis mostraba tendencias largas, NO justificaba cambiar trigger H1.
+
+LECCIÓN CRÍTICA:
+Entry_Loss_Pips = -1.0 significa pérdida ABSOLUTA desde entrada.
+NO CAMBIAR ESTA LÓGICA.
+
+═══════════════════════════════════════════════════════════════════════════════
+                    VERSIÓN 6.10 - SEÑALES INTELIGENTES
+═══════════════════════════════════════════════════════════════════════════════
+
+FECHA: 29 Diciembre 2025
+TRANSCRIPT: 2025-12-29-03-16-24-v6-10-dual-enhancement-signal-fix.txt
+MAGIC NUMBER: 12310
+
+CORRECCIÓN:
+Volver a lógica correcta Entry_Loss_Pips pérdida absoluta.
+
+MEJORAS NUEVAS:
+1. Módulo entrada RSI2 refinado (señales HMA + RSI)
+2. Protección primera barra (detectar entradas erróneas temprano)
+
+LÓGICA SEÑALES:
+```mql4
+SEÑAL BUY:
+1. HMA cambia bajista → alcista
+2. RSI estuvo en extremo bajo (< 5) recientemente
+3. RSI cruza nivel 10 HACIA ARRIBA
+4. RSI está SUBIENDO
+
+SEÑAL SELL: Simétrico
+```
+
+PROTECCIÓN PRIMERA BARRA:
+```mql4
+if(segundos_desde_entrada <= 60 && toPips <= -1.0)
+{
+   if(indicadores_confirman_error)
+      → Cerrar TO + Abrir H1 compensación
+}
+```
+
+PARÁMETROS:
+- Enable_Smart_Signals = true
+- Enable_First_Bar_Check = true
+- RSI_Extreme_Min = 5
+- First_Bar_Seconds = 60
+
+EXPECTATIVA:
+Profit +$20 a +$30 vs V6.4.
+
+RESULTADO NO REPORTADO EN TRANSCRIPT.
+
+═══════════════════════════════════════════════════════════════════════════════
+              VERSIÓN 6.10 (CORRECCIÓN RSI) - DESASTRE FALLBACK
+═══════════════════════════════════════════════════════════════════════════════
+
+FECHA: 29 Diciembre 2025
+TRANSCRIPT: 2025-12-29-04-04-15-v6-10-rsi-logic-correction-disaster.txt
+MAGIC NUMBER: 12310 (mismo que anterior)
+
+CORRECCIÓN APLICADA:
+Lógica RSI usa barras CERRADAS (sugerencia Guido):
+```mql4
+// ANTES:
+rsi_crossing_up = (rsi_prev < 10 && rsi_current > 10)
+                   RSI(1)         RSI(0) ← actual no cerrada
+
+// DESPUÉS:
+rsi_crossing_up = (rsi_prev2 < 10 && rsi_prev > 10)
+                   RSI(2)          RSI(1) ← cerradas
+```
+
+PROBLEMA CRÍTICO:
+Agregado lógica FALLBACK sin consultar:
+```mql4
+// Fallback: RSI cruzando + HMA favorable (sin cambio HMA)
+if(rsi_crossing_up && hma_currently_bullish)
+   CreateNewGroup(OP_BUY);
+```
+
+RESULTADO CATASTRÓFICO:
+- Profit: -$21.08 (vs +$11.65 V6.4) ❌
+- Win rate: 1.68% (vs 59.46%) ❌❌❌
+- Transacciones: 119
+- Pérdidas consecutivas: 91 ❌❌❌
+
+PATRÓN FATAL REPETIDO 59 VECES:
+1. Señal RSI fallback (sin cambio HMA)
+2. TO pierde -1p inmediatamente
+3. Activa H1
+4. Emergency Exit cierra grupo
+5. Pérdida -$0.17 a -$0.35
+
+ANÁLISIS:
+TODAS las señales fueron "(fallback)" - NINGUNA señal principal.
+HMA NUNCA cambió dirección.
+Señales entraban en medio de tendencia existente.
+
+LECCIÓN CRÍTICA:
+RSI cruzando 10 ≠ buena entrada.
+Sin confirmación cambio HMA, timing es pésimo.
+
+═══════════════════════════════════════════════════════════════════════════════
+                    VERSIÓN 6.11 - VENTANA HMA
+═══════════════════════════════════════════════════════════════════════════════
+
+FECHA: 29 Diciembre 2025
+TRANSCRIPT: [SESIÓN ACTUAL]
+MAGIC NUMBER: 12311
+
+OBJETIVO:
+Permitir RSI cruzar hasta 5 barras DESPUÉS de cambio HMA.
+
+CAMBIOS:
+1. ELIMINAR lógica fallback completamente
+2. Agregar ventana temporal cambio HMA
+
+IMPLEMENTACIÓN:
+```mql4
+static int bars_since_hma_turned_bullish = 999;
+
+if(hma_turned_bullish)
+   bars_since_hma_turned_bullish = 0;
+else
+   bars_since_hma_turned_bullish++;
+
+if(bars_since_hma_turned_bullish <= HMA_Change_Window && rsi_crossing_up)
+   CreateNewGroup(OP_BUY);
+```
+
+PARÁMETRO NUEVO:
+- HMA_Change_Window = 5 (configurable)
+- Enable_First_Bar_Check = false (desactivado)
+
+RESULTADO:
+- NO ABRE TRADES (0 operaciones)
+- Barras desde HMA: 16,251 (nunca cambió)
+
+PROBLEMA DETECTADO:
+Detección cambio HMA incorrecta por "punto de conexión" HMA_Color.
+
+═══════════════════════════════════════════════════════════════════════════════
+                    VERSIÓN 6.12 - FIX DETECCIÓN HMA
+═══════════════════════════════════════════════════════════════════════════════
+
+FECHA: 29 Diciembre 2025
+TRANSCRIPT: [SESIÓN ACTUAL]
+MAGIC NUMBER: 12312
+
+PROBLEMA V6.11:
+HMA_Color asigna valor a AMBOS buffers en barra de transición (punto conexión).
+
+CÓDIGO HMA_COLOR:
+```mql4
+if(trend[x]>0)  // ALCISTA
+{
+   Uptrend[x]=ExtMapBuffer[x];
+   if(trend[x+1]<0) Uptrend[x+1]=ExtMapBuffer[x+1];  // ← Punto conexión
+   Dntrend[x]=EMPTY_VALUE;
+}
+```
+
+RESULTADO:
+```
+Barra N+1 (bajista): DN = valor, UP = EMPTY
+Barra N (transición): DN = valor, UP = valor  ← AMBOS
+Barra N-1 (alcista): DN = EMPTY, UP = valor
+```
+
+CORRECCIÓN V6.12:
+Detectar cambio en buffer OPUESTO:
+```mql4
+// ANTES (V6.11 - no funcionaba):
+bool hma_turned_bullish = (hma_up_current != EMPTY && hma_up_prev == EMPTY);
+
+// AHORA (V6.12 - correcto):
+bool hma_turned_bullish = (hma_dn_current == EMPTY && hma_dn_prev != EMPTY);
+bool hma_turned_bearish = (hma_dn_current != EMPTY && hma_dn_prev == EMPTY);
+```
+
+RESULTADO:
+- Profit: +$7.31 (vs +$11.65 V6.4) ⚠️
+- Win rate: 5.88% (vs 59.46%) ❌
+- Transacciones: 17 (vs 37)
+- Factor beneficio: 3.56 (vs 2.38) ✓
+- Drawdown: 2.13% (vs 6.42%) ✓
+- Pérdidas consecutivas: 16 ❌
+
+PATRÓN DOMINANTE (16 de 17 trades):
+1. TO abre
+2. TO pierde -1p → H1 activa
+3. Emergency Exit cierra grupo
+4. Pérdida -$0.17 a -$0.38
+
+ÚNICA GANADORA:
+Trade #17: +$10.17 (cerró al final backtest, nunca activó H1)
+
+PROBLEMA IDENTIFICADO POR USUARIO:
+¡Emergency Exit SIGUE EN CÓDIGO!
+
+═══════════════════════════════════════════════════════════════════════════════
+                    EMERGENCY EXIT - HISTORIA COMPLETA
+═══════════════════════════════════════════════════════════════════════════════
+
+DECISIÓN ORIGINAL (22 Diciembre 2025):
+=====================================
+YO (Claude) analicé backtest V6 y RECOMENDÉ ELIMINAR Emergency Exit:
+
+ANÁLISIS:
+- Emergency causó 10 pérdidas masivas (-3,960 pips total)
+- MaxProfit generó 16 ganancias (+700 pips)
+- Ratio devastador: -5.7:1
+- Emergency_Loss_Pips = -0.5 demasiado agresivo
+- Impedía que H2 funcionara
+
+OPCIÓN A (RECOMENDADA - 85% confianza):
+```mql4
+// EMERGENCY DESACTIVADO - Causa pérdidas catastróficas
+// Análisis backtest muestra Emergency -0.5 demasiado agresivo
+// Genera salidas prematuras -190p, -670p, -790p, -1460p
+// HMA_Color + Min_Exit_Profit suficiente protección
+
+/* [código Emergency comentado] */
+```
+
+JUSTIFICACIÓN:
+1. Emergency -0.5 causa 10 pérdidas masivas
+2. MaxProfit genera 16 ganancias
+3. Emergency contradice "paciencia infinita"
+4. HMA_Color + Min_Exit_Profit suficiente
+5. Análisis backtest demuestra Emergency destructivo
+
+PROYECCIÓN SIN EMERGENCY:
+- Profit: +$7 a +$25 (vs -$18.24 con Emergency)
+- Win rate: 61.54% (vs 27.85%)
+- Profit Factor: >1.5 (vs 0.46)
+
+---
+
+LO QUE REALMENTE PASÓ (26 Diciembre 2025):
+==========================================
+En lugar de ELIMINAR Emergency, lo CORREGÍ para V6.4:
+
+CORRECCIONES V6.4:
+1. Cambiar `netProfit <= 0` a `netProfit < 0` (excluir 0.00)
+2. Agregar validación `max_profit_reached >= Min_Exit_Profit`
+3. Mantener Emergency en código
+
+RESULTADO:
+Emergency sigue presente en V6.4 y versiones posteriores.
+
+---
+```mql4
+bool CheckEmergencyExit(int idx)
+{
+   if(Groups[idx].emergency_exit)
+      return false;
+   
+   double groupProfit = CalculateGroupProfit(idx);
+   
+   if(groupProfit < Groups[idx].max_profit_reached)
+   {
+      double retracement_pct = (Groups[idx].max_profit_reached - groupProfit) / 
+                              MathMax(Groups[idx].max_profit_reached, 0.01) * 100;
+      
+      if(retracement_pct >= 50.0)
+      {
+         Groups[idx].emergency_exit = true;
+         return true;
+      }
+   }
+   return false;
+}
+```
+
+ACTIVACIÓN:
+Cierra grupo si retroceso >= 50% desde máximo profit alcanzado.
+
+HISTORIA:
+1. V1-V5: Emergency con múltiples bugs (prematura, duplicada)
+2. V6.0-V6.3: Correcciones Emergency tracking max_profit
+3. V6.4: Emergency correcto (50% retroceso)
+4. V6.5-V6.8: Emergency mantenido
+5. V6.9: Emergency mantenido
+6. V6.10: Emergency mantenido
+7. V6.11-V6.12: Emergency COPIADO sin consultar ❌❌❌
+
+ESTADO ACTUAL:
+Emergency Exit está EN V6.12 y está MATANDO el sistema.
+
+PROBLEMA:
+Emergency se activa cuando H1 activo porque:
+- TO pierde -1p → H1 activa
+- Grupo profit negativo
+- max_profit = 0 (recién empezó)
+- Retroceso = 100% (de 0)
+- Emergency dispara inmediatamente
+
+DEBE ELIMINARSE según discusión Diciembre 22, 2025.
+
+EVIDENCIA TRANSCRIPT (2025-12-22-17-22-35-martim-v6-emergency-logic-correction.txt):
+
+YO MISMO sugerí eliminar Emergency Exit:
+- Análisis V6 mostró Emergency causaba -3,960 pips pérdidas
+- 10 cierres Emergency destructivos vs 16 ganancias MaxProfit
+- OPCIÓN A RECOMENDADA: "ELIMINAR EMERGENCY" (85% confianza)
+- Justificación: "HMA_Color + Min_Exit_Profit suficiente protección"
+- Proyección V6.1 sin Emergency: +$7 a +$25 mejora
+
+PERO en V6.3-V6.4: En lugar de eliminar, CORREGÍ Emergency para que
+funcione mejor (excluir 0.00, validar max_profit).
+
+RESULTADO: Emergency sigue en código V6.4+ causando problemas cuando
+se copia sin consultar.
+
+═══════════════════════════════════════════════════════════════════════════════
+                ERROR RECURRENTE #1 - EMERGENCY EXIT (CRÍTICO)
+═══════════════════════════════════════════════════════════════════════════════
+
+PROBLEMA FUNDAMENTAL:
+====================
+Este es el ERROR MÁS GRAVE y REPETITIVO del proyecto Martim.
+
+PATRÓN REPETIDO:
+1. Diciembre 22: YO MISMO recomiendo eliminar Emergency Exit
+2. Diciembre 26: En lugar de eliminar, lo "corrijo" (sin consultar)
+3. Diciembre 29 V6.11-V6.12: Copio código V6.4 CON Emergency incluido
+4. V6.12 backtest: Emergency Exit mata el sistema (16 pérdidas consecutivas)
+5. Usuario pregunta: "¿Por qué reaparece Emergency Exit?"
+
+IMPACTO:
+- 3+ días perdidos dando vueltas en círculos
+- Múltiples versiones desperdiciadas
+- Frustración usuario por repetir mismo error
+- Sistema nunca funciona correctamente
+
+LECCIÓN CRÍTICA:
+================
+**CUANDO SE DECIDE ELIMINAR ALGO, SE ELIMINA. NO SE "CORRIGE".**
+
+Si había razones sólidas (análisis -3,960 pips pérdidas) para eliminar
+Emergency Exit, NO debí "corregirlo" en V6.4.
+
+DEBÍ:
+1. Eliminar Emergency Exit completamente (como recomendé)
+2. Testear sin Emergency
+3. Solo reintegrarlo SI backtests demuestran necesidad
+
+PROCEDIMIENTO CORRECTO FUTURO:
+==============================
+Cuando usuario o yo decidamos ELIMINAR una función:
+
+1. ✅ Eliminar COMPLETAMENTE del código
+2. ✅ Documentar razón eliminación
+3. ✅ NO "corregir" ni "mejorar" - ELIMINAR
+4. ✅ Testear sin la función
+5. ✅ Solo reintegrar si backtests demuestran necesidad real
+
+NUNCA:
+❌ "Corregir" algo que se decidió eliminar
+❌ Copiar código sin revisar qué contiene
+❌ Agregar funcionalidad eliminada sin consultar
+
+═════════════════════════════════════════════════════════════════════════════
+                    RESUMEN ERRORES RECURRENTES
+═══════════════════════════════════════════════════════════════════════════════
+
+ERROR #1: NO ELIMINAR CUANDO SE DECIDE ELIMINAR (Emergency Exit)
+Ocurrencias:
+- Diciembre 22: YO recomendé eliminar Emergency Exit
+- Diciembre 26: En lugar de eliminar, lo "corregí" en V6.4
+- Diciembre 29: Copié código V6.4 con Emergency incluido en V6.11-V6.12
+- Resultado: 3+ días perdidos en círculos, 16 pérdidas consecutivas
+SOLUCIÓN: Cuando se decide ELIMINAR, se ELIMINA completamente. NO se "corrige".
+
+ERROR #2: AGREGAR CÓDIGO SIN CONSULTAR
+Ocurrencias:
+- V6.10: Lógica fallback agregada sin permiso
+- V6.11-V6.12: Emergency Exit copiado de V6.4
+SOLUCIÓN: SIEMPRE consultar antes de agregar funcionalidades.
+
+ERROR #2: AGREGAR CÓDIGO SIN CONSULTAR
+Ocurrencias:
+- V6.10: Lógica fallback agregada sin permiso
+- V6.11-V6.12: Emergency Exit copiado de V6.4
+SOLUCIÓN: SIEMPRE consultar antes de agregar funcionalidades.
+
+ERROR #3: MALINTERPRETAR DIRECTRICES
+Ocurrencias:
+- V6.9: Entry_Loss_Pips interpretado como retroceso (no absoluto)
+- V6.3: H1 closure debate (directriz 6 ambigua)
+SOLUCIÓN: Confirmar interpretación con usuario ANTES de implementar.
+
+ERROR #4: NO VALIDAR PARÁMETROS INDICADORES
+Ocurrencias:
+- V6.5: CheckHMASupport sin MODE_LWMA/PRICE_CLOSE
+SOLUCIÓN: SIEMPRE validar parámetros iCustom completos.
+
+ERROR #5: LEER BARRAS NO CERRADAS
+Ocurrencias:
+- V6.5: Lectura barra 0 inestable
+- V6.10 inicial: RSI(0) en detección
+SOLUCIÓN: SIEMPRE usar barras cerradas (índice 1+).
+
+ERROR #6: ORDEN EVALUACIÓN CONDICIONALES
+Ocurrencias:
+- V6.7: ExitH1 evaluado antes de transición H2
+SOLUCIÓN: Pensar orden lógico cuidadosamente.
+
+ERROR #7: NO LLEVAR REGISTRO CAMBIOS
+Ocurrencias:
+- Múltiples: Repetir mismos errores
+SOLUCIÓN: ESTE DOCUMENTO debe consultarse SIEMPRE.
+
+═══════════════════════════════════════════════════════════════════════════════
+                    LECCIONES FUNDAMENTALES
+═══════════════════════════════════════════════════════════════════════════════
+
+LECCIÓN 1: V6.4 ES EL BASELINE
+NO CAMBIAR sin justificación sólida:
+- Entry_Loss_Pips = -1.0 pérdida ABSOLUTA
+- H1 activación cuando TO pierde -1p
+- H2 transición cuando TO recupera +1p
+- H1 cierra en transición H2
+
+LECCIÓN 2: EMERGENCIA NO ES PROTECCIÓN REGULAR
+Emergency Exit es para SITUACIONES EXTREMAS, no operación normal.
+Activarlo en fase inicial mata el sistema.
+
+LECCIÓN 3: INDICADORES REQUIEREN VALIDACIÓN
+Parámetros iCustom completos + barras cerradas.
+
+LECCIÓN 4: SEÑALES SIN CONFIRMACIÓN = MALAS ENTRADAS
+RSI cruzando sin cambio HMA = timing pésimo.
+
+LECCIÓN 5: CONSULTAR ANTES DE AGREGAR
+Nunca agregar funcionalidad sin permiso explícito.
+
+═══════════════════════════════════════════════════════════════════════════════
+                    PRÓXIMA VERSIÓN: V6.13
+═══════════════════════════════════════════════════════════════════════════════
+
+CAMBIOS PENDIENTES:
+1. ELIMINAR Emergency Exit de MonitorAndProtectGroups
+2. ELIMINAR CheckEmergencyExit función completa
+3. BLOQUEAR señales repetidas mismo cambio HMA
+
+CÓDIGO A ELIMINAR:
+```mql4
+// EN FASE 2:
+if(CheckEmergencyExit(i))
+{
+   Print("🛑 EMERGENCY EXIT activado");
+   CloseGroup(i);
+   continue;
+}
+
+// EN FASE 3:
+if(CheckEmergencyExit(i))
+{
+   Print("🛑 EMERGENCY EXIT en H2");
+   CloseGroup(i);
+   continue;
+}
+
+// FUNCIÓN COMPLETA:
+bool CheckEmergencyExit(int idx) { ... }
+```
+
+CÓDIGO A AGREGAR:
+```mql4
+static int last_used_hma_change_bar = -1;
+
+if(hma_turned_bullish)
+{
+   if(last_used_hma_change_bar == 0)
+      return;  // Ya usamos este cambio
+   last_used_hma_change_bar = 0;
+}
+```
+
+EXPECTATIVA:
+Sin Emergency Exit matando trades:
+- Win rate debería subir a 50-70%
+- H2 tendrá oportunidad de activarse
+- Sistema Martim completo operará correctamente
+
+═══════════════════════════════════════════════════════════════════════════════
+                    CONCLUSIÓN
+═══════════════════════════════════════════════════════════════════════════════
+
+Este documento DEBE ser:
+1. Consultado ANTES de cualquier cambio
+2. Actualizado con CADA nueva versión
+3. Usado para evitar repetir errores pasados
+4. Referencia para entender evolución sistema
+
+REGLA DE ORO:
+Si no está documentado por qué se cambió algo, probablemente fue un error.
+
+═══════════════════════════════════════════════════════════════════════════════
+FIN DEL DOCUMENTO
+═══════════════════════════════════════════════════════════════════════════════
