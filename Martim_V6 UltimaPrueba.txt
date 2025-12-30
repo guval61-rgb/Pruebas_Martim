@@ -30,515 +30,281 @@ Graph
 
 JOURNAL
 --------------------------------------------------------------------------------------
-2025.12.29 22:31:12.508	EURUSD,M5: 684378 tick events (4066 bars, 685379 bar states) processed in 0:00:02.000 (total time 0:00:02.141)
-2025.12.29 22:31:12.508	2025.09.29 23:58:48  Martim_ProtectorEA_V6.15 EURUSD,M5: Martim V6.15 detenido. Reason: 0
-2025.12.29 22:31:12.508	2025.09.29 23:58:48  Tester: order #1 is closed
-2025.12.29 22:31:12.508	2025.09.29 23:58:48  Tester: order #3 is closed
-2025.12.29 22:31:12.508	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.508	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
-2025.12.29 22:31:12.508	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-2.85
-2025.12.29 22:31:12.508	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
-2025.12.29 22:31:12.508	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.508	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.508	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: ALCISTA | RSI: 94.80
-2025.12.29 22:31:12.508	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 19.50p
-2025.12.29 22:31:12.508	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-2.85 | Max: $80.26
-2025.12.29 22:31:12.508	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 20.90p
-2025.12.29 22:31:12.508	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 482h 20m
-2025.12.29 22:31:12.508	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
-2025.12.29 22:31:12.508	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.508	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.508	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
-2025.12.29 22:31:12.508	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.41
-2025.12.29 22:31:12.508	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
-2025.12.29 22:31:12.508	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.508	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.508	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: ALCISTA | RSI: 77.41
-2025.12.29 22:31:12.508	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 18.10p
-2025.12.29 22:31:12.508	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.41 | Max: $80.26
-2025.12.29 22:31:12.508	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 19.50p
-2025.12.29 22:31:12.508	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 482h 15m
-2025.12.29 22:31:12.508	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
-2025.12.29 22:31:12.508	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.57
-2025.12.29 22:31:12.493	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
-2025.12.29 22:31:12.493	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: ALCISTA | RSI: 49.32
-2025.12.29 22:31:12.493	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 17.70p
-2025.12.29 22:31:12.493	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.57 | Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 19.10p
-2025.12.29 22:31:12.493	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 482h 10m
-2025.12.29 22:31:12.493	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
-2025.12.29 22:31:12.493	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.53
-2025.12.29 22:31:12.493	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
-2025.12.29 22:31:12.493	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: ALCISTA | RSI: 59.24
-2025.12.29 22:31:12.493	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 17.80p
-2025.12.29 22:31:12.493	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.53 | Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 19.20p
-2025.12.29 22:31:12.493	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 482h 5m
-2025.12.29 22:31:12.493	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
-2025.12.29 22:31:12.493	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.61
-2025.12.29 22:31:12.493	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
-2025.12.29 22:31:12.493	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: ALCISTA | RSI: 65.45
-2025.12.29 22:31:12.493	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 17.60p
-2025.12.29 22:31:12.493	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.61 | Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 19.00p
-2025.12.29 22:31:12.493	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 482h 0m
-2025.12.29 22:31:12.493	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
-2025.12.29 22:31:12.493	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-4.09
-2025.12.29 22:31:12.493	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
-2025.12.29 22:31:12.493	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: BAJISTA | RSI: 14.51
-2025.12.29 22:31:12.493	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 16.40p
-2025.12.29 22:31:12.493	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-4.09 | Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 17.80p
-2025.12.29 22:31:12.493	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 481h 55m
-2025.12.29 22:31:12.493	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
-2025.12.29 22:31:12.493	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.81
-2025.12.29 22:31:12.493	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
-2025.12.29 22:31:12.493	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: BAJISTA | RSI: 26.54
-2025.12.29 22:31:12.493	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 17.10p
-2025.12.29 22:31:12.493	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.81 | Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 18.50p
-2025.12.29 22:31:12.493	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 481h 50m
-2025.12.29 22:31:12.493	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
-2025.12.29 22:31:12.493	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.05
-2025.12.29 22:31:12.493	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
-2025.12.29 22:31:12.493	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: ALCISTA | RSI: 68.59
-2025.12.29 22:31:12.493	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 19.00p
-2025.12.29 22:31:12.493	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.05 | Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 20.40p
-2025.12.29 22:31:12.493	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 481h 45m
-2025.12.29 22:31:12.493	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
-2025.12.29 22:31:12.493	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.25
-2025.12.29 22:31:12.493	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
-2025.12.29 22:31:12.493	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: ALCISTA | RSI: 56.74
-2025.12.29 22:31:12.493	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 18.50p
-2025.12.29 22:31:12.493	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.25 | Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 19.90p
-2025.12.29 22:31:12.493	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 481h 40m
-2025.12.29 22:31:12.493	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
-2025.12.29 22:31:12.493	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.41
-2025.12.29 22:31:12.493	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
-2025.12.29 22:31:12.493	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: BAJISTA | RSI: 30.52
-2025.12.29 22:31:12.493	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 18.10p
-2025.12.29 22:31:12.493	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.41 | Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 19.50p
-2025.12.29 22:31:12.493	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 481h 35m
-2025.12.29 22:31:12.493	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
-2025.12.29 22:31:12.493	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.09
-2025.12.29 22:31:12.493	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
-2025.12.29 22:31:12.493	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: BAJISTA | RSI: 0.72
-2025.12.29 22:31:12.493	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 18.90p
-2025.12.29 22:31:12.493	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.09 | Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 20.30p
-2025.12.29 22:31:12.493	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 481h 30m
-2025.12.29 22:31:12.493	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
-2025.12.29 22:31:12.493	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-2.57
-2025.12.29 22:31:12.493	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
-2025.12.29 22:31:12.493	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: BAJISTA | RSI: 2.40
-2025.12.29 22:31:12.493	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 20.20p
-2025.12.29 22:31:12.493	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-2.57 | Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 21.60p
-2025.12.29 22:31:12.493	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 481h 25m
-2025.12.29 22:31:12.493	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
-2025.12.29 22:31:12.493	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-2.37
-2025.12.29 22:31:12.493	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
-2025.12.29 22:31:12.493	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: BAJISTA | RSI: 18.42
-2025.12.29 22:31:12.493	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 20.70p
-2025.12.29 22:31:12.493	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-2.37 | Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 22.10p
-2025.12.29 22:31:12.493	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 481h 20m
-2025.12.29 22:31:12.493	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
-2025.12.29 22:31:12.493	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-2.21
-2025.12.29 22:31:12.493	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
-2025.12.29 22:31:12.493	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: BAJISTA | RSI: 8.24
-2025.12.29 22:31:12.493	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 21.10p
-2025.12.29 22:31:12.493	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-2.21 | Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 22.50p
-2025.12.29 22:31:12.493	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 481h 15m
-2025.12.29 22:31:12.493	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
-2025.12.29 22:31:12.493	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
-2025.12.29 22:31:12.493	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-1.89
-2025.12.29 22:31:12.493	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
-2025.12.29 22:31:12.493	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.493	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.493	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: BAJISTA | RSI: 30.92
-2025.12.29 22:31:12.493	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 21.90p
-2025.12.29 22:31:12.493	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-1.89 | Max: $80.26
-2025.12.29 22:31:12.352	2025.09.26 15:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
-2025.12.29 22:31:12.352	2025.09.26 15:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:12.352	2025.09.26 15:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.352	2025.09.26 15:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: BAJISTA | RSI: 61.89
-2025.12.29 22:31:12.352	2025.09.26 15:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: -29.30p
-2025.12.29 22:31:12.352	2025.09.26 15:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-21.85 | Max: $80.26
-2025.12.29 22:31:12.352	2025.09.26 15:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | -27.90p
-2025.12.29 22:31:12.352	2025.09.26 15:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 401h 55m
-2025.12.29 22:31:12.101	2025.09.24 16:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: ALCISTA | RSI: 59.11
-2025.12.29 22:31:12.101	2025.09.24 16:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 28.50p
-2025.12.29 22:31:12.101	2025.09.24 16:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $3.38 | Max: $80.26
-2025.12.29 22:31:12.101	2025.09.24 16:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 29.90p
-2025.12.29 22:31:12.101	2025.09.24 16:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 355h 5m
-2025.12.29 22:31:12.101	2025.09.24 16:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
-2025.12.29 22:31:12.101	2025.09.24 16:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:12.101	2025.09.24 16:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:11.913	2025.09.23 02:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:11.913	2025.09.23 02:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: BAJISTA | RSI: 41.41
-2025.12.29 22:31:11.913	2025.09.23 02:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 94.10p
-2025.12.29 22:31:11.913	2025.09.23 02:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $30.14 | Max: $80.26
-2025.12.29 22:31:11.913	2025.09.23 02:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 95.50p
-2025.12.29 22:31:11.913	2025.09.23 02:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 317h 20m
-2025.12.29 22:31:11.913	2025.09.23 02:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
-2025.12.29 22:31:11.913	2025.09.23 02:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:11.710	2025.09.19 16:29:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:11.710	2025.09.19 16:24:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:11.710	2025.09.19 16:24:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
-2025.12.29 22:31:11.710	2025.09.19 16:24:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $9.27
-2025.12.29 22:31:11.710	2025.09.19 16:24:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
-2025.12.29 22:31:11.710	2025.09.19 16:24:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:11.710	2025.09.19 16:24:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:11.710	2025.09.19 16:24:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: BAJISTA | RSI: 31.03
-2025.12.29 22:31:11.302	2025.09.17 09:39:20  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 149.50p
-2025.12.29 22:31:11.302	2025.09.17 09:39:20  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 180h 4m
-2025.12.29 22:31:11.302	2025.09.17 09:39:20  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
-2025.12.29 22:31:11.302	2025.09.17 09:39:20  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:11.302	2025.09.17 09:34:18  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:11.302	2025.09.17 09:34:18  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $64.70
-2025.12.29 22:31:11.302	2025.09.17 09:34:18  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $54.02
-2025.12.29 22:31:11.302	2025.09.17 09:34:18  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
-2025.12.29 22:31:11.051	2025.09.15 12:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
-2025.12.29 22:31:11.051	2025.09.15 12:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:11.051	2025.09.15 12:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:11.051	2025.09.15 12:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: ALCISTA | RSI: 87.17
-2025.12.29 22:31:11.051	2025.09.15 12:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 35.00p
-2025.12.29 22:31:11.051	2025.09.15 12:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $10.71 | Max: $13.47
-2025.12.29 22:31:11.051	2025.09.15 12:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 36.40p
-2025.12.29 22:31:11.051	2025.09.15 12:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 134h 50m
-2025.12.29 22:31:10.894	2025.09.12 04:41:26  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
-2025.12.29 22:31:10.894	2025.09.12 04:41:26  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
-2025.12.29 22:31:10.894	2025.09.12 04:41:26  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: ALCISTA | RSI: 51.19
-2025.12.29 22:31:10.894	2025.09.12 04:41:26  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 21.30p
-2025.12.29 22:31:10.894	2025.09.12 04:41:26  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $5.75 | Max: $13.32
-2025.12.29 22:31:10.894	2025.09.12 04:41:26  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 22.70p
-2025.12.29 22:31:10.894	2025.09.12 04:41:26  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 55h 6m
-2025.12.29 22:31:10.894	2025.09.12 04:41:26  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
-2025.12.29 22:31:10.550	2025.09.09 21:02:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    • Transición: TO +1p ? H1?H2
-2025.12.29 22:31:10.550	2025.09.09 21:02:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    • Punto 2: TO -$3 ? Eval indicadores
-2025.12.29 22:31:10.550	2025.09.09 21:02:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    • Punto 1: TO -$2 ? Eval indicadores
-2025.12.29 22:31:10.550	2025.09.09 21:02:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    DIRECTRICES MARTIM:
-2025.12.29 22:31:10.550	2025.09.09 21:02:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? MARTIM V6.15 INICIALIZADO
-2025.12.29 22:31:10.550	2025.09.09 21:02:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ========================================
-2025.12.29 22:31:10.503	2025.08.01 00:00:00  Martim_ProtectorEA_V6.15 inputs: TO_Lot=0.01; Hedge1_Lot=0.02; Hedge2_Lot=0.03; Entry_Loss_Pips=-1; Hedge2_Trigger_Pips=1; HMA_Period=7; RSI_Period=2; RSI_Lower_Level=10; RSI_Upper_Level=90; HMA_Change_Window=5; Status_Log_Minutes=5; Magic_Number=151515; Enable_Test_Signals=0; Enable_Smart_Signals=1; Signal_Interval=10; 
-2025.12.29 22:31:10.377	TestGenerator: spread set to 2
-2025.12.29 22:31:03.553	Expert Martim_ProtectorEA_V6.15 EURUSD,M5: loaded successfully
-2025.12.29 22:31:03.537	Expert Martim_ProtectorEA_V6.15 EURUSD,M5: removed
-2025.12.29 22:30:36.255	Expert Martim_ProtectorEA_V6.15 EURUSD,M5: loaded successfully
-2025.12.29 22:30:36.223	Expert Martim_ProtectorEA_V6.14 EURUSD,M5: removed
-2025.12.29 19:42:10.039	EURUSD,M5: 684378 tick events (4066 bars, 685379 bar states) processed in 0:00:02.250 (total time 0:00:02.406)
-2025.12.29 19:42:10.039	2025.09.29 23:58:48  Martim_ProtectorEA_V6.14 EURUSD,M5: Martim V6.14 detenido. Reason: 0
-2025.12.29 19:42:10.039	2025.09.29 23:58:48  Tester: order #55 is closed
-2025.12.29 19:42:10.039	2025.09.29 23:58:48  Tester: order #57 is closed
-2025.12.29 19:42:10.039	2025.09.29 23:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    ? NO SALIR: Profit < mínimo requerido
-2025.12.29 19:42:10.039	2025.09.29 23:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Retroceso: 1229.33% (umbral: 50%)
-2025.12.29 19:42:10.039	2025.09.29 23:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Max profit: $1.77
-2025.12.29 19:42:10.039	2025.09.29 23:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit actual: $-19.99 | Mínimo req: $1.00
-2025.12.29 19:42:10.039	2025.09.29 23:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? EVALUACIÓN SALIDA H2:
-2025.12.29 19:42:10.039	2025.09.29 23:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.039	2025.09.29 23:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    HMA: ALCISTA | RSI: 94.80
-2025.12.29 19:42:10.039	2025.09.29 23:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    H2 ACTIVO | Pips: -50.30
-2025.12.29 19:42:10.039	2025.09.29 23:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit grupo: $-19.99 | Max: $1.77
-2025.12.29 19:42:10.039	2025.09.29 23:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    TO: SELL | Pips: -49.00
-2025.12.29 19:42:10.039	2025.09.29 23:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Tiempo abierto: 80h 25m
-2025.12.29 19:42:10.039	2025.09.29 23:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? STATUS GRUPO #55
-2025.12.29 19:42:10.039	2025.09.29 23:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.038	2025.09.29 23:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    ? NO SALIR: Profit < mínimo requerido
-2025.12.29 19:42:10.038	2025.09.29 23:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Retroceso: 1197.69% (umbral: 50%)
-2025.12.29 19:42:10.038	2025.09.29 23:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Max profit: $1.77
-2025.12.29 19:42:10.038	2025.09.29 23:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit actual: $-19.43 | Mínimo req: $1.00
-2025.12.29 19:42:10.038	2025.09.29 23:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? EVALUACIÓN SALIDA H2:
-2025.12.29 19:42:10.038	2025.09.29 23:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.038	2025.09.29 23:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    HMA: ALCISTA | RSI: 77.41
-2025.12.29 19:42:10.038	2025.09.29 23:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    H2 ACTIVO | Pips: -48.90
-2025.12.29 19:42:10.038	2025.09.29 23:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit grupo: $-19.43 | Max: $1.77
-2025.12.29 19:42:10.038	2025.09.29 23:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    TO: SELL | Pips: -47.60
-2025.12.29 19:42:10.038	2025.09.29 23:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Tiempo abierto: 80h 20m
-2025.12.29 19:42:10.038	2025.09.29 23:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? STATUS GRUPO #55
-2025.12.29 19:42:10.038	2025.09.29 23:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.038	2025.09.29 23:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    ? NO SALIR: Profit < mínimo requerido
-2025.12.29 19:42:10.038	2025.09.29 23:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Retroceso: 1188.65% (umbral: 50%)
-2025.12.29 19:42:10.038	2025.09.29 23:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Max profit: $1.77
-2025.12.29 19:42:10.038	2025.09.29 23:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit actual: $-19.27 | Mínimo req: $1.00
-2025.12.29 19:42:10.038	2025.09.29 23:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? EVALUACIÓN SALIDA H2:
-2025.12.29 19:42:10.038	2025.09.29 23:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.038	2025.09.29 23:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    HMA: ALCISTA | RSI: 49.32
-2025.12.29 19:42:10.038	2025.09.29 23:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    H2 ACTIVO | Pips: -48.50
-2025.12.29 19:42:10.038	2025.09.29 23:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit grupo: $-19.27 | Max: $1.77
-2025.12.29 19:42:10.038	2025.09.29 23:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    TO: SELL | Pips: -47.20
-2025.12.29 19:42:10.038	2025.09.29 23:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Tiempo abierto: 80h 15m
-2025.12.29 19:42:10.038	2025.09.29 23:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? STATUS GRUPO #55
-2025.12.29 19:42:10.038	2025.09.29 23:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.038	2025.09.29 23:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    ? NO SALIR: Profit < mínimo requerido
-2025.12.29 19:42:10.038	2025.09.29 23:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Retroceso: 1190.91% (umbral: 50%)
-2025.12.29 19:42:10.038	2025.09.29 23:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Max profit: $1.77
-2025.12.29 19:42:10.038	2025.09.29 23:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit actual: $-19.31 | Mínimo req: $1.00
-2025.12.29 19:42:10.038	2025.09.29 23:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? EVALUACIÓN SALIDA H2:
-2025.12.29 19:42:10.038	2025.09.29 23:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.038	2025.09.29 23:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    HMA: ALCISTA | RSI: 59.24
-2025.12.29 19:42:10.038	2025.09.29 23:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    H2 ACTIVO | Pips: -48.60
-2025.12.29 19:42:10.038	2025.09.29 23:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit grupo: $-19.31 | Max: $1.77
-2025.12.29 19:42:10.038	2025.09.29 23:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    TO: SELL | Pips: -47.30
-2025.12.29 19:42:10.038	2025.09.29 23:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Tiempo abierto: 80h 10m
-2025.12.29 19:42:10.038	2025.09.29 23:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? STATUS GRUPO #55
-2025.12.29 19:42:10.038	2025.09.29 23:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.038	2025.09.29 23:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    ? NO SALIR: Profit < mínimo requerido
-2025.12.29 19:42:10.038	2025.09.29 23:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Retroceso: 1186.39% (umbral: 50%)
-2025.12.29 19:42:10.038	2025.09.29 23:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Max profit: $1.77
-2025.12.29 19:42:10.038	2025.09.29 23:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit actual: $-19.23 | Mínimo req: $1.00
-2025.12.29 19:42:10.038	2025.09.29 23:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? EVALUACIÓN SALIDA H2:
-2025.12.29 19:42:10.038	2025.09.29 23:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.038	2025.09.29 23:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    HMA: ALCISTA | RSI: 65.45
-2025.12.29 19:42:10.038	2025.09.29 23:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    H2 ACTIVO | Pips: -48.40
-2025.12.29 19:42:10.038	2025.09.29 23:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit grupo: $-19.23 | Max: $1.77
-2025.12.29 19:42:10.038	2025.09.29 23:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    TO: SELL | Pips: -47.10
-2025.12.29 19:42:10.038	2025.09.29 23:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Tiempo abierto: 80h 5m
-2025.12.29 19:42:10.038	2025.09.29 23:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? STATUS GRUPO #55
-2025.12.29 19:42:10.038	2025.09.29 23:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.038	2025.09.29 23:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    ? NO SALIR: Profit < mínimo requerido
-2025.12.29 19:42:10.038	2025.09.29 23:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Retroceso: 1159.27% (umbral: 50%)
-2025.12.29 19:42:10.038	2025.09.29 23:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Max profit: $1.77
-2025.12.29 19:42:10.038	2025.09.29 23:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit actual: $-18.75 | Mínimo req: $1.00
-2025.12.29 19:42:10.038	2025.09.29 23:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? EVALUACIÓN SALIDA H2:
-2025.12.29 19:42:10.038	2025.09.29 23:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.038	2025.09.29 23:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    HMA: BAJISTA | RSI: 14.51
-2025.12.29 19:42:10.038	2025.09.29 23:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    H2 ACTIVO | Pips: -47.20
-2025.12.29 19:42:10.038	2025.09.29 23:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit grupo: $-18.75 | Max: $1.77
-2025.12.29 19:42:10.038	2025.09.29 23:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    TO: SELL | Pips: -45.90
-2025.12.29 19:42:10.038	2025.09.29 23:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Tiempo abierto: 80h 0m
-2025.12.29 19:42:10.038	2025.09.29 23:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? STATUS GRUPO #55
-2025.12.29 19:42:10.038	2025.09.29 23:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.038	2025.09.29 23:25:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    ? NO SALIR: Profit < mínimo requerido
-2025.12.29 19:42:10.038	2025.09.29 23:25:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Retroceso: 1175.09% (umbral: 50%)
-2025.12.29 19:42:10.038	2025.09.29 23:25:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Max profit: $1.77
-2025.12.29 19:42:10.038	2025.09.29 23:25:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit actual: $-19.03 | Mínimo req: $1.00
-2025.12.29 19:42:10.038	2025.09.29 23:25:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? EVALUACIÓN SALIDA H2:
-2025.12.29 19:42:10.038	2025.09.29 23:25:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.038	2025.09.29 23:25:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    HMA: BAJISTA | RSI: 26.54
-2025.12.29 19:42:10.038	2025.09.29 23:25:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    H2 ACTIVO | Pips: -47.90
-2025.12.29 19:42:10.038	2025.09.29 23:25:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit grupo: $-19.03 | Max: $1.77
-2025.12.29 19:42:10.038	2025.09.29 23:25:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    TO: SELL | Pips: -46.60
-2025.12.29 19:42:10.038	2025.09.29 23:25:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Tiempo abierto: 79h 55m
-2025.12.29 19:42:10.038	2025.09.29 23:25:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? STATUS GRUPO #55
-2025.12.29 19:42:10.038	2025.09.29 23:25:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.038	2025.09.29 23:20:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    ? NO SALIR: Profit < mínimo requerido
-2025.12.29 19:42:10.038	2025.09.29 23:20:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Retroceso: 1218.03% (umbral: 50%)
-2025.12.29 19:42:10.038	2025.09.29 23:20:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Max profit: $1.77
-2025.12.29 19:42:10.038	2025.09.29 23:20:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit actual: $-19.79 | Mínimo req: $1.00
-2025.12.29 19:42:10.038	2025.09.29 23:20:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? EVALUACIÓN SALIDA H2:
-2025.12.29 19:42:10.038	2025.09.29 23:20:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.038	2025.09.29 23:20:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    HMA: ALCISTA | RSI: 68.59
-2025.12.29 19:42:10.038	2025.09.29 23:20:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    H2 ACTIVO | Pips: -49.80
-2025.12.29 19:42:10.038	2025.09.29 23:20:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit grupo: $-19.79 | Max: $1.77
-2025.12.29 19:42:10.038	2025.09.29 23:20:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    TO: SELL | Pips: -48.50
-2025.12.29 19:42:10.038	2025.09.29 23:20:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Tiempo abierto: 79h 50m
-2025.12.29 19:42:10.038	2025.09.29 23:20:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? STATUS GRUPO #55
-2025.12.29 19:42:10.038	2025.09.29 23:20:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.038	2025.09.29 23:15:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    ? NO SALIR: Profit < mínimo requerido
-2025.12.29 19:42:10.038	2025.09.29 23:15:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Retroceso: 1206.73% (umbral: 50%)
-2025.12.29 19:42:10.038	2025.09.29 23:15:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Max profit: $1.77
-2025.12.29 19:42:10.038	2025.09.29 23:15:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit actual: $-19.59 | Mínimo req: $1.00
-2025.12.29 19:42:10.038	2025.09.29 23:15:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? EVALUACIÓN SALIDA H2:
-2025.12.29 19:42:10.038	2025.09.29 23:15:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.038	2025.09.29 23:15:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    HMA: ALCISTA | RSI: 56.74
-2025.12.29 19:42:10.038	2025.09.29 23:15:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    H2 ACTIVO | Pips: -49.30
-2025.12.29 19:42:10.038	2025.09.29 23:15:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit grupo: $-19.59 | Max: $1.77
-2025.12.29 19:42:10.038	2025.09.29 23:15:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    TO: SELL | Pips: -48.00
-2025.12.29 19:42:10.038	2025.09.29 23:15:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Tiempo abierto: 79h 45m
-2025.12.29 19:42:10.038	2025.09.29 23:15:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? STATUS GRUPO #55
-2025.12.29 19:42:10.038	2025.09.29 23:15:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.037	2025.09.29 23:10:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    ? NO SALIR: Profit < mínimo requerido
-2025.12.29 19:42:10.037	2025.09.29 23:10:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Retroceso: 1197.69% (umbral: 50%)
-2025.12.29 19:42:10.037	2025.09.29 23:10:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Max profit: $1.77
-2025.12.29 19:42:10.037	2025.09.29 23:10:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit actual: $-19.43 | Mínimo req: $1.00
-2025.12.29 19:42:10.037	2025.09.29 23:10:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? EVALUACIÓN SALIDA H2:
-2025.12.29 19:42:10.037	2025.09.29 23:10:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.037	2025.09.29 23:10:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    HMA: BAJISTA | RSI: 30.52
-2025.12.29 19:42:10.037	2025.09.29 23:10:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    H2 ACTIVO | Pips: -48.90
-2025.12.29 19:42:10.037	2025.09.29 23:10:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit grupo: $-19.43 | Max: $1.77
-2025.12.29 19:42:10.037	2025.09.29 23:10:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    TO: SELL | Pips: -47.60
-2025.12.29 19:42:10.037	2025.09.29 23:10:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Tiempo abierto: 79h 40m
-2025.12.29 19:42:10.037	2025.09.29 23:10:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? STATUS GRUPO #55
-2025.12.29 19:42:10.037	2025.09.29 23:10:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.037	2025.09.29 23:05:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    ? NO SALIR: Profit < mínimo requerido
-2025.12.29 19:42:10.037	2025.09.29 23:05:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Retroceso: 1215.77% (umbral: 50%)
-2025.12.29 19:42:10.037	2025.09.29 23:05:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Max profit: $1.77
-2025.12.29 19:42:10.037	2025.09.29 23:05:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit actual: $-19.75 | Mínimo req: $1.00
-2025.12.29 19:42:10.037	2025.09.29 23:05:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? EVALUACIÓN SALIDA H2:
-2025.12.29 19:42:10.037	2025.09.29 23:05:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.037	2025.09.29 23:05:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    HMA: BAJISTA | RSI: 0.72
-2025.12.29 19:42:10.037	2025.09.29 23:05:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    H2 ACTIVO | Pips: -49.70
-2025.12.29 19:42:10.037	2025.09.29 23:05:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit grupo: $-19.75 | Max: $1.77
-2025.12.29 19:42:10.037	2025.09.29 23:05:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    TO: SELL | Pips: -48.40
-2025.12.29 19:42:10.037	2025.09.29 23:05:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Tiempo abierto: 79h 35m
-2025.12.29 19:42:10.037	2025.09.29 23:05:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? STATUS GRUPO #55
-2025.12.29 19:42:10.037	2025.09.29 23:05:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.037	2025.09.29 23:00:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    ? NO SALIR: Profit < mínimo requerido
-2025.12.29 19:42:10.037	2025.09.29 23:00:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Retroceso: 1245.15% (umbral: 50%)
-2025.12.29 19:42:10.037	2025.09.29 23:00:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Max profit: $1.77
-2025.12.29 19:42:10.037	2025.09.29 23:00:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit actual: $-20.27 | Mínimo req: $1.00
-2025.12.29 19:42:10.037	2025.09.29 23:00:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? EVALUACIÓN SALIDA H2:
-2025.12.29 19:42:10.037	2025.09.29 23:00:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.037	2025.09.29 23:00:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    HMA: BAJISTA | RSI: 2.40
-2025.12.29 19:42:10.037	2025.09.29 23:00:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    H2 ACTIVO | Pips: -51.00
-2025.12.29 19:42:10.037	2025.09.29 23:00:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit grupo: $-20.27 | Max: $1.77
-2025.12.29 19:42:10.037	2025.09.29 23:00:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    TO: SELL | Pips: -49.70
-2025.12.29 19:42:10.037	2025.09.29 23:00:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Tiempo abierto: 79h 30m
-2025.12.29 19:42:10.037	2025.09.29 23:00:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? STATUS GRUPO #55
-2025.12.29 19:42:10.037	2025.09.29 23:00:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.037	2025.09.29 22:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    ? NO SALIR: Profit < mínimo requerido
-2025.12.29 19:42:10.037	2025.09.29 22:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Retroceso: 1256.45% (umbral: 50%)
-2025.12.29 19:42:10.037	2025.09.29 22:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Max profit: $1.77
-2025.12.29 19:42:10.037	2025.09.29 22:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit actual: $-20.47 | Mínimo req: $1.00
-2025.12.29 19:42:10.037	2025.09.29 22:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? EVALUACIÓN SALIDA H2:
-2025.12.29 19:42:10.037	2025.09.29 22:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.037	2025.09.29 22:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    HMA: BAJISTA | RSI: 18.42
-2025.12.29 19:42:10.037	2025.09.29 22:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    H2 ACTIVO | Pips: -51.50
-2025.12.29 19:42:10.037	2025.09.29 22:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit grupo: $-20.47 | Max: $1.77
-2025.12.29 19:42:10.037	2025.09.29 22:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    TO: SELL | Pips: -50.20
-2025.12.29 19:42:10.037	2025.09.29 22:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Tiempo abierto: 79h 25m
-2025.12.29 19:42:10.037	2025.09.29 22:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? STATUS GRUPO #55
-2025.12.29 19:42:10.037	2025.09.29 22:55:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.037	2025.09.29 22:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    ? NO SALIR: Profit < mínimo requerido
-2025.12.29 19:42:10.037	2025.09.29 22:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Retroceso: 1265.49% (umbral: 50%)
-2025.12.29 19:42:10.037	2025.09.29 22:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Max profit: $1.77
-2025.12.29 19:42:10.037	2025.09.29 22:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit actual: $-20.63 | Mínimo req: $1.00
-2025.12.29 19:42:10.037	2025.09.29 22:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? EVALUACIÓN SALIDA H2:
-2025.12.29 19:42:10.037	2025.09.29 22:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.037	2025.09.29 22:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    HMA: BAJISTA | RSI: 8.24
-2025.12.29 19:42:10.037	2025.09.29 22:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    H2 ACTIVO | Pips: -51.90
-2025.12.29 19:42:10.037	2025.09.29 22:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit grupo: $-20.63 | Max: $1.77
-2025.12.29 19:42:10.037	2025.09.29 22:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    TO: SELL | Pips: -50.60
-2025.12.29 19:42:10.037	2025.09.29 22:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Tiempo abierto: 79h 20m
-2025.12.29 19:42:10.037	2025.09.29 22:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? STATUS GRUPO #55
-2025.12.29 19:42:10.037	2025.09.29 22:50:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.037	2025.09.29 22:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    ? NO SALIR: Profit < mínimo requerido
-2025.12.29 19:42:10.037	2025.09.29 22:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Retroceso: 1283.57% (umbral: 50%)
-2025.12.29 19:42:10.037	2025.09.29 22:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Max profit: $1.77
-2025.12.29 19:42:10.037	2025.09.29 22:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit actual: $-20.95 | Mínimo req: $1.00
-2025.12.29 19:42:10.037	2025.09.29 22:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? EVALUACIÓN SALIDA H2:
-2025.12.29 19:42:10.037	2025.09.29 22:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.037	2025.09.29 22:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    HMA: BAJISTA | RSI: 30.92
-2025.12.29 19:42:10.037	2025.09.29 22:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    H2 ACTIVO | Pips: -52.70
-2025.12.29 19:42:10.037	2025.09.29 22:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit grupo: $-20.95 | Max: $1.77
-2025.12.29 19:42:10.037	2025.09.29 22:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    TO: SELL | Pips: -51.40
-2025.12.29 19:42:10.037	2025.09.29 22:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Tiempo abierto: 79h 15m
-2025.12.29 19:42:10.037	2025.09.29 22:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? STATUS GRUPO #55
-2025.12.29 19:42:10.037	2025.09.29 22:45:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.037	2025.09.29 22:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    ? NO SALIR: Profit < mínimo requerido
-2025.12.29 19:42:10.037	2025.09.29 22:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Retroceso: 1279.05% (umbral: 50%)
-2025.12.29 19:42:10.037	2025.09.29 22:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Max profit: $1.77
-2025.12.29 19:42:10.037	2025.09.29 22:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit actual: $-20.87 | Mínimo req: $1.00
-2025.12.29 19:42:10.037	2025.09.29 22:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? EVALUACIÓN SALIDA H2:
-2025.12.29 19:42:10.037	2025.09.29 22:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.037	2025.09.29 22:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    HMA: BAJISTA | RSI: 17.81
-2025.12.29 19:42:10.037	2025.09.29 22:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    H2 ACTIVO | Pips: -52.50
-2025.12.29 19:42:10.037	2025.09.29 22:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit grupo: $-20.87 | Max: $1.77
-2025.12.29 19:42:10.037	2025.09.29 22:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    TO: SELL | Pips: -51.20
-2025.12.29 19:42:10.037	2025.09.29 22:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Tiempo abierto: 79h 10m
-2025.12.29 19:42:10.037	2025.09.29 22:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? STATUS GRUPO #55
-2025.12.29 19:42:10.037	2025.09.29 22:40:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.036	2025.09.29 22:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    ? NO SALIR: Profit < mínimo requerido
-2025.12.29 19:42:10.036	2025.09.29 22:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Retroceso: 1315.21% (umbral: 50%)
-2025.12.29 19:42:10.036	2025.09.29 22:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Max profit: $1.77
-2025.12.29 19:42:10.036	2025.09.29 22:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit actual: $-21.51 | Mínimo req: $1.00
-2025.12.29 19:42:10.036	2025.09.29 22:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? EVALUACIÓN SALIDA H2:
-2025.12.29 19:42:10.036	2025.09.29 22:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.036	2025.09.29 22:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    HMA: BAJISTA | RSI: 52.24
-2025.12.29 19:42:10.036	2025.09.29 22:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    H2 ACTIVO | Pips: -54.10
-2025.12.29 19:42:10.036	2025.09.29 22:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit grupo: $-21.51 | Max: $1.77
-2025.12.29 19:42:10.036	2025.09.29 22:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    TO: SELL | Pips: -52.80
-2025.12.29 19:42:10.036	2025.09.29 22:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Tiempo abierto: 79h 5m
-2025.12.29 19:42:10.036	2025.09.29 22:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? STATUS GRUPO #55
-2025.12.29 19:42:10.036	2025.09.29 22:35:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.036	2025.09.29 22:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    ? NO SALIR: Profit < mínimo requerido
-2025.12.29 19:42:10.036	2025.09.29 22:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Retroceso: 1308.43% (umbral: 50%)
-2025.12.29 19:42:10.036	2025.09.29 22:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Max profit: $1.77
-2025.12.29 19:42:10.036	2025.09.29 22:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit actual: $-21.39 | Mínimo req: $1.00
-2025.12.29 19:42:10.036	2025.09.29 22:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? EVALUACIÓN SALIDA H2:
-2025.12.29 19:42:10.036	2025.09.29 22:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.036	2025.09.29 22:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    HMA: BAJISTA | RSI: 49.16
-2025.12.29 19:42:10.036	2025.09.29 22:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    H2 ACTIVO | Pips: -53.80
-2025.12.29 19:42:10.036	2025.09.29 22:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit grupo: $-21.39 | Max: $1.77
-2025.12.29 19:42:10.036	2025.09.29 22:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    TO: SELL | Pips: -52.50
-2025.12.29 19:42:10.036	2025.09.29 22:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Tiempo abierto: 79h 0m
-2025.12.29 19:42:10.036	2025.09.29 22:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? STATUS GRUPO #55
-2025.12.29 19:42:10.036	2025.09.29 22:30:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:10.036	2025.09.29 22:25:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    ? NO SALIR: Profit < mínimo requerido
-2025.12.29 19:42:10.036	2025.09.29 22:25:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Retroceso: 1303.91% (umbral: 50%)
-2025.12.29 19:42:10.036	2025.09.29 22:25:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Max profit: $1.77
-2025.12.29 19:42:10.036	2025.09.29 22:25:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit actual: $-21.31 | Mínimo req: $1.00
-2025.12.29 19:42:09.999	2025.09.29 16:20:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    H2 ACTIVO | Pips: -64.70
-2025.12.29 19:42:09.999	2025.09.29 16:20:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Profit grupo: $-25.75 | Max: $1.77
-2025.12.29 19:42:09.999	2025.09.29 16:20:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    TO: SELL | Pips: -63.40
-2025.12.29 19:42:09.999	2025.09.29 16:20:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    Tiempo abierto: 72h 50m
-2025.12.29 19:42:09.999	2025.09.29 16:20:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ?? STATUS GRUPO #55
-2025.12.29 19:42:09.999	2025.09.29 16:20:00  Martim_ProtectorEA_V6.14 EURUSD,M5: ---------------------------------------
-2025.12.29 19:42:09.999	2025.09.29 16:15:00  Martim_ProtectorEA_V6.14 EURUSD,M5:    ? NO SALIR: Profit < mínimo requerido
+
+2025.12.29 22:41:23.327	EURUSD,M5: 684378 tick events (4066 bars, 685379 bar states) processed in 0:00:02.266 (total time 0:00:02.422)
+2025.12.29 22:41:23.327	2025.09.29 23:58:48  Martim_ProtectorEA_V6.15 EURUSD,M5: Martim V6.15 detenido. Reason: 0
+2025.12.29 22:41:23.327	2025.09.29 23:58:48  Tester: order #1 is closed
+2025.12.29 22:41:23.327	2025.09.29 23:58:48  Tester: order #3 is closed
+2025.12.29 22:41:23.327	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.327	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
+2025.12.29 22:41:23.327	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-2.85
+2025.12.29 22:41:23.327	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:23.327	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.327	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.327	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: ALCISTA | RSI: 94.80
+2025.12.29 22:41:23.327	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 19.50p
+2025.12.29 22:41:23.327	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-2.85 | Max: $80.26
+2025.12.29 22:41:23.327	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 20.90p
+2025.12.29 22:41:23.327	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 482h 20m
+2025.12.29 22:41:23.327	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
+2025.12.29 22:41:23.327	2025.09.29 23:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.327	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.327	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
+2025.12.29 22:41:23.327	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.41
+2025.12.29 22:41:23.327	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:23.327	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.327	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.327	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: ALCISTA | RSI: 77.41
+2025.12.29 22:41:23.327	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 18.10p
+2025.12.29 22:41:23.327	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.41 | Max: $80.26
+2025.12.29 22:41:23.327	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 19.50p
+2025.12.29 22:41:23.327	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 482h 15m
+2025.12.29 22:41:23.327	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
+2025.12.29 22:41:23.327	2025.09.29 23:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.327	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.327	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
+2025.12.29 22:41:23.327	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.57
+2025.12.29 22:41:23.327	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:23.327	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.327	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.327	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: ALCISTA | RSI: 49.32
+2025.12.29 22:41:23.327	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 17.70p
+2025.12.29 22:41:23.327	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.57 | Max: $80.26
+2025.12.29 22:41:23.327	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 19.10p
+2025.12.29 22:41:23.327	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 482h 10m
+2025.12.29 22:41:23.327	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
+2025.12.29 22:41:23.327	2025.09.29 23:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.327	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.327	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
+2025.12.29 22:41:23.327	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.53
+2025.12.29 22:41:23.327	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:23.327	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.327	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.327	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: ALCISTA | RSI: 59.24
+2025.12.29 22:41:23.327	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 17.80p
+2025.12.29 22:41:23.327	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.53 | Max: $80.26
+2025.12.29 22:41:23.327	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 19.20p
+2025.12.29 22:41:23.327	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 482h 5m
+2025.12.29 22:41:23.327	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
+2025.12.29 22:41:23.327	2025.09.29 23:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.327	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.327	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
+2025.12.29 22:41:23.327	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.61
+2025.12.29 22:41:23.327	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:23.327	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.327	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.327	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: ALCISTA | RSI: 65.45
+2025.12.29 22:41:23.327	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 17.60p
+2025.12.29 22:41:23.327	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.61 | Max: $80.26
+2025.12.29 22:41:23.327	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 19.00p
+2025.12.29 22:41:23.327	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 482h 0m
+2025.12.29 22:41:23.327	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
+2025.12.29 22:41:23.327	2025.09.29 23:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.327	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.327	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
+2025.12.29 22:41:23.327	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-4.09
+2025.12.29 22:41:23.327	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:23.327	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.327	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.327	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: BAJISTA | RSI: 14.51
+2025.12.29 22:41:23.327	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 16.40p
+2025.12.29 22:41:23.327	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-4.09 | Max: $80.26
+2025.12.29 22:41:23.327	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 17.80p
+2025.12.29 22:41:23.327	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 481h 55m
+2025.12.29 22:41:23.327	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
+2025.12.29 22:41:23.327	2025.09.29 23:30:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.327	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.327	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
+2025.12.29 22:41:23.327	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.81
+2025.12.29 22:41:23.327	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:23.327	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.327	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.327	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: BAJISTA | RSI: 26.54
+2025.12.29 22:41:23.327	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 17.10p
+2025.12.29 22:41:23.327	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.81 | Max: $80.26
+2025.12.29 22:41:23.327	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 18.50p
+2025.12.29 22:41:23.327	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 481h 50m
+2025.12.29 22:41:23.327	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
+2025.12.29 22:41:23.327	2025.09.29 23:25:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.327	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.327	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
+2025.12.29 22:41:23.327	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.05
+2025.12.29 22:41:23.327	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:23.327	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.327	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.327	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: ALCISTA | RSI: 68.59
+2025.12.29 22:41:23.327	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 19.00p
+2025.12.29 22:41:23.327	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.05 | Max: $80.26
+2025.12.29 22:41:23.327	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 20.40p
+2025.12.29 22:41:23.327	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 481h 45m
+2025.12.29 22:41:23.327	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
+2025.12.29 22:41:23.327	2025.09.29 23:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.327	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.311	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
+2025.12.29 22:41:23.311	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.25
+2025.12.29 22:41:23.311	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:23.311	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.311	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.311	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: ALCISTA | RSI: 56.74
+2025.12.29 22:41:23.311	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 18.50p
+2025.12.29 22:41:23.311	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.25 | Max: $80.26
+2025.12.29 22:41:23.311	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 19.90p
+2025.12.29 22:41:23.311	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 481h 40m
+2025.12.29 22:41:23.311	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
+2025.12.29 22:41:23.311	2025.09.29 23:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.311	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.311	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
+2025.12.29 22:41:23.311	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.41
+2025.12.29 22:41:23.311	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:23.311	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.311	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.311	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: BAJISTA | RSI: 30.52
+2025.12.29 22:41:23.311	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 18.10p
+2025.12.29 22:41:23.311	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.41 | Max: $80.26
+2025.12.29 22:41:23.311	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 19.50p
+2025.12.29 22:41:23.311	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 481h 35m
+2025.12.29 22:41:23.311	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
+2025.12.29 22:41:23.311	2025.09.29 23:10:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.311	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.311	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
+2025.12.29 22:41:23.311	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.09
+2025.12.29 22:41:23.311	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:23.311	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.311	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.311	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: BAJISTA | RSI: 0.72
+2025.12.29 22:41:23.311	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 18.90p
+2025.12.29 22:41:23.311	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-3.09 | Max: $80.26
+2025.12.29 22:41:23.311	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 20.30p
+2025.12.29 22:41:23.311	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 481h 30m
+2025.12.29 22:41:23.311	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
+2025.12.29 22:41:23.311	2025.09.29 23:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.311	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.311	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
+2025.12.29 22:41:23.311	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-2.57
+2025.12.29 22:41:23.311	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:23.311	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.311	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.311	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: BAJISTA | RSI: 2.40
+2025.12.29 22:41:23.311	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 20.20p
+2025.12.29 22:41:23.311	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-2.57 | Max: $80.26
+2025.12.29 22:41:23.311	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 21.60p
+2025.12.29 22:41:23.311	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 481h 25m
+2025.12.29 22:41:23.311	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
+2025.12.29 22:41:23.311	2025.09.29 23:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.311	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.311	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
+2025.12.29 22:41:23.311	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-2.37
+2025.12.29 22:41:23.311	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:23.311	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.311	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.311	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: BAJISTA | RSI: 18.42
+2025.12.29 22:41:23.311	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 20.70p
+2025.12.29 22:41:23.311	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-2.37 | Max: $80.26
+2025.12.29 22:41:23.311	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 22.10p
+2025.12.29 22:41:23.311	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 481h 20m
+2025.12.29 22:41:23.311	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
+2025.12.29 22:41:23.311	2025.09.29 22:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.311	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.311	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
+2025.12.29 22:41:23.311	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-2.21
+2025.12.29 22:41:23.311	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:23.311	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.311	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.311	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: BAJISTA | RSI: 8.24
+2025.12.29 22:41:23.311	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 21.10p
+2025.12.29 22:41:23.311	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-2.21 | Max: $80.26
+2025.12.29 22:41:23.311	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 22.50p
+2025.12.29 22:41:23.311	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 481h 15m
+2025.12.29 22:41:23.311	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
+2025.12.29 22:41:23.311	2025.09.29 22:50:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.311	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.311	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
+2025.12.29 22:41:23.311	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-1.89
+2025.12.29 22:41:23.311	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:23.311	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.311	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.311	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: BAJISTA | RSI: 30.92
+2025.12.29 22:41:23.311	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 21.90p
+2025.12.29 22:41:23.311	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-1.89 | Max: $80.26
+2025.12.29 22:41:23.311	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 23.30p
+2025.12.29 22:41:23.311	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 481h 10m
+2025.12.29 22:41:23.311	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
+2025.12.29 22:41:23.311	2025.09.29 22:45:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.311	2025.09.29 22:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.311	2025.09.29 22:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
+2025.12.29 22:41:23.311	2025.09.29 22:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-1.97
+2025.12.29 22:41:23.311	2025.09.29 22:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:23.311	2025.09.29 22:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.311	2025.09.29 22:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.107	2025.09.26 14:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
+2025.12.29 22:41:23.107	2025.09.26 14:40:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:23.107	2025.09.26 14:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.107	2025.09.26 14:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
+2025.12.29 22:41:23.107	2025.09.26 14:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-24.93
+2025.12.29 22:41:23.107	2025.09.26 14:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:23.107	2025.09.26 14:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:23.107	2025.09.26 14:35:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:22.841	2025.09.24 19:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 33.10p
+2025.12.29 22:41:22.841	2025.09.24 19:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 357h 30m
+2025.12.29 22:41:22.841	2025.09.24 19:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
+2025.12.29 22:41:22.841	2025.09.24 19:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:22.841	2025.09.24 19:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:22.841	2025.09.24 19:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
+2025.12.29 22:41:22.841	2025.09.24 19:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $5.82
+2025.12.29 22:41:22.841	2025.09.24 19:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:22.638	2025.09.23 16:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $28.38 | Max: $80.26
+2025.12.29 22:41:22.638	2025.09.23 16:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 91.10p
+2025.12.29 22:41:22.638	2025.09.23 16:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 330h 25m
+2025.12.29 22:41:22.638	2025.09.23 16:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
+2025.12.29 22:41:22.638	2025.09.23 16:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:22.638	2025.09.23 15:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:22.638	2025.09.23 15:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
+2025.12.29 22:41:22.638	2025.09.23 15:55:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $28.58
+2025.12.29 22:41:22.340	2025.09.19 16:24:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 40.70p
+2025.12.29 22:41:22.340	2025.09.19 16:24:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 234h 49m
+2025.12.29 22:41:22.340	2025.09.19 16:24:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
+2025.12.29 22:41:22.340	2025.09.19 16:24:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:22.340	2025.09.19 16:19:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:22.340	2025.09.19 16:19:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
+2025.12.29 22:41:22.340	2025.09.19 16:19:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $12.71
+2025.12.29 22:41:22.340	2025.09.19 16:19:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:22.105	2025.09.18 08:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 87.70p
+2025.12.29 22:41:22.105	2025.09.18 08:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 202h 45m
+2025.12.29 22:41:22.105	2025.09.18 08:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
+2025.12.29 22:41:22.105	2025.09.18 08:20:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:22.105	2025.09.18 08:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:22.105	2025.09.18 08:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $80.26
+2025.12.29 22:41:22.105	2025.09.18 08:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $27.60
+2025.12.29 22:41:22.105	2025.09.18 08:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:21.839	2025.09.16 16:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:21.839	2025.09.16 16:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:21.839	2025.09.16 16:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:21.839	2025.09.16 16:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: ALCISTA | RSI: 89.67
+2025.12.29 22:41:21.839	2025.09.16 16:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 103.70p
+2025.12.29 22:41:21.839	2025.09.16 16:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $37.66 | Max: $41.86
+2025.12.29 22:41:21.839	2025.09.16 16:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | 105.10p
+2025.12.29 22:41:21.839	2025.09.16 16:15:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 162h 40m
+2025.12.29 22:41:21.593	2025.09.12 20:38:12  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $13.47
+2025.12.29 22:41:21.593	2025.09.12 20:38:12  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $8.43
+2025.12.29 22:41:21.593	2025.09.12 20:38:12  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? H2 ACTIVO - Desarrollo pendiente
+2025.12.29 22:41:21.593	2025.09.12 20:38:12  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:21.593	2025.09.12 20:38:12  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:21.593	2025.09.12 20:38:12  Martim_ProtectorEA_V6.15 EURUSD,M5:    HMA: BAJISTA | RSI: 56.41
+2025.12.29 22:41:21.593	2025.09.12 20:38:12  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: 28.00p
+2025.12.29 22:41:21.593	2025.09.12 20:38:12  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $8.43 | Max: $13.47
+2025.12.29 22:41:21.342	2025.09.11 15:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    H2: -21.30p
+2025.12.29 22:41:21.342	2025.09.11 15:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Profit: $-10.76 | Max: $8.53
+2025.12.29 22:41:21.342	2025.09.11 15:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    TO: BUY | -19.90p
+2025.12.29 22:41:21.342	2025.09.11 15:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Tiempo: 41h 30m
+2025.12.29 22:41:21.342	2025.09.11 15:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? STATUS #1
+2025.12.29 22:41:21.342	2025.09.11 15:05:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ---------------------------------------
+2025.12.29 22:41:21.342	2025.09.11 15:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?????????????????????????????????????
+2025.12.29 22:41:21.342	2025.09.11 15:00:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    Max: $8.53
+2025.12.29 22:41:21.060	2025.09.09 21:02:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    • Transición: TO +1p ? H1?H2
+2025.12.29 22:41:21.060	2025.09.09 21:02:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    • Punto 2: TO -$3 ? Eval indicadores
+2025.12.29 22:41:21.060	2025.09.09 21:02:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    • Punto 1: TO -$2 ? Eval indicadores
+2025.12.29 22:41:21.060	2025.09.09 21:02:00  Martim_ProtectorEA_V6.15 EURUSD,M5:    DIRECTRICES MARTIM:
+2025.12.29 22:41:21.060	2025.09.09 21:02:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ?? MARTIM V6.15 INICIALIZADO
+2025.12.29 22:41:21.060	2025.09.09 21:02:00  Martim_ProtectorEA_V6.15 EURUSD,M5: ========================================
+2025.12.29 22:41:21.060	2025.08.01 00:00:00  Martim_ProtectorEA_V6.15 inputs: TO_Lot=0.01; Hedge1_Lot=0.02; Hedge2_Lot=0.03; Entry_Loss_Pips=-1; Hedge2_Trigger_Pips=1; HMA_Period=7; RSI_Period=2; RSI_Lower_Level=10; RSI_Upper_Level=90; HMA_Change_Window=5; Status_Log_Minutes=5; Magic_Number=151515; Enable_Test_Signals=0; Enable_Smart_Signals=1; Signal_Interval=10; 
+2025.12.29 22:41:20.920	TestGenerator: spread set to 2
