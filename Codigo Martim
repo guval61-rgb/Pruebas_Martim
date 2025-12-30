@@ -1,6 +1,6 @@
 //+------------------------------------------------------------------+
-//|                                      Martim_ProtectorEA_V6.14.mq4 |
-//|          CORRECCIÓN: 3 bugs críticos + Validación indicadores    |
+//|                                     Martim_ProtectorEA_V6.14.mq4 |
+//|   CORRECCIÓN: 3 bugs críticos + Validación indicadores + Logs    |
 //+------------------------------------------------------------------+
 #property copyright "Guido - V6.14 BUG FIXES"
 #property version   "6.14"
@@ -33,8 +33,11 @@ input int HMA_Change_Window = 5;         // Barras ventana cambio HMA
 input int First_Bar_Seconds = 60;        // Tiempo primera barra (seg)
 input bool Enable_First_Bar_Check = false; // Activar verificación primera barra
 
+// === LOGGING ===
+input int Status_Log_Minutes = 5;        // Intervalo log status periódico (min)
+
 // === IDENTIFICACIÓN ===
-input int Magic_Number = 1231414;          // Magic Number V6.14
+input int Magic_Number = 141414;          // Magic Number V6.14
 input string Comment_Prefix = "MartimV6"; // Prefijo comentarios
 
 // === TEST SIGNALS (temporal) ===
@@ -60,6 +63,7 @@ struct TradeGroup
    bool hedge2_active;      // Hedge2 activo
    
    double max_profit_reached; // Máximo profit alcanzado
+   datetime last_status_log;  // Último log status periódico
 };
 
 //+------------------------------------------------------------------+
@@ -189,6 +193,7 @@ void LoadExistingGroups()
          Groups[idx].max_profit_reached = 0;
          Groups[idx].ticket_H1 = -1;
          Groups[idx].ticket_H2 = -1;
+         Groups[idx].last_status_log = 0;
       }
    }
    
@@ -440,6 +445,7 @@ void CreateNewGroup(int type)
       Groups[idx].max_profit_reached = 0;
       Groups[idx].ticket_H1 = -1;
       Groups[idx].ticket_H2 = -1;
+      Groups[idx].last_status_log = TimeCurrent();
       
       // Obtener precio y tiempo de entrada
       if(OrderSelect(ticket, SELECT_BY_TICKET))
@@ -466,6 +472,18 @@ void MonitorAndProtectGroups()
       {
          RemoveGroup(i);
          continue;
+      }
+      
+      // ============================================================
+      // LOG STATUS PERIÓDICO
+      // ============================================================
+      
+      int minutes_since_log = (int)((TimeCurrent() - Groups[i].last_status_log) / 60);
+      
+      if(minutes_since_log >= Status_Log_Minutes)
+      {
+         LogGroupStatus(i);
+         Groups[i].last_status_log = TimeCurrent();
       }
       
       // Calcular profit TO en pips
@@ -528,11 +546,25 @@ void MonitorAndProtectGroups()
          // Verificar si TO recuperó y puede activar H2
          if(toPips >= Hedge2_Trigger_Pips)
          {
+            // LOG: Verificación HMA support
+            double hma_up = iCustom(Symbol(), 0, HMA_Indicator, HMA_Period, 0, 0);
+            double hma_dn = iCustom(Symbol(), 0, HMA_Indicator, HMA_Period, 1, 0);
+            
+            Print("📋 EVALUACIÓN TRANSICIÓN H2:");
+            Print("   TO recuperó: ", DoubleToString(toPips, 2), "p (umbral: ", Hedge2_Trigger_Pips, "p)");
+            Print("   TO tipo: ", (Groups[i].type_TO == OP_BUY ? "BUY" : "SELL"));
+            Print("   HMA UP buffer: ", (hma_up == EMPTY_VALUE ? "EMPTY" : DoubleToString(hma_up, 5)));
+            Print("   HMA DN buffer: ", (hma_dn == EMPTY_VALUE ? "EMPTY" : DoubleToString(hma_dn, 5)));
+            
             if(CheckHMASupport(Groups[i].type_TO))
             {
-               Print("🔄 TO recuperó ", DoubleToString(toPips, 2), "p → TRANSICIÓN H2");
+               Print("   ✅ HMA APOYA transición → ACTIVAR H2");
                TransitionToHedge2(i);
                continue;
+            }
+            else
+            {
+               Print("   ❌ HMA NO APOYA transición → Mantener H1");
             }
          }
       }
@@ -544,6 +576,32 @@ void MonitorAndProtectGroups()
       if(Groups[i].hedge2_active)
       {
          double groupProfit = CalculateGroupProfit(i);
+         
+         // LOG: Evaluación salida periódica
+         if(minutes_since_log >= Status_Log_Minutes)
+         {
+            double retracement_pct = 0;
+            if(Groups[i].max_profit_reached > 0.01)
+            {
+               retracement_pct = (Groups[i].max_profit_reached - groupProfit) / 
+                                Groups[i].max_profit_reached * 100;
+            }
+            
+            Print("📊 EVALUACIÓN SALIDA H2:");
+            Print("   Profit actual: $", DoubleToString(groupProfit, 2), 
+                  " | Mínimo req: $", DoubleToString(Min_Exit_Profit, 2));
+            Print("   Max profit: $", DoubleToString(Groups[i].max_profit_reached, 2));
+            Print("   Retroceso: ", DoubleToString(retracement_pct, 2), "% (umbral: 50%)");
+            
+            if(groupProfit < Min_Exit_Profit)
+            {
+               Print("   → NO SALIR: Profit < mínimo requerido");
+            }
+            else if(retracement_pct < 50.0)
+            {
+               Print("   → NO SALIR: Retroceso < 50%");
+            }
+         }
          
          if(groupProfit >= Min_Exit_Profit)
          {
@@ -560,6 +618,84 @@ void MonitorAndProtectGroups()
          }
       }
    }
+}
+
+//+------------------------------------------------------------------+
+//| LOG STATUS GRUPO PERIÓDICO                                       |
+//+------------------------------------------------------------------+
+
+void LogGroupStatus(int idx)
+{
+   int minutes_open = (int)((TimeCurrent() - Groups[idx].entry_time_TO) / 60);
+   int hours_open = minutes_open / 60;
+   int mins_remaining = minutes_open % 60;
+   
+   string time_open = "";
+   if(hours_open > 0)
+      time_open = IntegerToString(hours_open) + "h " + IntegerToString(mins_remaining) + "m";
+   else
+      time_open = IntegerToString(mins_remaining) + "m";
+   
+   double totalProfit = CalculateGroupProfit(idx);
+   
+   // Calcular pips TO
+   double toPips = CalculatePips(
+      Groups[idx].entry_price_TO,
+      Groups[idx].type_TO == OP_BUY ? Bid : Ask,
+      Groups[idx].type_TO
+   );
+   
+   // Leer indicadores actuales
+   double hma_up = iCustom(Symbol(), 0, HMA_Indicator, HMA_Period, 0, 0);
+   double hma_dn = iCustom(Symbol(), 0, HMA_Indicator, HMA_Period, 1, 0);
+   double rsi = iRSI(Symbol(), 0, RSI_Period, PRICE_CLOSE, 0);
+   
+   string hma_status = "";
+   if(hma_up != EMPTY_VALUE)
+      hma_status = "ALCISTA";
+   else if(hma_dn != EMPTY_VALUE)
+      hma_status = "BAJISTA";
+   else
+      hma_status = "INDEFINIDO";
+   
+   Print("═══════════════════════════════════════");
+   Print("📍 STATUS GRUPO #", Groups[idx].ticket_TO);
+   Print("   Tiempo abierto: ", time_open);
+   Print("   TO: ", (Groups[idx].type_TO == OP_BUY ? "BUY" : "SELL"), 
+         " | Pips: ", DoubleToString(toPips, 2));
+   Print("   Profit grupo: $", DoubleToString(totalProfit, 2), 
+         " | Max: $", DoubleToString(Groups[idx].max_profit_reached, 2));
+   
+   if(Groups[idx].hedge1_active)
+   {
+      double h1Pips = 0;
+      if(OrderSelect(Groups[idx].ticket_H1, SELECT_BY_TICKET))
+      {
+         h1Pips = CalculatePips(
+            OrderOpenPrice(),
+            OrderType() == OP_BUY ? Bid : Ask,
+            OrderType()
+         );
+      }
+      Print("   H1 ACTIVO | Pips: ", DoubleToString(h1Pips, 2));
+   }
+   
+   if(Groups[idx].hedge2_active)
+   {
+      double h2Pips = 0;
+      if(OrderSelect(Groups[idx].ticket_H2, SELECT_BY_TICKET))
+      {
+         h2Pips = CalculatePips(
+            OrderOpenPrice(),
+            OrderType() == OP_BUY ? Bid : Ask,
+            OrderType()
+         );
+      }
+      Print("   H2 ACTIVO | Pips: ", DoubleToString(h2Pips, 2));
+   }
+   
+   Print("   HMA: ", hma_status, " | RSI: ", DoubleToString(rsi, 2));
+   Print("═══════════════════════════════════════");
 }
 
 //+------------------------------------------------------------------+
